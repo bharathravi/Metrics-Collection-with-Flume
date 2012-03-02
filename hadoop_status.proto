@@ -1,0 +1,12 @@
+package flume_metrics;
+
+message HadoopStatus {
+  message JobStatus {
+    required string jobID = 1;
+    required float map = 2;
+    required float reduce = 3;
+  }
+
+  required string timestamp = 1;
+  repeated JobStatus status = 2;
+}
