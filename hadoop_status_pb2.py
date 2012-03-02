@@ -11,7 +11,7 @@ from google.protobuf import descriptor_pb2
 DESCRIPTOR = descriptor.FileDescriptor(
   name='hadoop_status.proto',
   package='flume_metrics',
-  serialized_pb='\n\x13hadoop_status.proto\x12\rflume_metrics\"\x91\x01\n\x0cHadoopStatus\x12\x11\n\ttimestamp\x18\x01 \x02(\t\x12\x35\n\x06status\x18\x02 \x03(\x0b\x32%.flume_metrics.HadoopStatus.JobStatus\x1a\x37\n\tJobStatus\x12\r\n\x05jobID\x18\x01 \x02(\t\x12\x0b\n\x03map\x18\x02 \x02(\x02\x12\x0e\n\x06reduce\x18\x03 \x02(\x02')
+  serialized_pb='\n\x13hadoop_status.proto\x12\rflume_metrics\"\x96\x01\n\x0cHadoopStatus\x12\x11\n\ttimestamp\x18\x01 \x02(\t\x12\x39\n\njob_status\x18\x02 \x03(\x0b\x32%.flume_metrics.HadoopStatus.JobStatus\x1a\x38\n\tJobStatus\x12\x0e\n\x06job_id\x18\x01 \x02(\t\x12\x0b\n\x03map\x18\x02 \x02(\x02\x12\x0e\n\x06reduce\x18\x03 \x02(\x02')
 
 
 
@@ -24,7 +24,7 @@ _HADOOPSTATUS_JOBSTATUS = descriptor.Descriptor(
   containing_type=None,
   fields=[
     descriptor.FieldDescriptor(
-      name='jobID', full_name='flume_metrics.HadoopStatus.JobStatus.jobID', index=0,
+      name='job_id', full_name='flume_metrics.HadoopStatus.JobStatus.job_id', index=0,
       number=1, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=unicode("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
@@ -53,8 +53,8 @@ _HADOOPSTATUS_JOBSTATUS = descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=129,
-  serialized_end=184,
+  serialized_start=133,
+  serialized_end=189,
 )
 
 _HADOOPSTATUS = descriptor.Descriptor(
@@ -72,7 +72,7 @@ _HADOOPSTATUS = descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='status', full_name='flume_metrics.HadoopStatus.status', index=1,
+      name='job_status', full_name='flume_metrics.HadoopStatus.job_status', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -88,11 +88,11 @@ _HADOOPSTATUS = descriptor.Descriptor(
   is_extendable=False,
   extension_ranges=[],
   serialized_start=39,
-  serialized_end=184,
+  serialized_end=189,
 )
 
 _HADOOPSTATUS_JOBSTATUS.containing_type = _HADOOPSTATUS;
-_HADOOPSTATUS.fields_by_name['status'].message_type = _HADOOPSTATUS_JOBSTATUS
+_HADOOPSTATUS.fields_by_name['job_status'].message_type = _HADOOPSTATUS_JOBSTATUS
 DESCRIPTOR.message_types_by_name['HadoopStatus'] = _HADOOPSTATUS
 
 class HadoopStatus(message.Message):
