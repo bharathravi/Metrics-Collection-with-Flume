@@ -2,7 +2,7 @@
 
 import os, sys, time, signal
 from datetime import datetime
-import subprocess
+import subprocess, struct
 
 import hadoop_status_pb2 as proto
 
@@ -14,11 +14,21 @@ def signal_handler(signal, frame):
   print 'You pressed Ctrl+C!'
   SHOULD_EXIT = True
         
- 
+def getPaddedLength(string):
+  """Returns the length of the string padded to 8 bytes.
+  Obviously, the maximum string length allowed is 2^32.
+  """ 
+  if len(string) > 2<<64:
+    print "String too long"
+    return -1
+  return struct.pack('L', len(string))
+  
+  
+
 def main():
-  OUTFILE = open('hadoop_status.out', 'a')
+  OUTFILE = open('hadoop_status.out', 'ab')
   if len(sys.argv) > 1:
-    OUTFILE = open(sys.argv[1], 'a')
+    OUTFILE = open(sys.argv[1], 'ab')
 
   signal.signal(signal.SIGINT, signal_handler)
 
@@ -38,7 +48,12 @@ def main():
       jobstatus.reduce = float(statuslines.rstrip().split('\n')[1])
       print jobstatus.map
       print jobstatus.reduce
-    OUTFILE.write(status.SerializeToString())
+    serialized = status.SerializeToString()
+    length = getPaddedLength(serialized)
+    if length == -1:
+      continue
+    OUTFILE.write(length)
+    OUTFILE.write(serialized)
     OUTFILE.flush()
     time.sleep(FREQUENCY)
 
