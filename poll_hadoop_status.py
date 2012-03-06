@@ -4,11 +4,21 @@ import os, sys, time, signal
 from datetime import datetime
 import subprocess, struct
 
+sys.path.append("./protos")
 import hadoop_status_pb2 as proto
+
+"""This file polls Hadoop for per job completion metrics.
+It uses the hadoop command line API and wget, which is clumsy, evil and slow.
+"""
+
+#TODO(bharath): Use a more sane API
+#TODO(bharath): Do not get metrics for jobs that have finished more than once.
 
 FREQUENCY = 3
 HADOOP_HOME = "../hadoop-1.0.0"
 SHOULD_EXIT = False
+finished_jobs = []
+
 
 def signal_handler(signal, frame):
   print 'You pressed Ctrl+C!'
@@ -40,6 +50,8 @@ def getJobStats(job_id, job_state):
   finish_time = ''
   if job_state == '2':
     # The job has completed. Get finish time.
+    # Add it to the finished list so that we don't query for it again in future    
+    finished_jobs.append(job_id)
     finish_time = subprocess.check_output('wget -qO- ' + trackingURL + ' | grep "Finished at" | cut -d" " -f3-10', shell=True)[0:-5]
   print (start_time, finish_time, map_percent, reduce_percent)
  
@@ -80,7 +92,6 @@ def main():
     print 'Polling...'
    
     for line in getJobsList():
-      print line
       job_id = line.split(None)[0]
       job_state = line.split(None)[1]
       finish_time = ''
@@ -88,8 +99,9 @@ def main():
       map_percent = 0
       reduce_percent = 0
 
-      (start_time, finish_time, map_percent, reduce_percent) = getJobStats(job_id, job_state)
-      populateProto(hadoop_status,job_id, job_state, start_time, finish_time, map_percent, reduce_percent)
+      if job_id not in finished_jobs:
+        (start_time, finish_time, map_percent, reduce_percent) = getJobStats(job_id, job_state)
+        populateProto(hadoop_status,job_id, job_state, start_time, finish_time, map_percent, reduce_percent)
 
     writeProtoToOutfile(hadoop_status, OUTFILE)
   time.sleep(FREQUENCY)

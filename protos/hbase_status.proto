@@ -1,0 +1,8 @@
+package flume_metrics;
+
+message HBaseStatus {
+  required string timestamp = 1;
+  required float read_latency = 2;
+  required float write_latency = 3;
+  required float sync_latency = 4;
+}
