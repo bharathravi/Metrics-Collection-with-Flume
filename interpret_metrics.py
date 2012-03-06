@@ -22,7 +22,7 @@ def main():
         status.ParseFromString(data)    
         print status.timestamp, 
         for job in status.job_status:
-          print job.job_id, job.map, job. reduce
+          print job.job_id, job.map, job. reduce, job.start_time, job.finish_time
       except:
         print "Unexpected end of data"        
         exit(0)

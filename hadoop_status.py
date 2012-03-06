@@ -22,8 +22,49 @@ def getPaddedLength(string):
     print "String too long"
     return -1
   return struct.pack('L', len(string))
-  
-  
+ 
+def getJobsList():
+  # Flawed security with shell=True
+  lines = subprocess.check_output(HADOOP_HOME + '/bin/hadoop job -list all', shell=True)
+  return lines.split('\n')[4:-1]
+
+def getJobStats(job_id, job_state):
+  # TODO(bharath): This method is evil and absolutely dirty. Find a better way of achieving this.
+  trackingURL = subprocess.check_output(HADOOP_HOME + '/bin/hadoop job -status ' + job_id + ' | grep  "tracking URL" | cut -d" " -f3', shell=True)
+  trackingURL = trackingURL.rstrip()
+  print 'wget -qO- ' + trackingURL + ' | grep "Started at" | cut -d" " -f3-10'
+  start_time = subprocess.check_output('wget -qO- ' + trackingURL + ' | grep "Started at" | cut -d" " -f3-10', shell=True)[0:-5]
+  statuslines = subprocess.check_output(HADOOP_HOME + '/bin/hadoop job -status ' + job_id + ' | grep -E "map\(\)|reduce\(\)" | cut -d" " -f3', shell=True)
+  map_percent = float(statuslines.rstrip().split('\n')[0])
+  reduce_percent = float(statuslines.rstrip().split('\n')[1])
+  finish_time = ''
+  if job_state == '2':
+    # The job has completed. Get finish time.
+    finish_time = subprocess.check_output('wget -qO- ' + trackingURL + ' | grep "Finished at" | cut -d" " -f3-10', shell=True)[0:-5]
+  print (start_time, finish_time, map_percent, reduce_percent)
+ 
+  return (start_time, finish_time, map_percent, reduce_percent)
+
+def populateProto(hadoop_status, job_id, job_state, start_time, finish_time, map_percent, reduce_percent):
+  jobstatus = hadoop_status.job_status.add()
+  jobstatus.map = map_percent
+  jobstatus.reduce = reduce_percent
+  jobstatus.start_time = start_time
+  jobstatus.finish_time = finish_time
+  jobstatus.job_id =job_id
+  jobstatus.job_status = job_state
+
+  return hadoop_status
+
+def writeProtoToOutfile(proto, outfile):
+  serialized = proto.SerializeToString()
+  length = getPaddedLength(serialized)
+  if length == -1:
+    return
+  outfile.write(length)
+  outfile.write(serialized)
+  outfile.flush()
+
 
 def main():
   OUTFILE = open('hadoop_status.out', 'ab')
@@ -34,28 +75,24 @@ def main():
 
   while not SHOULD_EXIT:
     print SHOULD_EXIT
-    status = proto.HadoopStatus()
-    status.timestamp =  str(datetime.now())
+    hadoop_status = proto.HadoopStatus()
+    hadoop_status.timestamp =  str(datetime.now())
     print 'Polling...'
-    # Flawed security with shell=True
-    lines = subprocess.check_output(HADOOP_HOME + '/bin/hadoop job -list', shell=True)
-    #jobs = call("ls")
-    for line in lines.rstrip().split('\n')[2:]:
-      jobstatus = status.job_status.add()
-      jobstatus.job_id = line.split(None)[0]
-      statuslines = subprocess.check_output(HADOOP_HOME + '/bin/hadoop job -status ' + jobstatus.job_id + ' | grep -E "map\(\)|reduce\(\)" | cut -d" " -f3', shell=True)
-      jobstatus.map = float(statuslines.rstrip().split('\n')[0])
-      jobstatus.reduce = float(statuslines.rstrip().split('\n')[1])
-      print jobstatus.map
-      print jobstatus.reduce
-    serialized = status.SerializeToString()
-    length = getPaddedLength(serialized)
-    if length == -1:
-      continue
-    OUTFILE.write(length)
-    OUTFILE.write(serialized)
-    OUTFILE.flush()
-    time.sleep(FREQUENCY)
+   
+    for line in getJobsList():
+      print line
+      job_id = line.split(None)[0]
+      job_state = line.split(None)[1]
+      finish_time = ''
+      start_time = ''
+      map_percent = 0
+      reduce_percent = 0
+
+      (start_time, finish_time, map_percent, reduce_percent) = getJobStats(job_id, job_state)
+      populateProto(hadoop_status,job_id, job_state, start_time, finish_time, map_percent, reduce_percent)
+
+    writeProtoToOutfile(hadoop_status, OUTFILE)
+  time.sleep(FREQUENCY)
 
 
 if __name__ == '__main__':

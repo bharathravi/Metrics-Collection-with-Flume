@@ -5,6 +5,9 @@ message HadoopStatus {
     required string job_id = 1;
     required float map = 2;
     required float reduce = 3;
+    required string start_time = 4;
+    required string finish_time = 5; // null if job has not finished
+    required string job_status = 6;
   }
 
   required string timestamp = 1;
