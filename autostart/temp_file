@@ -1,0 +1,6 @@
+connect fm-vm-010.cercs.int
+exec unconfig hadoop-agent
+exec config hadoop-agent 'helloWorldSource("/root/flume_metrics/poll_hadoop_status.py")' 'hbase("flume_hadoop","%{nanos}","cf","body","%{body}","cf","host","%{host}")'
+exec unconfig tail-agent
+exec config tail-agent 'tail("hello.txt")' 'text("bye.txt")'
+exec refreshAll

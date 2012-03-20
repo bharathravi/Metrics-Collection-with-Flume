@@ -1,0 +1,12 @@
+('/home/bharath/workspace/flume/flume_metrics/build/pyi.linux2/poll_hadoop_status2/outPKG3.pkg',
+ {'BINARY': 1,
+  'DATA': 1,
+  'EXECUTABLE': 1,
+  'EXTENSION': 1,
+  'PYMODULE': 1,
+  'PYSOURCE': 1},
+ [('outPYZ1.pyz', '/home/bharath/workspace/flume/flume_metrics/build/pyi.linux2/poll_hadoop_status2/outPYZ1.pyz', 'PYZ'), ('iu', '/home/bharath/workspace/pyinstaller-1.5.1/iu.pyc', 'PYMODULE'), ('struct', '/usr/lib/python2.7/struct.pyc', 'PYMODULE'), ('archive', '/home/bharath/workspace/pyinstaller-1.5.1/archive.pyc', 'PYMODULE'), ('_mountzlib', '../../pyinstaller-1.5.1/support/_mountzlib.py', 'PYSOURCE'), ('useUnicode', '../../pyinstaller-1.5.1/support/useUnicode.py', 'PYSOURCE'), ('poll_hadoop_status2', 'poll_hadoop_status2.py', 'PYSOURCE')],
+ 1,
+ False,
+ True,
+ 0)

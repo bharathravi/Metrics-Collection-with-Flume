@@ -13,11 +13,11 @@ def main():
   if len(sys.argv) > 1:
     OUTFILE = open(sys.argv[1], 'rb')
   
-  length_string = OUTFILE.read(8)
+  length_string = OUTFILE.read(4)
   try:
     while length_string != "":
       try:
-        length = struct.unpack('L', length_string)[0]
+        length = struct.unpack('<l', length_string)[0]
         print length
         data = OUTFILE.read(length)
         status = proto.HadoopStatus()
@@ -28,7 +28,7 @@ def main():
       except:
         print "Unexpected end of data"        
         exit(0)
-      length_string = OUTFILE.read(8)
+      length_string = OUTFILE.read(4)
   finally:
     OUTFILE.close()
 
