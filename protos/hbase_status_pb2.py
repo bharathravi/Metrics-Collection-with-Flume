@@ -11,7 +11,7 @@ from google.protobuf import descriptor_pb2
 DESCRIPTOR = descriptor.FileDescriptor(
   name='hbase_status.proto',
   package='flume_metrics',
-  serialized_pb='\n\x12hbase_status.proto\x12\rflume_metrics\"c\n\x0bHBaseStatus\x12\x11\n\ttimestamp\x18\x01 \x02(\t\x12\x14\n\x0cread_latency\x18\x02 \x02(\x02\x12\x15\n\rwrite_latency\x18\x03 \x02(\x02\x12\x14\n\x0csync_latency\x18\x04 \x02(\x02')
+  serialized_pb='\n\x12hbase_status.proto\x12\rflume_metrics\"q\n\x0bHBaseStatus\x12\x11\n\ttimestamp\x18\x01 \x02(\t\x12\x14\n\x0cread_latency\x18\x02 \x02(\x02\x12\x15\n\rwrite_latency\x18\x03 \x02(\x02\x12\x14\n\x0csync_latency\x18\x04 \x02(\x02\x12\x0c\n\x04host\x18\x05 \x02(\t')
 
 
 
@@ -51,6 +51,13 @@ _HBASESTATUS = descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    descriptor.FieldDescriptor(
+      name='host', full_name='flume_metrics.HBaseStatus.host', index=4,
+      number=5, type=9, cpp_type=9, label=2,
+      has_default_value=False, default_value=unicode("", "utf-8"),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -61,7 +68,7 @@ _HBASESTATUS = descriptor.Descriptor(
   is_extendable=False,
   extension_ranges=[],
   serialized_start=37,
-  serialized_end=136,
+  serialized_end=150,
 )
 
 DESCRIPTOR.message_types_by_name['HBaseStatus'] = _HBASESTATUS

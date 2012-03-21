@@ -3,6 +3,7 @@
 import os, sys, time, signal
 from datetime import datetime
 import subprocess, struct
+from subprocess import Popen, PIPE, STDOUT
 
 sys.path.append("./protos")
 import hbase_status_pb2 as proto
@@ -11,15 +12,16 @@ import hbase_status_pb2 as proto
 """
 
 FREQUENCY = 3
-HBASE_HOME = "../hbase-0.92.0/"
+HBASE_HOME = "/root/hbase-0.92.0"
 SHOULD_EXIT = False
 HBASE_METRICS_LOG = "/tmp/metrics_hbase.log"
 HBASE_REGIONSERVER_METRICS = 'hbase.regionserver:'
 
 previous_timestamp = ''
+SHOULD_EXIT = False
 
 def signal_handler(signal, frame):
-  print 'You pressed Ctrl+C!'
+  global SHOULD_EXIT
   SHOULD_EXIT = True
         
 def getPaddedLength(string):
@@ -27,19 +29,19 @@ def getPaddedLength(string):
   Obviously, the maximum string length allowed is 2^32.
   """ 
   if len(string) > 2<<64:
-    print "String too long"
     return -1
   return struct.pack('L', len(string))
  
 def getLatencyStats():
-  line = subprocess.check_output('tail -n1 ' + HBASE_METRICS_LOG, shell=True)
+  p = subprocess.Popen('tail -n1 ' + HBASE_METRICS_LOG, shell=True, stdout=PIPE)
+  line = p.stdout.read()
   words = line.split(None)
   timestamp = words[0]
+  global previous_timestamp
   if timestamp == previous_timestamp:
     # We have already seen this line. Don't record it again.
     return None
 
-  global previous_timestamp
   previous_timestamp = timestamp
  
   read = 0
@@ -47,14 +49,16 @@ def getLatencyStats():
   sync = 0 
   if (words[1] == HBASE_REGIONSERVER_METRICS):
     # This line is a regionserver metrics line. Go ahead.
+    host = words[3].split('=')[1]
     read = float(words[23][:-1].split('=')[1])
     write = float(words[25][:-1].split('=')[1])
     sync = float(words[27][:-1].split('=')[1])
-    return(read, write, sync)
+    return(host, read, write, sync)
  
   return None
 
-def populateProto(hbase_status, read_latency, write_latency, sync_latency):
+def populateProto(host, hbase_status, read_latency, write_latency, sync_latency):
+  hbase_status.host = host
   hbase_status.read_latency = read_latency
   hbase_status.write_latency = write_latency
   hbase_status.sync_latency = sync_latency
@@ -66,6 +70,9 @@ def writeProtoToOutfile(proto, outfile):
   length = getPaddedLength(serialized)
   if length == -1:
     return
+  sys.stdout.write(length)
+  sys.stdout.write(serialized)
+  sys.stdout.flush()
   outfile.write(length)
   outfile.write(serialized)
   outfile.flush()
@@ -79,16 +86,13 @@ def main():
   signal.signal(signal.SIGINT, signal_handler)
 
   while not SHOULD_EXIT:
-   # print SHOULD_EXIT
     hbase_status = proto.HBaseStatus()
     hbase_status.timestamp =  str(datetime.now())
-   # print 'Polling...'
   
     stats = getLatencyStats()
     if not stats == None:
-      (read_latency, write_latency, sync_latency) = stats
-      print (read_latency, write_latency, sync_latency)
-      populateProto(hbase_status,read_latency, write_latency, sync_latency)
+      (host, read_latency, write_latency, sync_latency) = stats
+      populateProto(host, hbase_status,read_latency, write_latency, sync_latency)
 
       writeProtoToOutfile(hbase_status, OUTFILE)
     time.sleep(FREQUENCY)

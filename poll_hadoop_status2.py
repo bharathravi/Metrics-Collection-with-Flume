@@ -3,9 +3,8 @@
 import os, sys, time, signal
 from datetime import datetime
 import subprocess, struct
-from subprocess import Popen, PIPE, STDOUT
 
-sys.path.append("/root/flume_metrics/protos")
+sys.path.append("/home/bharath/workspace/flume/flume_metrics/protos")
 import hadoop_status_pb2 as proto
 
 """This file polls Hadoop for per job completion metrics.
@@ -16,13 +15,12 @@ It uses the hadoop command line API and wget, which is clumsy, evil and slow.
 #TODO(bharath): Do not get metrics for jobs that have finished more than once.
 
 FREQUENCY = 3
-HADOOP_HOME = "/root/hadoop-1.0.1"
+HADOOP_HOME = "/home/bharath/workspace/hotspot/hadoop-1.0.0"
 SHOULD_EXIT = False
 finished_jobs = []
 
 
 def signal_handler(signal, frame):
-  global SHOULD_EXIT
   SHOULD_EXIT = True
         
 def getPaddedLength(string):
@@ -35,20 +33,15 @@ def getPaddedLength(string):
  
 def getJobsList():
   # Flawed security with shell=True
-  p = subprocess.Popen(HADOOP_HOME + '/bin/hadoop job -list all', shell=True, stdout=PIPE)
-  lines = p.stdout.read()
+  lines = subprocess.check_output(HADOOP_HOME + '/bin/hadoop job -list all', shell=True)
   return lines.split('\n')[4:-1]
 
 def getJobStats(job_id, job_state):
   # TODO(bharath): This method is evil and absolutely dirty. Find a better way of achieving this.
-  p = subprocess.Popen(HADOOP_HOME + '/bin/hadoop job -status ' + job_id + ' | grep  "tracking URL" | cut -d" " -f3', shell=True, stdout=PIPE)
-  trackingURL = p.stdout.read().rstrip()
-  p = subprocess.Popen('wget -qO- ' + trackingURL + ' | grep "Started at" | cut -d" " -f3-10', shell=True, stdout=PIPE)
-  start_time = p.stdout.read()[0:-5]
-
-  p = subprocess.Popen(HADOOP_HOME + '/bin/hadoop job -status ' + job_id + ' | grep -E "map\(\)|reduce\(\)" | cut -d" " -f3', shell=True, stdout=PIPE)
-  statuslines = p.stdout.read()
-
+  trackingURL = subprocess.check_output(HADOOP_HOME + '/bin/hadoop job -status ' + job_id + ' | grep  "tracking URL" | cut -d" " -f3', shell=True)
+  trackingURL = trackingURL.rstrip()
+  start_time = subprocess.check_output('wget -qO- ' + trackingURL + ' | grep "Started at" | cut -d" " -f3-10', shell=True)[0:-5]
+  statuslines = subprocess.check_output(HADOOP_HOME + '/bin/hadoop job -status ' + job_id + ' | grep -E "map\(\)|reduce\(\)" | cut -d" " -f3', shell=True)
   map_percent = float(statuslines.rstrip().split('\n')[0])
   reduce_percent = float(statuslines.rstrip().split('\n')[1])
   finish_time = ''
@@ -56,8 +49,7 @@ def getJobStats(job_id, job_state):
     # The job has completed. Get finish time.
     # Add it to the finished list so that we don't query for it again in future    
     finished_jobs.append(job_id)
-    p = subprocess.Popen('wget -qO- ' + trackingURL + ' | grep "Finished at" | cut -d" " -f3-10', shell=True, stdout=PIPE)
-    statuslines = p.stdout.read()[0:-5]
+    finish_time = subprocess.check_output('wget -qO- ' + trackingURL + ' | grep "Finished at" | cut -d" " -f3-10', shell=True)[0:-5]
  
   return (start_time, finish_time, map_percent, reduce_percent)
 

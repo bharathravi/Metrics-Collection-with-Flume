@@ -1,0 +1,10 @@
+('/home/bharath/workspace/flume/flume_metrics/build/pyi.linux2/poll_hadoop_status2/poll_hadoop_status2',
+ 1,
+ False,
+ None,
+ None,
+ [],
+ False,
+ True,
+ 0,
+ 1331951503)

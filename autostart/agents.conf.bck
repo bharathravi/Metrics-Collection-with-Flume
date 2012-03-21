@@ -1,0 +1,2 @@
+fm-vm-010.cercs.int;hadoop-agent;'helloWorldSource("/root/flume_metrics/poll_hadoop_status.py")';'logicalSink("hadoop-collector")';hadoop-flow
+fm-vm-010.cercs.int;hadoop-collector;'logicalSource';'hbase("flume_hadoop","%{nanos}","cf","body","%{body}","cf","host","%{host}")';hadoop-flow

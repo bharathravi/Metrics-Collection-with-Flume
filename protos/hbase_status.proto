@@ -5,4 +5,5 @@ message HBaseStatus {
   required float read_latency = 2;
   required float write_latency = 3;
   required float sync_latency = 4;
+  required string host = 5;
 }
