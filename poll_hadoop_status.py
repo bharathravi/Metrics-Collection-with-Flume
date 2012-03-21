@@ -22,7 +22,10 @@ finished_jobs = []
 
 
 def signal_handler(signal, frame):
+<<<<<<< HEAD
   global SHOULD_EXIT
+=======
+>>>>>>> 918581a3ef8fcffca801fa7e08c3c8c09858a9ae
   SHOULD_EXIT = True
         
 def getPaddedLength(string):
@@ -43,6 +46,10 @@ def getJobStats(job_id, job_state):
   # TODO(bharath): This method is evil and absolutely dirty. Find a better way of achieving this.
   p = subprocess.Popen(HADOOP_HOME + '/bin/hadoop job -status ' + job_id + ' | grep  "tracking URL" | cut -d" " -f3', shell=True, stdout=PIPE)
   trackingURL = p.stdout.read().rstrip()
+<<<<<<< HEAD
+=======
+  print 'tracking ' + trackingURL
+>>>>>>> 918581a3ef8fcffca801fa7e08c3c8c09858a9ae
   p = subprocess.Popen('wget -qO- ' + trackingURL + ' | grep "Started at" | cut -d" " -f3-10', shell=True, stdout=PIPE)
   start_time = p.stdout.read()[0:-5]
 

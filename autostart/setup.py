@@ -45,5 +45,3 @@ if __name__ == "__main__":
     start_configs(master)
   else:
     stop_configs(master)
-    
-
