@@ -5,7 +5,7 @@ from datetime import datetime
 import subprocess, struct
 from subprocess import Popen, PIPE, STDOUT
 
-sys.path.append("./protos")
+sys.path.append("/home/bharath/workspace/flume/flume_metrics/protos")
 import hbase_status_pb2 as proto
 
 """Polls HBase for metrics using the HBase logs.
