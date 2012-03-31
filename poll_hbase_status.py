@@ -30,7 +30,7 @@ def getPaddedLength(string):
   """ 
   if len(string) > 2<<64:
     return -1
-  return struct.pack('L', len(string))
+  return struct.pack('<l', len(string))
  
 def getLatencyStats():
   p = subprocess.Popen('tail -n1 ' + HBASE_METRICS_LOG, shell=True, stdout=PIPE)
