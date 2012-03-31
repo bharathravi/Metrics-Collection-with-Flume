@@ -1,0 +1,10 @@
+package flume_metrics;
+
+message SystemStatus {
+  required string timestamp = 1;
+  required string host = 2;
+  required uint64 total_memory = 3;
+  required uint64 free_memory = 4;
+  required uint32 num_cpus = 5;
+  required uint32 cpu_load = 6;
+}
