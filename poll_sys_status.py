@@ -4,9 +4,10 @@ import os, sys, time, signal
 from datetime import datetime
 import subprocess, struct
 from subprocess import Popen, PIPE, STDOUT
+from socket import gethostname
 
-sys.path.append("/root/flume_metrics/protos")
-import sys_status_pb2 as proto
+sys.path.append("/root/Metrics-Collection-with-Flume/protos")
+import system_status_pb2 as proto
 
 """Polls HBase for metrics using the HBase logs.
 """
@@ -25,38 +26,42 @@ def getPaddedLength(string):
   if len(string) > 2<<64:
     return -1
   return struct.pack('<l', len(string))
- 
-def getSysStats():
-  p = subprocess.Popen('tail -n1 ' + HBASE_METRICS_LOG, shell=True, stdout=PIPE)
+
+def getHostname():
+  return gethostname()
+
+def getMemoryStats():
+  p = subprocess.Popen('free -m -t | grep Mem', shell=True, stdout=PIPE)
   line = p.stdout.read()
   words = line.split(None)
-  timestamp = words[0]
-  global previous_timestamp
-  if timestamp == previous_timestamp:
-    # We have already seen this line. Don't record it again.
-    return None
 
-  previous_timestamp = timestamp
- 
-  read = 0
-  write = 0
-  sync = 0 
-  if (words[1] == HBASE_REGIONSERVER_METRICS):
-    # This line is a regionserver metrics line. Go ahead.
-    host = words[3].split('=')[1]
-    read = float(words[23][:-1].split('=')[1])
-    write = float(words[25][:-1].split('=')[1])
-    sync = float(words[27][:-1].split('=')[1])
-    return(host, read, write, sync)
- 
-  return None
+  return (int(words[1]), int(words[3]))
 
-def populateProto(host, total_memory, free_memory, num_cpus, cpu_load):
+def getNumCpus():
+  p = subprocess.Popen('cat /proc/stat | grep cpu | wc -l', shell=True, stdout=PIPE)
+  line = p.stdout.read()
+  return int(line) - 1
+
+def getCpuLoad():
+  p = subprocess.Popen('top -b -n1 | grep Cpu', shell=True, stdout=PIPE)
+  line = p.stdout.read()
+  words = line.split(None)
+  return 100 - float(words[4][0:-4])
+ 
+def getSysStats():
+  host = getHostname()
+  total_mem, free_mem = getMemoryStats()
+  num_cpus = getNumCpus()
+  cpu_usage = getCpuLoad()
+  return(host, total_mem, free_mem, num_cpus, cpu_usage)
+ 
+
+def populateProto(sys_status, host, total_memory, free_memory, num_cpus, cpu_usage):
   sys_status.host = host
   sys_status.total_memory = total_memory
   sys_status.free_memory = free_memory
   sys_status.num_cpus = num_cpus
-  sys_status.cpu_load = cpu_load
+  sys_status.cpu_usage = cpu_usage
 
   return sys_status
 
@@ -86,8 +91,8 @@ def main():
   
     stats = getSysStats()
     if not stats == None:
-      (host, total_memory, free_memory, num_cpus, cpu_load) = stats
-      populateProto(host, total_memory, free_memoru, num_cpus, cpu_load)
+      (host, total_memory, free_memory, num_cpus, cpu_usage) = stats
+      populateProto(sys_status, host, total_memory, free_memory, num_cpus, cpu_usage)
 
       writeProtoToOutfile(sys_status, OUTFILE)
     time.sleep(FREQUENCY)

@@ -9,9 +9,9 @@ from google.protobuf import descriptor_pb2
 
 
 DESCRIPTOR = descriptor.FileDescriptor(
-  name='sys_status.proto',
+  name='system_status.proto',
   package='flume_metrics',
-  serialized_pb='\n\x10sys_status.proto\x12\rflume_metrics\"~\n\x0cSystemStatus\x12\x11\n\ttimestamp\x18\x01 \x02(\t\x12\x0c\n\x04host\x18\x02 \x02(\t\x12\x14\n\x0ctotal_memory\x18\x03 \x02(\x04\x12\x13\n\x0b\x66ree_memory\x18\x04 \x02(\x04\x12\x10\n\x08num_cpus\x18\x05 \x02(\r\x12\x10\n\x08\x63pu_load\x18\x06 \x02(\r')
+  serialized_pb='\n\x13system_status.proto\x12\rflume_metrics\"\x7f\n\x0cSystemStatus\x12\x11\n\ttimestamp\x18\x01 \x02(\t\x12\x0c\n\x04host\x18\x02 \x02(\t\x12\x14\n\x0ctotal_memory\x18\x03 \x02(\x04\x12\x13\n\x0b\x66ree_memory\x18\x04 \x02(\x04\x12\x10\n\x08num_cpus\x18\x05 \x02(\r\x12\x11\n\tcpu_usage\x18\x06 \x02(\x02')
 
 
 
@@ -59,8 +59,8 @@ _SYSTEMSTATUS = descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     descriptor.FieldDescriptor(
-      name='cpu_load', full_name='flume_metrics.SystemStatus.cpu_load', index=5,
-      number=6, type=13, cpp_type=3, label=2,
+      name='cpu_usage', full_name='flume_metrics.SystemStatus.cpu_usage', index=5,
+      number=6, type=2, cpp_type=6, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -74,8 +74,8 @@ _SYSTEMSTATUS = descriptor.Descriptor(
   options=None,
   is_extendable=False,
   extension_ranges=[],
-  serialized_start=35,
-  serialized_end=161,
+  serialized_start=38,
+  serialized_end=165,
 )
 
 DESCRIPTOR.message_types_by_name['SystemStatus'] = _SYSTEMSTATUS
