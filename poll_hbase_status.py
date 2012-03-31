@@ -73,9 +73,6 @@ def writeProtoToOutfile(proto, outfile):
   sys.stdout.write(length)
   sys.stdout.write(serialized)
   sys.stdout.flush()
-  outfile.write(length)
-  outfile.write(serialized)
-  outfile.flush()
 
 
 def main():
