@@ -78,7 +78,7 @@ def writeProtoToOutfile(proto):
 def main():
   signal.signal(signal.SIGINT, signal_handler)
   
-  if HBASE_HOME = '':
+  if HBASE_HOME == '':
     print 'Please set $HBASE_HOME'
     exit(1)
 
