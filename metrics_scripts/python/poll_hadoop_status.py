@@ -16,7 +16,7 @@ It uses the hadoop command line API and wget, which is clumsy, evil and slow.
 #TODO(bharath): Do not get metrics for jobs that have finished more than once.
 
 FREQUENCY = 3
-HADOOP_HOME = "/root/hadoop-1.0.1"
+HADOOP_HOME = os.getenv('HADOOP_HOME', '')
 SHOULD_EXIT = False
 finished_jobs = []
 
@@ -73,7 +73,7 @@ def populateProto(hadoop_status, job_id, job_state, start_time, finish_time, map
 
   return hadoop_status
 
-def writeProtoToOutfile(proto, outfile):
+def writeProtoToOutfile(proto):
   serialized = proto.SerializeToString()
   length = getPaddedLength(serialized)
   if length == -1:
@@ -84,11 +84,11 @@ def writeProtoToOutfile(proto, outfile):
 
 
 def main():
-  OUTFILE = open('hadoop_status.out', 'ab')
-  if len(sys.argv) > 1:
-    OUTFILE = open(sys.argv[1], 'ab')
-
   signal.signal(signal.SIGINT, signal_handler)
+  
+  if HADOOP_HOME == '':
+    print 'Please set $HADOOP_HOME'
+    exit(1)
 
   while not SHOULD_EXIT:
     hadoop_status = proto.HadoopStatus()
@@ -106,7 +106,7 @@ def main():
         (start_time, finish_time, map_percent, reduce_percent) = getJobStats(job_id, job_state)
         populateProto(hadoop_status,job_id, job_state, start_time, finish_time, map_percent, reduce_percent)
 
-    writeProtoToOutfile(hadoop_status, OUTFILE)
+    writeProtoToOutfile(hadoop_status)
   time.sleep(FREQUENCY)
 
 

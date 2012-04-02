@@ -12,7 +12,7 @@ import hbase_status_pb2 as proto
 """
 
 FREQUENCY = 3
-HBASE_HOME = "/root/hbase-0.92.0"
+HBASE_HOME = os.getenv('HBASE_HOME','')
 SHOULD_EXIT = False
 HBASE_METRICS_LOG = "/tmp/metrics_hbase.log"
 HBASE_REGIONSERVER_METRICS = 'hbase.regionserver:'
@@ -65,7 +65,7 @@ def populateProto(host, hbase_status, read_latency, write_latency, sync_latency)
 
   return hbase_status
 
-def writeProtoToOutfile(proto, outfile):
+def writeProtoToOutfile(proto):
   serialized = proto.SerializeToString()
   length = getPaddedLength(serialized)
   if length == -1:
@@ -76,11 +76,11 @@ def writeProtoToOutfile(proto, outfile):
 
 
 def main():
-  OUTFILE = open('hbase_status.out', 'ab')
-  if len(sys.argv) > 1:
-    OUTFILE = open(sys.argv[1], 'ab')
-
   signal.signal(signal.SIGINT, signal_handler)
+  
+  if HBASE_HOME = '':
+    print 'Please set $HBASE_HOME'
+    exit(1)
 
   while not SHOULD_EXIT:
     hbase_status = proto.HBaseStatus()
@@ -91,7 +91,7 @@ def main():
       (host, read_latency, write_latency, sync_latency) = stats
       populateProto(host, hbase_status,read_latency, write_latency, sync_latency)
 
-      writeProtoToOutfile(hbase_status, OUTFILE)
+      writeProtoToOutfile(hbase_status)
     time.sleep(FREQUENCY)
 
 
