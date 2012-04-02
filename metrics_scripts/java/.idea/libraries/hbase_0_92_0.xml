@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hbase-0.92.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../hotspot/hbase-0.92.0/hbase-0.92.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
