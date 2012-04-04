@@ -3,6 +3,8 @@
 MASTER=`cat master`
 CURRENT_DIR=`pwd`
 
+./setup-env.sh
+
 if [ "$FLUME_HOME" = "" ]; then
   export FLUME_HOME='/root/flume-distribution-0.9.4'
 fi

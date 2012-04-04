@@ -9,6 +9,10 @@ def start_configs(master):
   seen_hosts = []
   for line in f.readlines():
     line=line.strip()
+    if len(line) == 0:
+      # Ignore empty lines
+      continue
+   
     config=line.split(";")
     host=config[0]
     node=config[1]
