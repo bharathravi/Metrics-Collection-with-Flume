@@ -12,7 +12,7 @@ import hbase_status_pb2 as proto
 """
 
 FREQUENCY = 3
-HBASE_HOME = os.getenv('HBASE_HOME','')
+HBASE_HOME = os.getenv('HBASE_HOME_DIR','')
 SHOULD_EXIT = False
 HBASE_METRICS_LOG = "/tmp/metrics_hbase.log"
 HBASE_REGIONSERVER_METRICS = 'hbase.regionserver:'
@@ -78,8 +78,9 @@ def writeProtoToOutfile(proto):
 def main():
   signal.signal(signal.SIGINT, signal_handler)
   
+  global HBASE_HOME
   if HBASE_HOME == '':
-    print 'Please set $HBASE_HOME'
+    print 'Please set $HBASE_HOME_DIR'
     exit(1)
 
   while not SHOULD_EXIT:

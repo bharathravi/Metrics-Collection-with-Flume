@@ -67,7 +67,16 @@ public class HelloWorldSource extends EventSource.Base {
         while (bytesRead < n) {
           int numRead = stream.read(bytes, bytesRead, n - bytesRead);
   
-          if (numRead == -1) {          
+          if (numRead == -1) {
+            // If the process is no longer running, then throw an error
+            try {
+              int exitVal = process.exitValue();
+              // The process has terminated. Throw an error.
+              throw new IOException("Process terminated unexpectedly");
+
+            } catch (IllegalThreadStateException e) {
+              // Do nothing, since the process is still running
+            }
             if(blockOnEOF) {
               // If we must block on EOF, wait a while and try again.
               Clock.sleep(5000);

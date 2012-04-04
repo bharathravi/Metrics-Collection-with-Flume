@@ -16,7 +16,7 @@ It uses the hadoop command line API and wget, which is clumsy, evil and slow.
 #TODO(bharath): Do not get metrics for jobs that have finished more than once.
 
 FREQUENCY = 3
-HADOOP_HOME = os.getenv('HADOOP_HOME', '')
+HADOOP_HOME = os.getenv('HADOOP_HOME_DIR', '')
 SHOULD_EXIT = False
 finished_jobs = []
 
@@ -86,8 +86,9 @@ def writeProtoToOutfile(proto):
 def main():
   signal.signal(signal.SIGINT, signal_handler)
   
+  global HADOOP_HOME
   if HADOOP_HOME == '':
-    print 'Please set $HADOOP_HOME'
+    print 'Please set $HADOOP_HOME_DIR'
     exit(1)
 
   while not SHOULD_EXIT:
