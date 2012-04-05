@@ -42,8 +42,10 @@ public class HelloWorldSource extends EventSource.Base {
   
   private String helloWorld;
   private Process process;
-  private String command = "/home/bharath/workspace/flume/flume_metrics/poll_hadoop_status2.py";
-  java.io.InputStream inputStream;
+  private String command = "echo 'No command set'";
+  private boolean open = false;
+  private java.io.InputStream inputStream;
+  private static int MAX_LENGTH = 10000; // 10KB is the maximum proto sie allowed.
 
   public HelloWorldSource(String command) {
     this.command = command;
@@ -66,12 +68,12 @@ public class HelloWorldSource extends EventSource.Base {
       try {
         while (bytesRead < n) {
           int numRead = stream.read(bytes, bytesRead, n - bytesRead);
-  
           if (numRead == -1) {
             // If the process is no longer running, then throw an error
             try {
               int exitVal = process.exitValue();
               // The process has terminated. Throw an error.
+	      LOG.warn("Process terminated unexpectedly");
               throw new IOException("Process terminated unexpectedly");
 
             } catch (IllegalThreadStateException e) {
@@ -81,6 +83,7 @@ public class HelloWorldSource extends EventSource.Base {
               // If we must block on EOF, wait a while and try again.
               Clock.sleep(5000);
             } else {
+	      LOG.warn("Unexpected end of file");
               throw new IOException("Unexpected end of File");
             }
           } else {
@@ -88,29 +91,43 @@ public class HelloWorldSource extends EventSource.Base {
           }          
         }
       } catch (InterruptedException e) {
+	LOG.warn("Clock interupted");
         throw new InterruptedException("Clock interrupted");
       }
 
       if (bytesRead != n) {
+	LOG.warn("Unexpected end of input");
         throw new IOException("Unexpected end of Input");
       }
   }
   @Override
   public void open() throws IOException {
+    if (open) return;
     // Initialized the source
     helloWorld = "Hello World!";
     process = Runtime.getRuntime().exec(command);
     inputStream = process.getInputStream();
+    open = true;
+    LOG.info("ProtoSource opened");
   }
 
   @Override
   public Event next() throws IOException {
+    if (!open) {
+      LOG.warn("Next on unopened source");
+      throw new IOException("Next on unopened source");
+    }
     try {
       // Next returns the next event, blocking if none available.
       byte[] length_bytes = new byte[4];
       readExactlyNBytes(inputStream, length_bytes, 4, true);
 
       int length = bytesToLong(length_bytes);
+
+      if (length > MAX_LENGTH) {
+        LOG.warn("Proto length too long: " + length + " bytes");
+        throw new IOException("Proto length too long: " + length + " bytes");
+      }
       byte[] bytes = new byte[4 + length];
       bytes[0] = length_bytes[0];
       bytes[1] = length_bytes[1];
@@ -119,10 +136,9 @@ public class HelloWorldSource extends EventSource.Base {
 
       readExactlyNBytes(inputStream, bytes, length, false);
 
-      // TODO(bharath): Parse proto from bytearray.
-      Thread.sleep(3000);
       return new EventImpl(bytes);
     } catch (InterruptedException e) {
+      LOG.warn("Process interupted");
       throw new IOException("Process interrupted " + e.getMessage(), e);
     }
 
@@ -132,6 +148,9 @@ public class HelloWorldSource extends EventSource.Base {
   public void close() throws IOException {
     // Cleanup
     helloWorld = null;
+    process.destroy();
+    open = false;
+    LOG.info("ProtoSource closed");
   }
 
   public static SourceBuilder builder() {
