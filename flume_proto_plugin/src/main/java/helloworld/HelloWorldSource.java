@@ -123,7 +123,7 @@ public class HelloWorldSource extends EventSource.Base {
       Thread.sleep(3000);
       return new EventImpl(bytes);
     } catch (InterruptedException e) {
-      throw new IOException(e.getMessage(), e);
+      throw new IOException("Process interrupted " + e.getMessage(), e);
     }
 
   }

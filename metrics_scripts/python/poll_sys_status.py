@@ -12,7 +12,7 @@ import system_status_pb2 as proto
 """Polls HBase for metrics using the HBase logs.
 """
 
-FREQUENCY = 3
+FREQUENCY = 30
 SHOULD_EXIT = False
 
 def signal_handler(signal, frame):
