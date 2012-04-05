@@ -1,0 +1,20 @@
+Exception in thread "logicalNode hadoop-agent-37" java.lang.OutOfMemoryError: Java heap space
+	at helloworld.HelloWorldSource.next(HelloWorldSource.java:114)
+	at com.cloudera.flume.core.connector.DirectDriver$PumperThread.run(DirectDriver.java:105)
+Exception in thread "logicalNode hadoop-agent-40" java.lang.OutOfMemoryError: Java heap space
+	at helloworld.HelloWorldSource.next(HelloWorldSource.java:114)
+	at com.cloudera.flume.core.connector.DirectDriver$PumperThread.run(DirectDriver.java:105)
+Exception in thread "logicalNode hbase-agent1-43" java.lang.OutOfMemoryError: Java heap space
+	at helloworld.HelloWorldSource.next(HelloWorldSource.java:114)
+	at com.cloudera.flume.core.connector.DirectDriver$PumperThread.run(DirectDriver.java:105)
+Exception in thread "logicalNode hadoop-agent-47" java.lang.OutOfMemoryError: Java heap space
+	at helloworld.HelloWorldSource.next(HelloWorldSource.java:114)
+	at com.cloudera.flume.core.connector.DirectDriver$PumperThread.run(DirectDriver.java:105)
+Exception in thread "logicalNode hadoop-agent-54" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "Thread-1" java.lang.NullPointerException
+	at com.cloudera.flume.handlers.thrift.ThriftEventSource.getMetrics(ThriftEventSource.java:96)
+	at com.cloudera.flume.core.EventSource$Base.getReports(EventSource.java:186)
+	at com.cloudera.flume.agent.LogicalNode.getReports(LogicalNode.java:309)
+	at com.cloudera.flume.reporter.MasterReportPusher$PusherThread.querySrcSinkReports(MasterReportPusher.java:102)
+	at com.cloudera.flume.reporter.MasterReportPusher$PusherThread.sendReports(MasterReportPusher.java:110)
+	at com.cloudera.flume.reporter.MasterReportPusher$PusherThread.run(MasterReportPusher.java:119)

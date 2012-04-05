@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+/**
+ * Copyright 2009 The Apache Software Foundation
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<configuration>
+  <property>
+    <name>hbase.master</name>
+    <value>fm-vm-010.cercs.int:60000</value>
+  </property>
+  <property>
+    <name>hbase.rootdir</name>
+    <value>hdfs://fm-vm-010.cercs.int:54111/hbase</value>
+  </property>
+  <property>
+    <name>hbase.cluster.distributed</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>hbase.zookeeper.dns.interface</name>
+    <value>eth0</value>
+    <description>The name of the Network Interface from which a ZooKeeper server
+      should report its IP address.
+    </description>
+  </property>
+  <property>
+    <name>hbase.zookeeper.dns.nameserver</name>
+    <value>lorien.cercs.int</value>
+    <description>The host name or IP address of the name server (DNS)
+      which a ZooKeeper server should use to determine the host name used by the
+      master for communication and display purposes.
+    </description>
+  </property>
+  <property>
+    <name>hbase.master.dns.interface</name>
+    <value>eth0</value>
+    <description>The name of the Network Interface from which a master 
+      should report its IP address.
+    </description>
+  </property>
+  <property>
+    <name>hbase.master.dns.nameserver</name>
+    <value>lorien.cercs.int</value>
+    <description>The host name or IP address of the name server (DNS)
+      which a master should use to determine the host name used 
+      for communication and display purposes.
+    </description>
+  </property>
+  <property>
+    <name>hbase.zookeeper.property.clientPort</name>
+    <value>2181</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+      The port at which the clients will connect.
+    </description>
+  </property>
+
+  <!--
+     The following three properties are used together to create the list of
+     host:peer_port:leader_port quorum servers for ZooKeeper.
+    -->
+  <property>
+    <name>hbase.zookeeper.quorum</name>
+    <value>fm-vm-010</value>
+    <description>Comma separated list of servers in the ZooKeeper Quorum.
+      For example, "host1.mydomain.com,host2.mydomain.com,host3.mydomain.com".
+      By default this is set to localhost for local and pseudo-distributed modes
+      of operation. For a fully-distributed setup, this should be set to a full
+      list of ZooKeeper quorum servers. If HBASE_MANAGES_ZK is set in hbase-env.sh
+      this is the list of servers which we will start/stop ZooKeeper on.
+    </description>
+  </property>
+
+</configuration>

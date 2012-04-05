@@ -1,0 +1,803 @@
+2012-04-03 22:43:40,565 INFO com.cloudera.flume.watchdog.FlumeWatchdog: Dropped a pidfile='/tmp/flumemaster.pid' with pid=2265
+2012-04-03 22:43:40,629 INFO com.cloudera.flume.conf.FlumeConfiguration: Loading configurations from conf
+2012-04-03 22:43:40,843 INFO com.cloudera.flume.watchdog.Watchdog: Restarting process @ Tue Apr 03 22:43:40 EDT 2012
+2012-04-03 22:43:41,498 INFO com.cloudera.flume.master.FlumeMaster: Flume 0.9.4
+2012-04-03 22:43:41,499 INFO com.cloudera.flume.master.FlumeMaster:  rev 8d0aa4be4ee50bb664cb0d1624e5634f46d7b62a
+2012-04-03 22:43:41,499 INFO com.cloudera.flume.master.FlumeMaster: Compiled  on  Mon Jun 20 14:48:23 PDT 2011
+2012-04-03 22:43:41,499 INFO com.cloudera.flume.master.FlumeMaster: System property flume.log.file=flume-root-master-fm-vm-010.cercs.int.log
+2012-04-03 22:43:41,499 INFO com.cloudera.flume.master.FlumeMaster: System property java.runtime.name=Java(TM) SE Runtime Environment
+2012-04-03 22:43:41,500 INFO com.cloudera.flume.master.FlumeMaster: System property sun.boot.library.path=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64
+2012-04-03 22:43:41,500 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.version=19.1-b02
+2012-04-03 22:43:41,500 INFO com.cloudera.flume.master.FlumeMaster: System property zookeeper.root.logger=INFO,zookeeper
+2012-04-03 22:43:41,500 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.vendor=Sun Microsystems Inc.
+2012-04-03 22:43:41,500 INFO com.cloudera.flume.master.FlumeMaster: System property java.vendor.url=http://java.sun.com/
+2012-04-03 22:43:41,500 INFO com.cloudera.flume.master.FlumeMaster: System property path.separator=:
+2012-04-03 22:43:41,500 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2012-04-03 22:43:41,500 INFO com.cloudera.flume.master.FlumeMaster: System property file.encoding.pkg=sun.io
+2012-04-03 22:43:41,500 INFO com.cloudera.flume.master.FlumeMaster: System property sun.java.launcher=SUN_STANDARD
+2012-04-03 22:43:41,500 INFO com.cloudera.flume.master.FlumeMaster: System property user.country=US
+2012-04-03 22:43:41,500 INFO com.cloudera.flume.master.FlumeMaster: System property sun.os.patch.level=unknown
+2012-04-03 22:43:41,500 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.specification.name=Java Virtual Machine Specification
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property user.dir=/root/flume-distribution-0.9.4
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property java.runtime.version=1.6.0_24-b07
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property flume.log.dir=/root/flume-distribution-0.9.4//logs
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property java.endorsed.dirs=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/endorsed
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property os.arch=amd64
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property java.io.tmpdir=/tmp
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property line.separator=
+
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.specification.vendor=Sun Microsystems Inc.
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property os.name=Linux
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property sun.jnu.encoding=UTF-8
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property java.library.path=/root/flume-distribution-0.9.4/lib::
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property java.specification.name=Java Platform API Specification
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property java.class.version=50.0
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property sun.management.compiler=HotSpot 64-Bit Server Compiler
+2012-04-03 22:43:41,501 INFO com.cloudera.flume.master.FlumeMaster: System property watchdog.root.logger=INFO,watchdog
+2012-04-03 22:43:41,502 INFO com.cloudera.flume.master.FlumeMaster: System property os.version=2.6.31-22-server
+2012-04-03 22:43:41,502 INFO com.cloudera.flume.master.FlumeMaster: System property user.home=/root
+2012-04-03 22:43:41,502 INFO com.cloudera.flume.master.FlumeMaster: System property user.timezone=America/New_York
+2012-04-03 22:43:41,502 INFO com.cloudera.flume.master.FlumeMaster: System property java.awt.printerjob=sun.print.PSPrinterJob
+2012-04-03 22:43:41,502 INFO com.cloudera.flume.master.FlumeMaster: System property file.encoding=UTF-8
+2012-04-03 22:43:41,502 INFO com.cloudera.flume.master.FlumeMaster: System property java.specification.version=1.6
+2012-04-03 22:43:41,502 INFO com.cloudera.flume.master.FlumeMaster: System property java.class.path=./conf:/root/flume-distribution-0.9.4/lib/activation-1.1.jar:/root/flume-distribution-0.9.4/lib/ahocorasick-2.x.jar:/root/flume-distribution-0.9.4/lib/ant-1.6.5.jar:/root/flume-distribution-0.9.4/lib/antlr-2.7.7.jar:/root/flume-distribution-0.9.4/lib/antlr-3.2.jar:/root/flume-distribution-0.9.4/lib/antlr-runtime-3.2.jar:/root/flume-distribution-0.9.4/lib/asm-3.1.jar:/root/flume-distribution-0.9.4/lib/automaton-1.0.0.jar:/root/flume-distribution-0.9.4/lib/avro-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-compiler-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-ipc-1.5.1.jar:/root/flume-distribution-0.9.4/lib/commons-cli-1.2.jar:/root/flume-distribution-0.9.4/lib/commons-codec-1.3.jar:/root/flume-distribution-0.9.4/lib/commons-collections-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-el-1.0.jar:/root/flume-distribution-0.9.4/lib/commons-httpclient-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-lang-2.5.jar:/root/flume-distribution-0.9.4/lib/commons-logging-1.0.4.jar:/root/flume-distribution-0.9.4/lib/commons-net-1.4.1.jar:/root/flume-distribution-0.9.4/lib/core-3.1.1.jar:/root/flume-distribution-0.9.4/lib/flume-core-0.9.4.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-hbasesink-0.9.5.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-helloworld-0.9.5.jar:/root/flume-distribution-0.9.4/lib/guava-r07.jar:/root/flume-distribution-0.9.4/lib/hadoop-core-0.20.2-CDH3B4.jar:/root/flume-distribution-0.9.4/lib/hbase-0.92.0.jar:/root/flume-distribution-0.9.4/lib/hsqldb-1.8.0.7.jar:/root/flume-distribution-0.9.4/lib/irclib-1.0.0.jar:/root/flume-distribution-0.9.4/lib/jackson-core-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-jaxrs-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-mapper-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-xc-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jasper-compiler-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jasper-runtime-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jaxb-api-2.1.jar:/root/flume-distribution-0.9.4/lib/jaxb-impl-2.1.12.jar:/root/flume-distribution-0.9.4/lib/jersey-core-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-json-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-server-1.4.jar:/root/flume-distribution-0.9.4/lib/jets3t-0.6.1.jar:/root/flume-distribution-0.9.4/lib/jettison-1.2.jar:/root/flume-distribution-0.9.4/lib/jetty-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jetty-util-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jline-0.9.94.jar:/root/flume-distribution-0.9.4/lib/jms-1.1.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.0.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.1.jar:/root/flume-distribution-0.9.4/lib/libthrift-0.6.0-cdh.jar:/root/flume-distribution-0.9.4/lib/log4j-1.2.15.jar:/root/flume-distribution-0.9.4/lib/mail-1.4.jar:/root/flume-distribution-0.9.4/lib/netty-3.2.4.Final.jar:/root/flume-distribution-0.9.4/lib/oro-2.0.8.jar:/root/flume-distribution-0.9.4/lib/paranamer-2.3.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5-20081211.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5.jar:/root/flume-distribution-0.9.4/lib/slf4j-api-1.5.11.jar:/root/flume-distribution-0.9.4/lib/slf4j-log4j12-1.5.11.jar:/root/flume-distribution-0.9.4/lib/snappy-java-1.0.1-rc3.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0.1.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0-2.jar:/root/flume-distribution-0.9.4/lib/stringtemplate-3.2.jar:/root/flume-distribution-0.9.4/lib/velocity-1.6.4.jar:/root/flume-distribution-0.9.4/lib/xmlenc-0.52.jar:/root/flume-distribution-0.9.4/lib/zookeeper-3.3.1-10.jar:/lib/tools.jar:/root/flume-distribution-0.9.4/build/classes
+2012-04-03 22:43:41,502 INFO com.cloudera.flume.master.FlumeMaster: System property user.name=root
+2012-04-03 22:43:41,502 INFO com.cloudera.flume.master.FlumeMaster: System property flume.root.logger=INFO,DRFA
+2012-04-03 22:43:41,502 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.specification.version=1.0
+2012-04-03 22:43:41,502 INFO com.cloudera.flume.master.FlumeMaster: System property java.home=/usr/lib/jvm/java-6-sun-1.6.0.24/jre
+2012-04-03 22:43:41,502 INFO com.cloudera.flume.master.FlumeMaster: System property sun.arch.data.model=64
+2012-04-03 22:43:41,502 INFO com.cloudera.flume.master.FlumeMaster: System property user.language=en
+2012-04-03 22:43:41,502 INFO com.cloudera.flume.master.FlumeMaster: System property java.specification.vendor=Sun Microsystems Inc.
+2012-04-03 22:43:41,503 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.info=mixed mode
+2012-04-03 22:43:41,503 INFO com.cloudera.flume.master.FlumeMaster: System property java.version=1.6.0_24
+2012-04-03 22:43:41,503 INFO com.cloudera.flume.master.FlumeMaster: System property java.ext.dirs=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/ext:/usr/java/packages/lib/ext
+2012-04-03 22:43:41,503 INFO com.cloudera.flume.master.FlumeMaster: System property sun.boot.class.path=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/classes
+2012-04-03 22:43:41,503 INFO com.cloudera.flume.master.FlumeMaster: System property java.vendor=Sun Microsystems Inc.
+2012-04-03 22:43:41,503 INFO com.cloudera.flume.master.FlumeMaster: System property file.separator=/
+2012-04-03 22:43:41,503 INFO com.cloudera.flume.master.FlumeMaster: System property java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+2012-04-03 22:43:41,503 INFO com.cloudera.flume.master.FlumeMaster: System property sun.io.unicode.encoding=UnicodeLittle
+2012-04-03 22:43:41,503 INFO com.cloudera.flume.master.FlumeMaster: System property sun.cpu.endian=little
+2012-04-03 22:43:41,503 INFO com.cloudera.flume.master.FlumeMaster: System property sun.cpu.isalist=
+2012-04-03 22:43:41,603 INFO com.cloudera.flume.conf.FlumeConfiguration: Loading configurations from conf
+2012-04-03 22:43:42,599 WARN com.cloudera.flume.handlers.text.FormatFactory: Unable to load output format plugin class  - Class not found
+2012-04-03 22:43:42,672 INFO com.cloudera.flume.master.FlumeMaster: Inferred master server index 0
+2012-04-03 22:43:42,759 INFO com.cloudera.flume.master.FlumeMaster: Single master, config translations enabled
+2012-04-03 22:43:42,777 INFO com.cloudera.flume.master.FlumeMaster: Starting flume master on: fm-vm-010.cercs.int
+2012-04-03 22:43:42,777 INFO com.cloudera.flume.master.FlumeMaster:  Working Directory is: /root/flume-distribution-0.9.4/.
+2012-04-03 22:43:42,778 INFO com.cloudera.flume.master.ZooKeeperService: Starting standalone ZooKeeper instance on port 3181
+2012-04-03 22:43:42,786 INFO com.cloudera.flume.master.ZKInProcessServer: Removing idfile /tmp/flume-root-zk/server-0/myid
+2012-04-03 22:43:42,786 INFO com.cloudera.flume.master.ZKInProcessServer: Creating /tmp/flume-root-zk/server-0/myid
+2012-04-03 22:43:42,814 INFO com.cloudera.flume.master.ZKInProcessServer: Starting ZooKeeper server
+2012-04-03 22:43:42,814 INFO org.apache.zookeeper.server.ZooKeeperServerMain: Starting server
+2012-04-03 22:43:42,834 INFO com.cloudera.flume.master.ZKInProcessServer: server 0.0.0.0:3181 not up yet
+2012-04-03 22:43:42,837 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:zookeeper.version=3.3.1-942149, built on 05/07/2010 17:14 GMT
+2012-04-03 22:43:42,838 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:host.name=fm-vm-010.cercs.int
+2012-04-03 22:43:42,838 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.version=1.6.0_24
+2012-04-03 22:43:42,838 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.vendor=Sun Microsystems Inc.
+2012-04-03 22:43:42,838 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.home=/usr/lib/jvm/java-6-sun-1.6.0.24/jre
+2012-04-03 22:43:42,838 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.class.path=./conf:/root/flume-distribution-0.9.4/lib/activation-1.1.jar:/root/flume-distribution-0.9.4/lib/ahocorasick-2.x.jar:/root/flume-distribution-0.9.4/lib/ant-1.6.5.jar:/root/flume-distribution-0.9.4/lib/antlr-2.7.7.jar:/root/flume-distribution-0.9.4/lib/antlr-3.2.jar:/root/flume-distribution-0.9.4/lib/antlr-runtime-3.2.jar:/root/flume-distribution-0.9.4/lib/asm-3.1.jar:/root/flume-distribution-0.9.4/lib/automaton-1.0.0.jar:/root/flume-distribution-0.9.4/lib/avro-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-compiler-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-ipc-1.5.1.jar:/root/flume-distribution-0.9.4/lib/commons-cli-1.2.jar:/root/flume-distribution-0.9.4/lib/commons-codec-1.3.jar:/root/flume-distribution-0.9.4/lib/commons-collections-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-el-1.0.jar:/root/flume-distribution-0.9.4/lib/commons-httpclient-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-lang-2.5.jar:/root/flume-distribution-0.9.4/lib/commons-logging-1.0.4.jar:/root/flume-distribution-0.9.4/lib/commons-net-1.4.1.jar:/root/flume-distribution-0.9.4/lib/core-3.1.1.jar:/root/flume-distribution-0.9.4/lib/flume-core-0.9.4.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-hbasesink-0.9.5.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-helloworld-0.9.5.jar:/root/flume-distribution-0.9.4/lib/guava-r07.jar:/root/flume-distribution-0.9.4/lib/hadoop-core-0.20.2-CDH3B4.jar:/root/flume-distribution-0.9.4/lib/hbase-0.92.0.jar:/root/flume-distribution-0.9.4/lib/hsqldb-1.8.0.7.jar:/root/flume-distribution-0.9.4/lib/irclib-1.0.0.jar:/root/flume-distribution-0.9.4/lib/jackson-core-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-jaxrs-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-mapper-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-xc-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jasper-compiler-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jasper-runtime-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jaxb-api-2.1.jar:/root/flume-distribution-0.9.4/lib/jaxb-impl-2.1.12.jar:/root/flume-distribution-0.9.4/lib/jersey-core-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-json-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-server-1.4.jar:/root/flume-distribution-0.9.4/lib/jets3t-0.6.1.jar:/root/flume-distribution-0.9.4/lib/jettison-1.2.jar:/root/flume-distribution-0.9.4/lib/jetty-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jetty-util-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jline-0.9.94.jar:/root/flume-distribution-0.9.4/lib/jms-1.1.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.0.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.1.jar:/root/flume-distribution-0.9.4/lib/libthrift-0.6.0-cdh.jar:/root/flume-distribution-0.9.4/lib/log4j-1.2.15.jar:/root/flume-distribution-0.9.4/lib/mail-1.4.jar:/root/flume-distribution-0.9.4/lib/netty-3.2.4.Final.jar:/root/flume-distribution-0.9.4/lib/oro-2.0.8.jar:/root/flume-distribution-0.9.4/lib/paranamer-2.3.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5-20081211.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5.jar:/root/flume-distribution-0.9.4/lib/slf4j-api-1.5.11.jar:/root/flume-distribution-0.9.4/lib/slf4j-log4j12-1.5.11.jar:/root/flume-distribution-0.9.4/lib/snappy-java-1.0.1-rc3.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0.1.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0-2.jar:/root/flume-distribution-0.9.4/lib/stringtemplate-3.2.jar:/root/flume-distribution-0.9.4/lib/velocity-1.6.4.jar:/root/flume-distribution-0.9.4/lib/xmlenc-0.52.jar:/root/flume-distribution-0.9.4/lib/zookeeper-3.3.1-10.jar:/lib/tools.jar:/root/flume-distribution-0.9.4/build/classes
+2012-04-03 22:43:42,838 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.library.path=/root/flume-distribution-0.9.4/lib::
+2012-04-03 22:43:42,838 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.io.tmpdir=/tmp
+2012-04-03 22:43:42,838 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.compiler=<NA>
+2012-04-03 22:43:42,838 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.name=Linux
+2012-04-03 22:43:42,838 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.arch=amd64
+2012-04-03 22:43:42,839 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.version=2.6.31-22-server
+2012-04-03 22:43:42,839 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.name=root
+2012-04-03 22:43:42,839 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.home=/root
+2012-04-03 22:43:42,839 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.dir=/root/flume-distribution-0.9.4
+2012-04-03 22:43:42,848 INFO org.apache.zookeeper.server.ZooKeeperServer: tickTime set to 2000
+2012-04-03 22:43:42,848 INFO org.apache.zookeeper.server.ZooKeeperServer: minSessionTimeout set to -1
+2012-04-03 22:43:42,848 INFO org.apache.zookeeper.server.ZooKeeperServer: maxSessionTimeout set to -1
+2012-04-03 22:43:42,902 INFO org.apache.zookeeper.server.NIOServerCnxn: binding to port 0.0.0.0/0.0.0.0:3181
+2012-04-03 22:43:42,941 INFO org.apache.zookeeper.server.persistence.FileSnap: Reading snapshot /tmp/flume-root-zk/server-0/version-2/snapshot.15
+2012-04-03 22:43:43,013 INFO org.apache.zookeeper.server.persistence.FileSnap: Reading snapshot /tmp/flume-root-zk/server-0/version-2/snapshot.15
+2012-04-03 22:43:43,027 INFO org.apache.zookeeper.server.persistence.FileTxnSnapLog: Snapshotting: 1d
+2012-04-03 22:43:44,848 INFO org.apache.zookeeper.server.NIOServerCnxn: Accepted socket connection from /10.2.42.110:34724
+2012-04-03 22:43:44,852 INFO org.apache.zookeeper.server.NIOServerCnxn: Processing stat command from /10.2.42.110:34724
+2012-04-03 22:43:44,865 INFO org.apache.zookeeper.server.NIOServerCnxn: Stat command output
+2012-04-03 22:43:44,866 INFO org.apache.zookeeper.server.NIOServerCnxn: Closed socket connection for client /10.2.42.110:34724 (no session established for client)
+2012-04-03 22:43:45,063 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-04-03 22:43:45,113 INFO com.cloudera.flume.master.FlumeMaster: Webserver root directory: /root/flume-distribution-0.9.4//webapps/flumemaster.war
+2012-04-03 22:43:45,213 INFO com.cloudera.util.InternalHttpServer: Starting internal HTTP server
+2012-04-03 22:43:45,213 INFO org.mortbay.log: jetty-6.1.26
+2012-04-03 22:43:45,588 INFO org.mortbay.log: Extract /root/flume-distribution-0.9.4/webapps/flumemaster.war to /tmp/Jetty_0_0_0_0_35871_flumemaster.war__flumemaster__.g4zqgj/webapp
+2012-04-03 22:43:48,141 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:35871
+2012-04-03 22:43:48,141 INFO com.cloudera.util.InternalHttpServer: Server started
+2012-04-03 22:43:48,213 INFO com.cloudera.flume.master.MasterClientServerThrift: Starting blocking thread pool server for control server on port 35872...
+2012-04-03 22:43:48,327 INFO com.cloudera.flume.master.MasterAdminServerThrift: Starting blocking thread pool server for admin server on port 35873...
+2012-04-03 22:43:48,345 INFO com.cloudera.flume.reporter.server.ThriftReportServer: Starting ReportServer...
+2012-04-03 22:43:48,348 INFO com.cloudera.flume.reporter.server.ThriftReportServer: ReportServer started on port 45678
+2012-04-03 22:43:48,472 INFO org.apache.zookeeper.ZooKeeper: Client environment:zookeeper.version=3.3.1-942149, built on 05/07/2010 17:14 GMT
+2012-04-03 22:43:48,472 INFO org.apache.zookeeper.ZooKeeper: Client environment:host.name=fm-vm-010.cercs.int
+2012-04-03 22:43:48,472 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.version=1.6.0_24
+2012-04-03 22:43:48,472 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.vendor=Sun Microsystems Inc.
+2012-04-03 22:43:48,472 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.home=/usr/lib/jvm/java-6-sun-1.6.0.24/jre
+2012-04-03 22:43:48,479 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.class.path=./conf:/root/flume-distribution-0.9.4/lib/activation-1.1.jar:/root/flume-distribution-0.9.4/lib/ahocorasick-2.x.jar:/root/flume-distribution-0.9.4/lib/ant-1.6.5.jar:/root/flume-distribution-0.9.4/lib/antlr-2.7.7.jar:/root/flume-distribution-0.9.4/lib/antlr-3.2.jar:/root/flume-distribution-0.9.4/lib/antlr-runtime-3.2.jar:/root/flume-distribution-0.9.4/lib/asm-3.1.jar:/root/flume-distribution-0.9.4/lib/automaton-1.0.0.jar:/root/flume-distribution-0.9.4/lib/avro-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-compiler-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-ipc-1.5.1.jar:/root/flume-distribution-0.9.4/lib/commons-cli-1.2.jar:/root/flume-distribution-0.9.4/lib/commons-codec-1.3.jar:/root/flume-distribution-0.9.4/lib/commons-collections-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-el-1.0.jar:/root/flume-distribution-0.9.4/lib/commons-httpclient-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-lang-2.5.jar:/root/flume-distribution-0.9.4/lib/commons-logging-1.0.4.jar:/root/flume-distribution-0.9.4/lib/commons-net-1.4.1.jar:/root/flume-distribution-0.9.4/lib/core-3.1.1.jar:/root/flume-distribution-0.9.4/lib/flume-core-0.9.4.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-hbasesink-0.9.5.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-helloworld-0.9.5.jar:/root/flume-distribution-0.9.4/lib/guava-r07.jar:/root/flume-distribution-0.9.4/lib/hadoop-core-0.20.2-CDH3B4.jar:/root/flume-distribution-0.9.4/lib/hbase-0.92.0.jar:/root/flume-distribution-0.9.4/lib/hsqldb-1.8.0.7.jar:/root/flume-distribution-0.9.4/lib/irclib-1.0.0.jar:/root/flume-distribution-0.9.4/lib/jackson-core-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-jaxrs-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-mapper-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-xc-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jasper-compiler-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jasper-runtime-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jaxb-api-2.1.jar:/root/flume-distribution-0.9.4/lib/jaxb-impl-2.1.12.jar:/root/flume-distribution-0.9.4/lib/jersey-core-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-json-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-server-1.4.jar:/root/flume-distribution-0.9.4/lib/jets3t-0.6.1.jar:/root/flume-distribution-0.9.4/lib/jettison-1.2.jar:/root/flume-distribution-0.9.4/lib/jetty-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jetty-util-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jline-0.9.94.jar:/root/flume-distribution-0.9.4/lib/jms-1.1.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.0.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.1.jar:/root/flume-distribution-0.9.4/lib/libthrift-0.6.0-cdh.jar:/root/flume-distribution-0.9.4/lib/log4j-1.2.15.jar:/root/flume-distribution-0.9.4/lib/mail-1.4.jar:/root/flume-distribution-0.9.4/lib/netty-3.2.4.Final.jar:/root/flume-distribution-0.9.4/lib/oro-2.0.8.jar:/root/flume-distribution-0.9.4/lib/paranamer-2.3.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5-20081211.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5.jar:/root/flume-distribution-0.9.4/lib/slf4j-api-1.5.11.jar:/root/flume-distribution-0.9.4/lib/slf4j-log4j12-1.5.11.jar:/root/flume-distribution-0.9.4/lib/snappy-java-1.0.1-rc3.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0.1.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0-2.jar:/root/flume-distribution-0.9.4/lib/stringtemplate-3.2.jar:/root/flume-distribution-0.9.4/lib/velocity-1.6.4.jar:/root/flume-distribution-0.9.4/lib/xmlenc-0.52.jar:/root/flume-distribution-0.9.4/lib/zookeeper-3.3.1-10.jar:/lib/tools.jar:/root/flume-distribution-0.9.4/build/classes
+2012-04-03 22:43:48,479 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.library.path=/root/flume-distribution-0.9.4/lib::
+2012-04-03 22:43:48,479 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+2012-04-03 22:43:48,479 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2012-04-03 22:43:48,479 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.name=Linux
+2012-04-03 22:43:48,479 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.arch=amd64
+2012-04-03 22:43:48,479 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.version=2.6.31-22-server
+2012-04-03 22:43:48,479 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.name=root
+2012-04-03 22:43:48,479 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.home=/root
+2012-04-03 22:43:48,479 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.dir=/root/flume-distribution-0.9.4
+2012-04-03 22:43:48,481 INFO org.apache.zookeeper.ZooKeeper: Initiating client connection, connectString=fm-vm-010:3181 sessionTimeout=5000 watcher=com.cloudera.flume.master.ZKClient$1$1@5abd09e8
+2012-04-03 22:43:48,566 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server fm-vm-010/10.2.42.110:3181
+2012-04-03 22:43:48,567 INFO org.apache.zookeeper.ClientCnxn: Socket connection established to fm-vm-010/10.2.42.110:3181, initiating session
+2012-04-03 22:43:48,570 INFO org.apache.zookeeper.server.NIOServerCnxn: Accepted socket connection from /10.2.42.110:34726
+2012-04-03 22:43:48,570 INFO org.apache.zookeeper.server.NIOServerCnxn: Client attempting to establish new session at /10.2.42.110:34726
+2012-04-03 22:43:48,746 INFO org.apache.zookeeper.server.NIOServerCnxn: Established session 0x1367b3c7b5b0000 with negotiated timeout 5000 for client /10.2.42.110:34726
+2012-04-03 22:43:48,747 INFO org.apache.zookeeper.ClientCnxn: Session establishment complete on server fm-vm-010/10.2.42.110:3181, sessionid = 0x1367b3c7b5b0000, negotiated timeout = 5000
+2012-04-03 22:43:48,767 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading config from: /flume-cfgs/cfg-0000000004
+2012-04-03 22:43:49,152 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000000
+2012-04-03 22:43:49,215 INFO com.cloudera.flume.master.ZooKeeperConfigStore: No Chokemap found at /flume-chokemap/chokemap*
+2012-04-03 22:43:49,216 INFO org.apache.zookeeper.ZooKeeper: Initiating client connection, connectString=fm-vm-010:3181 sessionTimeout=5000 watcher=com.cloudera.flume.master.ZKClient$1$1@72adf5be
+2012-04-03 22:43:49,226 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server fm-vm-010/10.2.42.110:3181
+2012-04-03 22:43:49,227 INFO org.apache.zookeeper.ClientCnxn: Socket connection established to fm-vm-010/10.2.42.110:3181, initiating session
+2012-04-03 22:43:49,227 INFO org.apache.zookeeper.server.NIOServerCnxn: Accepted socket connection from /10.2.42.110:34727
+2012-04-03 22:43:49,228 INFO org.apache.zookeeper.server.NIOServerCnxn: Client attempting to establish new session at /10.2.42.110:34727
+2012-04-03 22:43:49,246 INFO org.apache.zookeeper.server.NIOServerCnxn: Established session 0x1367b3c7b5b0001 with negotiated timeout 5000 for client /10.2.42.110:34727
+2012-04-03 22:43:49,246 INFO org.apache.zookeeper.ClientCnxn: Session establishment complete on server fm-vm-010/10.2.42.110:3181, sessionid = 0x1367b3c7b5b0001, negotiated timeout = 5000
+2012-04-03 22:43:49,504 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000005
+2012-04-03 22:43:49,563 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000006
+2012-04-03 22:43:49,633 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:43:49,808 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in helloworld.HelloWorldSink
+2012-04-03 22:43:49,809 INFO com.cloudera.flume.conf.SourceFactoryImpl: Found source builder helloWorldSource in helloworld.HelloWorldSource
+2012-04-03 22:43:49,812 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in helloworld.HelloWorldDecorator
+2012-04-03 22:43:49,814 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:43:49,856 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:43:50,005 INFO org.apache.zookeeper.server.ZooKeeperServer: Expiring session 0x1367b381a780001, timeout of 5000ms exceeded
+2012-04-03 22:43:50,005 INFO org.apache.zookeeper.server.ZooKeeperServer: Expiring session 0x1367b381a780000, timeout of 5000ms exceeded
+2012-04-03 22:43:50,006 INFO org.apache.zookeeper.server.PrepRequestProcessor: Processed session termination for sessionid: 0x1367b381a780001
+2012-04-03 22:43:50,006 INFO org.apache.zookeeper.server.PrepRequestProcessor: Processed session termination for sessionid: 0x1367b381a780000
+2012-04-03 22:43:50,218 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder helloWorldSink in helloworld.HelloWorldSink
+2012-04-03 22:43:50,218 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in helloworld.HelloWorldSink
+2012-04-03 22:43:50,219 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink builders found in helloworld.HelloWorldSource
+2012-04-03 22:43:50,219 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in helloworld.HelloWorldSource
+2012-04-03 22:43:50,219 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink builders found in helloworld.HelloWorldDecorator
+2012-04-03 22:43:50,219 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink decorator helloWorldDecorator in helloworld.HelloWorldDecorator
+2012-04-03 22:43:50,219 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder hbase in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:43:50,219 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:43:50,219 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder attr2hbase in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:43:50,219 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:43:51,851 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [fm-vm-010.cercs.int]
+2012-04-03 22:43:51,865 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [fm-vm-010.cercs.int]
+2012-04-03 22:43:51,943 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000007
+2012-04-03 22:43:52,034 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:43:52,048 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:43:52,056 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000001
+2012-04-03 22:43:52,517 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hbase-agent1]
+2012-04-03 22:43:52,519 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hbase-agent1]
+2012-04-03 22:43:52,542 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000008
+2012-04-03 22:43:52,542 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:43:53,021 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hbase-agent1, sys-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_sys_status"), autoBEChain]
+2012-04-03 22:43:53,023 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hbase-agent1, sys-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_sys_status"), autoBEChain]
+2012-04-03 22:43:53,084 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000009
+2012-04-03 22:43:53,099 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:43:53,525 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-010.cercs.int, hbase-agent1]
+2012-04-03 22:43:53,527 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-010.cercs.int, hbase-agent1]
+2012-04-03 22:43:53,556 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:43:53,559 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000002
+2012-04-03 22:43:54,029 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hbase-collector1]
+2012-04-03 22:43:54,031 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hbase-collector1]
+2012-04-03 22:43:54,060 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000010
+2012-04-03 22:43:54,066 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:43:54,533 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hbase-collector1, sys-flow, autoCollectorSource, hbase("flume_sys","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:43:54,535 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hbase-collector1, sys-flow, autoCollectorSource, hbase("flume_sys","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:43:54,686 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000011
+2012-04-03 22:43:54,695 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:43:54,984 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hbase-collector1' has not been assigned to a physical node yet
+2012-04-03 22:43:55,162 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hbase-collector1' has not been assigned to a physical node yet
+2012-04-03 22:43:55,538 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-010.cercs.int, hbase-collector1]
+2012-04-03 22:43:55,540 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-010.cercs.int, hbase-collector1]
+2012-04-03 22:43:55,555 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:43:55,557 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000003
+2012-04-03 22:43:55,591 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hbase-collector1' has not been assigned to a physical node yet
+2012-04-03 22:43:56,041 INFO com.cloudera.flume.master.CommandManager: Submitting command: refreshAll []
+2012-04-03 22:43:56,043 INFO com.cloudera.flume.master.CommandManager: Executing command: refreshAll []
+2012-04-03 22:43:56,062 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000012
+2012-04-03 22:43:56,116 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000013
+2012-04-03 22:43:56,122 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:43:56,192 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000014
+2012-04-03 22:43:56,198 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:43:56,427 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hbase-collector1' has not been assigned to a physical node yet
+2012-04-03 22:43:57,235 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:43:57,238 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000004
+2012-04-03 22:43:57,326 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hbase-collector1' has not been assigned to a physical node yet
+2012-04-03 22:43:57,326 WARN com.cloudera.flume.master.MasterClientServer: Recieved heartbeat from node 'fm-vm-010.cercs.int/fm-vm-010.cercs.int' that is not be set by master 
+2012-04-03 22:45:24,620 INFO com.cloudera.flume.watchdog.Watchdog: Watchdog shutdown hook
+2012-04-03 22:45:32,901 INFO com.cloudera.flume.watchdog.FlumeWatchdog: Dropped a pidfile='/tmp/flumemaster.pid' with pid=3424
+2012-04-03 22:45:32,962 INFO com.cloudera.flume.conf.FlumeConfiguration: Loading configurations from conf
+2012-04-03 22:45:33,179 INFO com.cloudera.flume.watchdog.Watchdog: Restarting process @ Tue Apr 03 22:45:33 EDT 2012
+2012-04-03 22:45:34,028 INFO com.cloudera.flume.master.FlumeMaster: Flume 0.9.4
+2012-04-03 22:45:34,029 INFO com.cloudera.flume.master.FlumeMaster:  rev 8d0aa4be4ee50bb664cb0d1624e5634f46d7b62a
+2012-04-03 22:45:34,029 INFO com.cloudera.flume.master.FlumeMaster: Compiled  on  Mon Jun 20 14:48:23 PDT 2011
+2012-04-03 22:45:34,030 INFO com.cloudera.flume.master.FlumeMaster: System property flume.log.file=flume-root-master-fm-vm-010.cercs.int.log
+2012-04-03 22:45:34,030 INFO com.cloudera.flume.master.FlumeMaster: System property java.runtime.name=Java(TM) SE Runtime Environment
+2012-04-03 22:45:34,030 INFO com.cloudera.flume.master.FlumeMaster: System property sun.boot.library.path=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64
+2012-04-03 22:45:34,030 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.version=19.1-b02
+2012-04-03 22:45:34,030 INFO com.cloudera.flume.master.FlumeMaster: System property zookeeper.root.logger=INFO,zookeeper
+2012-04-03 22:45:34,030 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.vendor=Sun Microsystems Inc.
+2012-04-03 22:45:34,030 INFO com.cloudera.flume.master.FlumeMaster: System property java.vendor.url=http://java.sun.com/
+2012-04-03 22:45:34,030 INFO com.cloudera.flume.master.FlumeMaster: System property path.separator=:
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property file.encoding.pkg=sun.io
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property sun.java.launcher=SUN_STANDARD
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property user.country=US
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property sun.os.patch.level=unknown
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.specification.name=Java Virtual Machine Specification
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property user.dir=/root/flume-distribution-0.9.4
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property java.runtime.version=1.6.0_24-b07
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property flume.log.dir=/root/flume-distribution-0.9.4//logs
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property java.endorsed.dirs=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/endorsed
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property os.arch=amd64
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property java.io.tmpdir=/tmp
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property line.separator=
+
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.specification.vendor=Sun Microsystems Inc.
+2012-04-03 22:45:34,031 INFO com.cloudera.flume.master.FlumeMaster: System property os.name=Linux
+2012-04-03 22:45:34,032 INFO com.cloudera.flume.master.FlumeMaster: System property sun.jnu.encoding=UTF-8
+2012-04-03 22:45:34,032 INFO com.cloudera.flume.master.FlumeMaster: System property java.library.path=/root/flume-distribution-0.9.4/lib::
+2012-04-03 22:45:34,032 INFO com.cloudera.flume.master.FlumeMaster: System property java.specification.name=Java Platform API Specification
+2012-04-03 22:45:34,032 INFO com.cloudera.flume.master.FlumeMaster: System property java.class.version=50.0
+2012-04-03 22:45:34,032 INFO com.cloudera.flume.master.FlumeMaster: System property sun.management.compiler=HotSpot 64-Bit Server Compiler
+2012-04-03 22:45:34,032 INFO com.cloudera.flume.master.FlumeMaster: System property watchdog.root.logger=INFO,watchdog
+2012-04-03 22:45:34,032 INFO com.cloudera.flume.master.FlumeMaster: System property os.version=2.6.31-22-server
+2012-04-03 22:45:34,032 INFO com.cloudera.flume.master.FlumeMaster: System property user.home=/root
+2012-04-03 22:45:34,032 INFO com.cloudera.flume.master.FlumeMaster: System property user.timezone=America/New_York
+2012-04-03 22:45:34,032 INFO com.cloudera.flume.master.FlumeMaster: System property java.awt.printerjob=sun.print.PSPrinterJob
+2012-04-03 22:45:34,032 INFO com.cloudera.flume.master.FlumeMaster: System property file.encoding=UTF-8
+2012-04-03 22:45:34,032 INFO com.cloudera.flume.master.FlumeMaster: System property java.specification.version=1.6
+2012-04-03 22:45:34,032 INFO com.cloudera.flume.master.FlumeMaster: System property java.class.path=./conf:/root/flume-distribution-0.9.4/lib/activation-1.1.jar:/root/flume-distribution-0.9.4/lib/ahocorasick-2.x.jar:/root/flume-distribution-0.9.4/lib/ant-1.6.5.jar:/root/flume-distribution-0.9.4/lib/antlr-2.7.7.jar:/root/flume-distribution-0.9.4/lib/antlr-3.2.jar:/root/flume-distribution-0.9.4/lib/antlr-runtime-3.2.jar:/root/flume-distribution-0.9.4/lib/asm-3.1.jar:/root/flume-distribution-0.9.4/lib/automaton-1.0.0.jar:/root/flume-distribution-0.9.4/lib/avro-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-compiler-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-ipc-1.5.1.jar:/root/flume-distribution-0.9.4/lib/commons-cli-1.2.jar:/root/flume-distribution-0.9.4/lib/commons-codec-1.3.jar:/root/flume-distribution-0.9.4/lib/commons-collections-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-el-1.0.jar:/root/flume-distribution-0.9.4/lib/commons-httpclient-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-lang-2.5.jar:/root/flume-distribution-0.9.4/lib/commons-logging-1.0.4.jar:/root/flume-distribution-0.9.4/lib/commons-net-1.4.1.jar:/root/flume-distribution-0.9.4/lib/core-3.1.1.jar:/root/flume-distribution-0.9.4/lib/flume-core-0.9.4.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-hbasesink-0.9.5.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-helloworld-0.9.5.jar:/root/flume-distribution-0.9.4/lib/guava-r07.jar:/root/flume-distribution-0.9.4/lib/hadoop-core-0.20.2-CDH3B4.jar:/root/flume-distribution-0.9.4/lib/hbase-0.92.0.jar:/root/flume-distribution-0.9.4/lib/hsqldb-1.8.0.7.jar:/root/flume-distribution-0.9.4/lib/irclib-1.0.0.jar:/root/flume-distribution-0.9.4/lib/jackson-core-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-jaxrs-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-mapper-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-xc-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jasper-compiler-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jasper-runtime-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jaxb-api-2.1.jar:/root/flume-distribution-0.9.4/lib/jaxb-impl-2.1.12.jar:/root/flume-distribution-0.9.4/lib/jersey-core-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-json-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-server-1.4.jar:/root/flume-distribution-0.9.4/lib/jets3t-0.6.1.jar:/root/flume-distribution-0.9.4/lib/jettison-1.2.jar:/root/flume-distribution-0.9.4/lib/jetty-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jetty-util-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jline-0.9.94.jar:/root/flume-distribution-0.9.4/lib/jms-1.1.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.0.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.1.jar:/root/flume-distribution-0.9.4/lib/libthrift-0.6.0-cdh.jar:/root/flume-distribution-0.9.4/lib/log4j-1.2.15.jar:/root/flume-distribution-0.9.4/lib/mail-1.4.jar:/root/flume-distribution-0.9.4/lib/netty-3.2.4.Final.jar:/root/flume-distribution-0.9.4/lib/oro-2.0.8.jar:/root/flume-distribution-0.9.4/lib/paranamer-2.3.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5-20081211.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5.jar:/root/flume-distribution-0.9.4/lib/slf4j-api-1.5.11.jar:/root/flume-distribution-0.9.4/lib/slf4j-log4j12-1.5.11.jar:/root/flume-distribution-0.9.4/lib/snappy-java-1.0.1-rc3.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0.1.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0-2.jar:/root/flume-distribution-0.9.4/lib/stringtemplate-3.2.jar:/root/flume-distribution-0.9.4/lib/velocity-1.6.4.jar:/root/flume-distribution-0.9.4/lib/xmlenc-0.52.jar:/root/flume-distribution-0.9.4/lib/zookeeper-3.3.1-10.jar:/lib/tools.jar:/root/flume-distribution-0.9.4/build/classes
+2012-04-03 22:45:34,032 INFO com.cloudera.flume.master.FlumeMaster: System property user.name=root
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property flume.root.logger=INFO,DRFA
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.specification.version=1.0
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property java.home=/usr/lib/jvm/java-6-sun-1.6.0.24/jre
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property sun.arch.data.model=64
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property user.language=en
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property java.specification.vendor=Sun Microsystems Inc.
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.info=mixed mode
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property java.version=1.6.0_24
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property java.ext.dirs=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/ext:/usr/java/packages/lib/ext
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property sun.boot.class.path=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/classes
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property java.vendor=Sun Microsystems Inc.
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property file.separator=/
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property sun.io.unicode.encoding=UnicodeLittle
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property sun.cpu.endian=little
+2012-04-03 22:45:34,033 INFO com.cloudera.flume.master.FlumeMaster: System property sun.cpu.isalist=
+2012-04-03 22:45:34,133 INFO com.cloudera.flume.conf.FlumeConfiguration: Loading configurations from conf
+2012-04-03 22:45:35,229 WARN com.cloudera.flume.handlers.text.FormatFactory: Unable to load output format plugin class  - Class not found
+2012-04-03 22:45:35,311 INFO com.cloudera.flume.master.FlumeMaster: Inferred master server index 0
+2012-04-03 22:45:35,413 INFO com.cloudera.flume.master.FlumeMaster: Single master, config translations enabled
+2012-04-03 22:45:35,435 INFO com.cloudera.flume.master.FlumeMaster: Starting flume master on: fm-vm-010.cercs.int
+2012-04-03 22:45:35,435 INFO com.cloudera.flume.master.FlumeMaster:  Working Directory is: /root/flume-distribution-0.9.4/.
+2012-04-03 22:45:35,437 INFO com.cloudera.flume.master.ZooKeeperService: Starting standalone ZooKeeper instance on port 3181
+2012-04-03 22:45:35,459 INFO com.cloudera.flume.master.ZKInProcessServer: Removing idfile /tmp/flume-root-zk/server-0/myid
+2012-04-03 22:45:35,460 INFO com.cloudera.flume.master.ZKInProcessServer: Creating /tmp/flume-root-zk/server-0/myid
+2012-04-03 22:45:35,492 INFO com.cloudera.flume.master.ZKInProcessServer: Starting ZooKeeper server
+2012-04-03 22:45:35,492 INFO org.apache.zookeeper.server.ZooKeeperServerMain: Starting server
+2012-04-03 22:45:35,525 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:zookeeper.version=3.3.1-942149, built on 05/07/2010 17:14 GMT
+2012-04-03 22:45:35,525 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:host.name=fm-vm-010.cercs.int
+2012-04-03 22:45:35,525 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.version=1.6.0_24
+2012-04-03 22:45:35,526 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.vendor=Sun Microsystems Inc.
+2012-04-03 22:45:35,526 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.home=/usr/lib/jvm/java-6-sun-1.6.0.24/jre
+2012-04-03 22:45:35,526 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.class.path=./conf:/root/flume-distribution-0.9.4/lib/activation-1.1.jar:/root/flume-distribution-0.9.4/lib/ahocorasick-2.x.jar:/root/flume-distribution-0.9.4/lib/ant-1.6.5.jar:/root/flume-distribution-0.9.4/lib/antlr-2.7.7.jar:/root/flume-distribution-0.9.4/lib/antlr-3.2.jar:/root/flume-distribution-0.9.4/lib/antlr-runtime-3.2.jar:/root/flume-distribution-0.9.4/lib/asm-3.1.jar:/root/flume-distribution-0.9.4/lib/automaton-1.0.0.jar:/root/flume-distribution-0.9.4/lib/avro-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-compiler-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-ipc-1.5.1.jar:/root/flume-distribution-0.9.4/lib/commons-cli-1.2.jar:/root/flume-distribution-0.9.4/lib/commons-codec-1.3.jar:/root/flume-distribution-0.9.4/lib/commons-collections-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-el-1.0.jar:/root/flume-distribution-0.9.4/lib/commons-httpclient-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-lang-2.5.jar:/root/flume-distribution-0.9.4/lib/commons-logging-1.0.4.jar:/root/flume-distribution-0.9.4/lib/commons-net-1.4.1.jar:/root/flume-distribution-0.9.4/lib/core-3.1.1.jar:/root/flume-distribution-0.9.4/lib/flume-core-0.9.4.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-hbasesink-0.9.5.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-helloworld-0.9.5.jar:/root/flume-distribution-0.9.4/lib/guava-r07.jar:/root/flume-distribution-0.9.4/lib/hadoop-core-0.20.2-CDH3B4.jar:/root/flume-distribution-0.9.4/lib/hbase-0.92.0.jar:/root/flume-distribution-0.9.4/lib/hsqldb-1.8.0.7.jar:/root/flume-distribution-0.9.4/lib/irclib-1.0.0.jar:/root/flume-distribution-0.9.4/lib/jackson-core-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-jaxrs-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-mapper-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-xc-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jasper-compiler-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jasper-runtime-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jaxb-api-2.1.jar:/root/flume-distribution-0.9.4/lib/jaxb-impl-2.1.12.jar:/root/flume-distribution-0.9.4/lib/jersey-core-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-json-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-server-1.4.jar:/root/flume-distribution-0.9.4/lib/jets3t-0.6.1.jar:/root/flume-distribution-0.9.4/lib/jettison-1.2.jar:/root/flume-distribution-0.9.4/lib/jetty-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jetty-util-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jline-0.9.94.jar:/root/flume-distribution-0.9.4/lib/jms-1.1.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.0.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.1.jar:/root/flume-distribution-0.9.4/lib/libthrift-0.6.0-cdh.jar:/root/flume-distribution-0.9.4/lib/log4j-1.2.15.jar:/root/flume-distribution-0.9.4/lib/mail-1.4.jar:/root/flume-distribution-0.9.4/lib/netty-3.2.4.Final.jar:/root/flume-distribution-0.9.4/lib/oro-2.0.8.jar:/root/flume-distribution-0.9.4/lib/paranamer-2.3.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5-20081211.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5.jar:/root/flume-distribution-0.9.4/lib/slf4j-api-1.5.11.jar:/root/flume-distribution-0.9.4/lib/slf4j-log4j12-1.5.11.jar:/root/flume-distribution-0.9.4/lib/snappy-java-1.0.1-rc3.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0.1.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0-2.jar:/root/flume-distribution-0.9.4/lib/stringtemplate-3.2.jar:/root/flume-distribution-0.9.4/lib/velocity-1.6.4.jar:/root/flume-distribution-0.9.4/lib/xmlenc-0.52.jar:/root/flume-distribution-0.9.4/lib/zookeeper-3.3.1-10.jar:/lib/tools.jar:/root/flume-distribution-0.9.4/build/classes
+2012-04-03 22:45:35,526 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.library.path=/root/flume-distribution-0.9.4/lib::
+2012-04-03 22:45:35,526 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.io.tmpdir=/tmp
+2012-04-03 22:45:35,526 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.compiler=<NA>
+2012-04-03 22:45:35,526 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.name=Linux
+2012-04-03 22:45:35,526 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.arch=amd64
+2012-04-03 22:45:35,526 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.version=2.6.31-22-server
+2012-04-03 22:45:35,527 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.name=root
+2012-04-03 22:45:35,527 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.home=/root
+2012-04-03 22:45:35,527 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.dir=/root/flume-distribution-0.9.4
+2012-04-03 22:45:35,533 INFO com.cloudera.flume.master.ZKInProcessServer: server 0.0.0.0:3181 not up yet
+2012-04-03 22:45:35,536 INFO org.apache.zookeeper.server.ZooKeeperServer: tickTime set to 2000
+2012-04-03 22:45:35,536 INFO org.apache.zookeeper.server.ZooKeeperServer: minSessionTimeout set to -1
+2012-04-03 22:45:35,536 INFO org.apache.zookeeper.server.ZooKeeperServer: maxSessionTimeout set to -1
+2012-04-03 22:45:35,631 INFO org.apache.zookeeper.server.NIOServerCnxn: binding to port 0.0.0.0/0.0.0.0:3181
+2012-04-03 22:45:35,687 INFO org.apache.zookeeper.server.persistence.FileSnap: Reading snapshot /tmp/flume-root-zk/server-0/version-2/snapshot.1d
+2012-04-03 22:45:35,804 INFO org.apache.zookeeper.server.persistence.FileSnap: Reading snapshot /tmp/flume-root-zk/server-0/version-2/snapshot.1d
+2012-04-03 22:45:35,813 INFO org.apache.zookeeper.server.persistence.FileTxnSnapLog: Snapshotting: 39
+2012-04-03 22:45:37,576 INFO org.apache.zookeeper.server.NIOServerCnxn: Accepted socket connection from /10.2.42.110:34793
+2012-04-03 22:45:37,584 INFO org.apache.zookeeper.server.NIOServerCnxn: Processing stat command from /10.2.42.110:34793
+2012-04-03 22:45:37,595 INFO org.apache.zookeeper.server.NIOServerCnxn: Stat command output
+2012-04-03 22:45:37,596 INFO org.apache.zookeeper.server.NIOServerCnxn: Closed socket connection for client /10.2.42.110:34793 (no session established for client)
+2012-04-03 22:45:37,854 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-04-03 22:45:37,991 INFO com.cloudera.flume.master.FlumeMaster: Webserver root directory: /root/flume-distribution-0.9.4//webapps/flumemaster.war
+2012-04-03 22:45:38,192 INFO com.cloudera.util.InternalHttpServer: Starting internal HTTP server
+2012-04-03 22:45:38,192 INFO org.mortbay.log: jetty-6.1.26
+2012-04-03 22:45:38,676 INFO org.mortbay.log: Extract /root/flume-distribution-0.9.4/webapps/flumemaster.war to /tmp/Jetty_0_0_0_0_35871_flumemaster.war__flumemaster__.g4zqgj/webapp
+2012-04-03 22:45:41,299 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:35871
+2012-04-03 22:45:41,299 INFO com.cloudera.util.InternalHttpServer: Server started
+2012-04-03 22:45:41,446 INFO com.cloudera.flume.master.MasterClientServerThrift: Starting blocking thread pool server for control server on port 35872...
+2012-04-03 22:45:41,584 INFO com.cloudera.flume.master.MasterAdminServerThrift: Starting blocking thread pool server for admin server on port 35873...
+2012-04-03 22:45:41,622 INFO com.cloudera.flume.reporter.server.ThriftReportServer: Starting ReportServer...
+2012-04-03 22:45:41,625 INFO com.cloudera.flume.reporter.server.ThriftReportServer: ReportServer started on port 45678
+2012-04-03 22:45:41,724 INFO org.apache.zookeeper.ZooKeeper: Client environment:zookeeper.version=3.3.1-942149, built on 05/07/2010 17:14 GMT
+2012-04-03 22:45:41,724 INFO org.apache.zookeeper.ZooKeeper: Client environment:host.name=fm-vm-010.cercs.int
+2012-04-03 22:45:41,724 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.version=1.6.0_24
+2012-04-03 22:45:41,724 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.vendor=Sun Microsystems Inc.
+2012-04-03 22:45:41,724 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.home=/usr/lib/jvm/java-6-sun-1.6.0.24/jre
+2012-04-03 22:45:41,724 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.class.path=./conf:/root/flume-distribution-0.9.4/lib/activation-1.1.jar:/root/flume-distribution-0.9.4/lib/ahocorasick-2.x.jar:/root/flume-distribution-0.9.4/lib/ant-1.6.5.jar:/root/flume-distribution-0.9.4/lib/antlr-2.7.7.jar:/root/flume-distribution-0.9.4/lib/antlr-3.2.jar:/root/flume-distribution-0.9.4/lib/antlr-runtime-3.2.jar:/root/flume-distribution-0.9.4/lib/asm-3.1.jar:/root/flume-distribution-0.9.4/lib/automaton-1.0.0.jar:/root/flume-distribution-0.9.4/lib/avro-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-compiler-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-ipc-1.5.1.jar:/root/flume-distribution-0.9.4/lib/commons-cli-1.2.jar:/root/flume-distribution-0.9.4/lib/commons-codec-1.3.jar:/root/flume-distribution-0.9.4/lib/commons-collections-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-el-1.0.jar:/root/flume-distribution-0.9.4/lib/commons-httpclient-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-lang-2.5.jar:/root/flume-distribution-0.9.4/lib/commons-logging-1.0.4.jar:/root/flume-distribution-0.9.4/lib/commons-net-1.4.1.jar:/root/flume-distribution-0.9.4/lib/core-3.1.1.jar:/root/flume-distribution-0.9.4/lib/flume-core-0.9.4.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-hbasesink-0.9.5.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-helloworld-0.9.5.jar:/root/flume-distribution-0.9.4/lib/guava-r07.jar:/root/flume-distribution-0.9.4/lib/hadoop-core-0.20.2-CDH3B4.jar:/root/flume-distribution-0.9.4/lib/hbase-0.92.0.jar:/root/flume-distribution-0.9.4/lib/hsqldb-1.8.0.7.jar:/root/flume-distribution-0.9.4/lib/irclib-1.0.0.jar:/root/flume-distribution-0.9.4/lib/jackson-core-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-jaxrs-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-mapper-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-xc-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jasper-compiler-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jasper-runtime-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jaxb-api-2.1.jar:/root/flume-distribution-0.9.4/lib/jaxb-impl-2.1.12.jar:/root/flume-distribution-0.9.4/lib/jersey-core-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-json-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-server-1.4.jar:/root/flume-distribution-0.9.4/lib/jets3t-0.6.1.jar:/root/flume-distribution-0.9.4/lib/jettison-1.2.jar:/root/flume-distribution-0.9.4/lib/jetty-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jetty-util-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jline-0.9.94.jar:/root/flume-distribution-0.9.4/lib/jms-1.1.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.0.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.1.jar:/root/flume-distribution-0.9.4/lib/libthrift-0.6.0-cdh.jar:/root/flume-distribution-0.9.4/lib/log4j-1.2.15.jar:/root/flume-distribution-0.9.4/lib/mail-1.4.jar:/root/flume-distribution-0.9.4/lib/netty-3.2.4.Final.jar:/root/flume-distribution-0.9.4/lib/oro-2.0.8.jar:/root/flume-distribution-0.9.4/lib/paranamer-2.3.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5-20081211.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5.jar:/root/flume-distribution-0.9.4/lib/slf4j-api-1.5.11.jar:/root/flume-distribution-0.9.4/lib/slf4j-log4j12-1.5.11.jar:/root/flume-distribution-0.9.4/lib/snappy-java-1.0.1-rc3.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0.1.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0-2.jar:/root/flume-distribution-0.9.4/lib/stringtemplate-3.2.jar:/root/flume-distribution-0.9.4/lib/velocity-1.6.4.jar:/root/flume-distribution-0.9.4/lib/xmlenc-0.52.jar:/root/flume-distribution-0.9.4/lib/zookeeper-3.3.1-10.jar:/lib/tools.jar:/root/flume-distribution-0.9.4/build/classes
+2012-04-03 22:45:41,725 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.library.path=/root/flume-distribution-0.9.4/lib::
+2012-04-03 22:45:41,725 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+2012-04-03 22:45:41,725 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2012-04-03 22:45:41,725 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.name=Linux
+2012-04-03 22:45:41,725 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.arch=amd64
+2012-04-03 22:45:41,725 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.version=2.6.31-22-server
+2012-04-03 22:45:41,725 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.name=root
+2012-04-03 22:45:41,725 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.home=/root
+2012-04-03 22:45:41,725 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.dir=/root/flume-distribution-0.9.4
+2012-04-03 22:45:41,727 INFO org.apache.zookeeper.ZooKeeper: Initiating client connection, connectString=fm-vm-010:3181 sessionTimeout=5000 watcher=com.cloudera.flume.master.ZKClient$1$1@1e670479
+2012-04-03 22:45:41,826 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server fm-vm-010/10.2.42.110:3181
+2012-04-03 22:45:41,827 INFO org.apache.zookeeper.ClientCnxn: Socket connection established to fm-vm-010/10.2.42.110:3181, initiating session
+2012-04-03 22:45:41,831 INFO org.apache.zookeeper.server.NIOServerCnxn: Accepted socket connection from /10.2.42.110:34796
+2012-04-03 22:45:41,832 INFO org.apache.zookeeper.server.NIOServerCnxn: Client attempting to establish new session at /10.2.42.110:34796
+2012-04-03 22:45:41,892 INFO org.apache.zookeeper.ClientCnxn: Session establishment complete on server fm-vm-010/10.2.42.110:3181, sessionid = 0x1367b3e33e00000, negotiated timeout = 5000
+2012-04-03 22:45:41,926 INFO org.apache.zookeeper.server.NIOServerCnxn: Established session 0x1367b3e33e00000 with negotiated timeout 5000 for client /10.2.42.110:34796
+2012-04-03 22:45:41,943 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading config from: /flume-cfgs/cfg-0000000014
+2012-04-03 22:45:42,000 INFO org.apache.zookeeper.server.ZooKeeperServer: Expiring session 0x1367b3c7b5b0000, timeout of 5000ms exceeded
+2012-04-03 22:45:42,000 INFO org.apache.zookeeper.server.ZooKeeperServer: Expiring session 0x1367b3c7b5b0001, timeout of 5000ms exceeded
+2012-04-03 22:45:42,000 INFO org.apache.zookeeper.server.PrepRequestProcessor: Processed session termination for sessionid: 0x1367b3c7b5b0000
+2012-04-03 22:45:42,001 INFO org.apache.zookeeper.server.PrepRequestProcessor: Processed session termination for sessionid: 0x1367b3c7b5b0001
+2012-04-03 22:45:42,236 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000004
+2012-04-03 22:45:42,266 INFO com.cloudera.flume.master.ZooKeeperConfigStore: No Chokemap found at /flume-chokemap/chokemap*
+2012-04-03 22:45:42,267 INFO org.apache.zookeeper.ZooKeeper: Initiating client connection, connectString=fm-vm-010:3181 sessionTimeout=5000 watcher=com.cloudera.flume.master.ZKClient$1$1@9818f80
+2012-04-03 22:45:42,272 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server fm-vm-010/10.2.42.110:3181
+2012-04-03 22:45:42,273 INFO org.apache.zookeeper.ClientCnxn: Socket connection established to fm-vm-010/10.2.42.110:3181, initiating session
+2012-04-03 22:45:42,274 INFO org.apache.zookeeper.server.NIOServerCnxn: Accepted socket connection from /10.2.42.110:34797
+2012-04-03 22:45:42,274 INFO org.apache.zookeeper.server.NIOServerCnxn: Client attempting to establish new session at /10.2.42.110:34797
+2012-04-03 22:45:42,296 INFO org.apache.zookeeper.server.NIOServerCnxn: Established session 0x1367b3e33e00001 with negotiated timeout 5000 for client /10.2.42.110:34797
+2012-04-03 22:45:42,305 INFO org.apache.zookeeper.ClientCnxn: Session establishment complete on server fm-vm-010/10.2.42.110:3181, sessionid = 0x1367b3e33e00001, negotiated timeout = 5000
+2012-04-03 22:45:42,478 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000015
+2012-04-03 22:45:42,506 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000016
+2012-04-03 22:45:42,645 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:45:42,691 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in helloworld.HelloWorldSink
+2012-04-03 22:45:42,703 INFO com.cloudera.flume.conf.SourceFactoryImpl: Found source builder helloWorldSource in helloworld.HelloWorldSource
+2012-04-03 22:45:42,705 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in helloworld.HelloWorldDecorator
+2012-04-03 22:45:42,708 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:45:42,735 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:45:43,021 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder helloWorldSink in helloworld.HelloWorldSink
+2012-04-03 22:45:43,022 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in helloworld.HelloWorldSink
+2012-04-03 22:45:43,022 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink builders found in helloworld.HelloWorldSource
+2012-04-03 22:45:43,022 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in helloworld.HelloWorldSource
+2012-04-03 22:45:43,022 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink builders found in helloworld.HelloWorldDecorator
+2012-04-03 22:45:43,022 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink decorator helloWorldDecorator in helloworld.HelloWorldDecorator
+2012-04-03 22:45:43,022 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder hbase in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:45:43,022 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:45:43,022 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder attr2hbase in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:45:43,023 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:45:43,316 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000017
+2012-04-03 22:45:43,321 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:45:43,913 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hbase-collector1' has not been assigned to a physical node yet
+2012-04-03 22:45:47,632 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [fm-vm-010.cercs.int]
+2012-04-03 22:45:47,644 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [fm-vm-010.cercs.int]
+2012-04-03 22:45:47,681 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000018
+2012-04-03 22:45:47,733 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:45:47,747 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:45:47,750 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000005
+2012-04-03 22:45:47,765 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hbase-collector1' has not been assigned to a physical node yet
+2012-04-03 22:45:48,150 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:45:48,153 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000006
+2012-04-03 22:45:48,180 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hbase-collector1' has not been assigned to a physical node yet
+2012-04-03 22:45:48,180 WARN com.cloudera.flume.master.MasterClientServer: Recieved heartbeat from node 'fm-vm-010.cercs.int/fm-vm-010.cercs.int' that is not be set by master 
+2012-04-03 22:45:48,197 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hbase-agent1]
+2012-04-03 22:45:48,198 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hbase-agent1]
+2012-04-03 22:45:48,236 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000019
+2012-04-03 22:45:48,257 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:45:48,274 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:45:48,278 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000007
+2012-04-03 22:45:48,313 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hbase-collector1' has not been assigned to a physical node yet
+2012-04-03 22:45:48,327 WARN com.cloudera.flume.master.MasterClientServer: Recieved heartbeat from node 'fm-vm-010.cercs.int/hbase-agent1' that is not be set by master 
+2012-04-03 22:45:48,701 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hbase-agent1, sys-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_sys_status"), autoBEChain]
+2012-04-03 22:45:48,703 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hbase-agent1, sys-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_sys_status"), autoBEChain]
+2012-04-03 22:45:48,721 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000020
+2012-04-03 22:45:48,727 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:45:49,205 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-010.cercs.int, hbase-agent1]
+2012-04-03 22:45:49,205 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-010.cercs.int, hbase-agent1]
+2012-04-03 22:45:49,215 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:45:49,218 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000008
+2012-04-03 22:45:49,710 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hbase-collector1]
+2012-04-03 22:45:49,712 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hbase-collector1]
+2012-04-03 22:45:49,742 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000021
+2012-04-03 22:45:50,295 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:45:50,310 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:45:50,313 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000009
+2012-04-03 22:45:50,716 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hbase-collector1, sys-flow, autoCollectorSource, hbase("flume_sys","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:45:50,716 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hbase-collector1, sys-flow, autoCollectorSource, hbase("flume_sys","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:45:50,865 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000022
+2012-04-03 22:45:50,875 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:45:51,747 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-010.cercs.int, hbase-collector1]
+2012-04-03 22:45:51,748 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-010.cercs.int, hbase-collector1]
+2012-04-03 22:45:51,768 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:45:51,773 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000010
+2012-04-03 22:45:52,250 INFO com.cloudera.flume.master.CommandManager: Submitting command: refreshAll []
+2012-04-03 22:45:52,251 INFO com.cloudera.flume.master.CommandManager: Executing command: refreshAll []
+2012-04-03 22:45:52,280 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000023
+2012-04-03 22:45:52,308 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000024
+2012-04-03 22:45:52,320 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:45:52,431 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000025
+2012-04-03 22:45:52,441 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:46:15,169 INFO com.cloudera.flume.watchdog.Watchdog: Watchdog shutdown hook
+2012-04-03 22:52:15,500 INFO com.cloudera.flume.watchdog.FlumeWatchdog: Dropped a pidfile='/tmp/flumemaster.pid' with pid=5094
+2012-04-03 22:52:15,561 INFO com.cloudera.flume.conf.FlumeConfiguration: Loading configurations from conf
+2012-04-03 22:52:15,779 INFO com.cloudera.flume.watchdog.Watchdog: Restarting process @ Tue Apr 03 22:52:15 EDT 2012
+2012-04-03 22:52:16,723 INFO com.cloudera.flume.master.FlumeMaster: Flume 0.9.4
+2012-04-03 22:52:16,724 INFO com.cloudera.flume.master.FlumeMaster:  rev 8d0aa4be4ee50bb664cb0d1624e5634f46d7b62a
+2012-04-03 22:52:16,724 INFO com.cloudera.flume.master.FlumeMaster: Compiled  on  Mon Jun 20 14:48:23 PDT 2011
+2012-04-03 22:52:16,725 INFO com.cloudera.flume.master.FlumeMaster: System property flume.log.file=flume-root-master-fm-vm-010.cercs.int.log
+2012-04-03 22:52:16,725 INFO com.cloudera.flume.master.FlumeMaster: System property java.runtime.name=Java(TM) SE Runtime Environment
+2012-04-03 22:52:16,751 INFO com.cloudera.flume.master.FlumeMaster: System property sun.boot.library.path=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64
+2012-04-03 22:52:16,751 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.version=19.1-b02
+2012-04-03 22:52:16,751 INFO com.cloudera.flume.master.FlumeMaster: System property zookeeper.root.logger=INFO,zookeeper
+2012-04-03 22:52:16,751 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.vendor=Sun Microsystems Inc.
+2012-04-03 22:52:16,751 INFO com.cloudera.flume.master.FlumeMaster: System property java.vendor.url=http://java.sun.com/
+2012-04-03 22:52:16,751 INFO com.cloudera.flume.master.FlumeMaster: System property path.separator=:
+2012-04-03 22:52:16,752 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2012-04-03 22:52:16,752 INFO com.cloudera.flume.master.FlumeMaster: System property file.encoding.pkg=sun.io
+2012-04-03 22:52:16,752 INFO com.cloudera.flume.master.FlumeMaster: System property sun.java.launcher=SUN_STANDARD
+2012-04-03 22:52:16,752 INFO com.cloudera.flume.master.FlumeMaster: System property user.country=US
+2012-04-03 22:52:16,752 INFO com.cloudera.flume.master.FlumeMaster: System property sun.os.patch.level=unknown
+2012-04-03 22:52:16,752 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.specification.name=Java Virtual Machine Specification
+2012-04-03 22:52:16,752 INFO com.cloudera.flume.master.FlumeMaster: System property user.dir=/root/flume-distribution-0.9.4
+2012-04-03 22:52:16,752 INFO com.cloudera.flume.master.FlumeMaster: System property java.runtime.version=1.6.0_24-b07
+2012-04-03 22:52:16,752 INFO com.cloudera.flume.master.FlumeMaster: System property java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+2012-04-03 22:52:16,752 INFO com.cloudera.flume.master.FlumeMaster: System property flume.log.dir=/root/flume-distribution-0.9.4//logs
+2012-04-03 22:52:16,752 INFO com.cloudera.flume.master.FlumeMaster: System property java.endorsed.dirs=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/endorsed
+2012-04-03 22:52:16,752 INFO com.cloudera.flume.master.FlumeMaster: System property os.arch=amd64
+2012-04-03 22:52:16,752 INFO com.cloudera.flume.master.FlumeMaster: System property java.io.tmpdir=/tmp
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property line.separator=
+
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.specification.vendor=Sun Microsystems Inc.
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property os.name=Linux
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property sun.jnu.encoding=UTF-8
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property java.library.path=/root/flume-distribution-0.9.4/lib::
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property java.specification.name=Java Platform API Specification
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property java.class.version=50.0
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property sun.management.compiler=HotSpot 64-Bit Server Compiler
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property watchdog.root.logger=INFO,watchdog
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property os.version=2.6.31-22-server
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property user.home=/root
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property user.timezone=America/New_York
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property java.awt.printerjob=sun.print.PSPrinterJob
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property file.encoding=UTF-8
+2012-04-03 22:52:16,753 INFO com.cloudera.flume.master.FlumeMaster: System property java.specification.version=1.6
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property java.class.path=./conf:/root/flume-distribution-0.9.4/lib/activation-1.1.jar:/root/flume-distribution-0.9.4/lib/ahocorasick-2.x.jar:/root/flume-distribution-0.9.4/lib/ant-1.6.5.jar:/root/flume-distribution-0.9.4/lib/antlr-2.7.7.jar:/root/flume-distribution-0.9.4/lib/antlr-3.2.jar:/root/flume-distribution-0.9.4/lib/antlr-runtime-3.2.jar:/root/flume-distribution-0.9.4/lib/asm-3.1.jar:/root/flume-distribution-0.9.4/lib/automaton-1.0.0.jar:/root/flume-distribution-0.9.4/lib/avro-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-compiler-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-ipc-1.5.1.jar:/root/flume-distribution-0.9.4/lib/commons-cli-1.2.jar:/root/flume-distribution-0.9.4/lib/commons-codec-1.3.jar:/root/flume-distribution-0.9.4/lib/commons-collections-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-el-1.0.jar:/root/flume-distribution-0.9.4/lib/commons-httpclient-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-lang-2.5.jar:/root/flume-distribution-0.9.4/lib/commons-logging-1.0.4.jar:/root/flume-distribution-0.9.4/lib/commons-net-1.4.1.jar:/root/flume-distribution-0.9.4/lib/core-3.1.1.jar:/root/flume-distribution-0.9.4/lib/flume-core-0.9.4.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-hbasesink-0.9.5.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-helloworld-0.9.5.jar:/root/flume-distribution-0.9.4/lib/guava-r07.jar:/root/flume-distribution-0.9.4/lib/hadoop-core-0.20.2-CDH3B4.jar:/root/flume-distribution-0.9.4/lib/hbase-0.92.0.jar:/root/flume-distribution-0.9.4/lib/hsqldb-1.8.0.7.jar:/root/flume-distribution-0.9.4/lib/irclib-1.0.0.jar:/root/flume-distribution-0.9.4/lib/jackson-core-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-jaxrs-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-mapper-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-xc-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jasper-compiler-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jasper-runtime-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jaxb-api-2.1.jar:/root/flume-distribution-0.9.4/lib/jaxb-impl-2.1.12.jar:/root/flume-distribution-0.9.4/lib/jersey-core-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-json-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-server-1.4.jar:/root/flume-distribution-0.9.4/lib/jets3t-0.6.1.jar:/root/flume-distribution-0.9.4/lib/jettison-1.2.jar:/root/flume-distribution-0.9.4/lib/jetty-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jetty-util-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jline-0.9.94.jar:/root/flume-distribution-0.9.4/lib/jms-1.1.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.0.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.1.jar:/root/flume-distribution-0.9.4/lib/libthrift-0.6.0-cdh.jar:/root/flume-distribution-0.9.4/lib/log4j-1.2.15.jar:/root/flume-distribution-0.9.4/lib/mail-1.4.jar:/root/flume-distribution-0.9.4/lib/netty-3.2.4.Final.jar:/root/flume-distribution-0.9.4/lib/oro-2.0.8.jar:/root/flume-distribution-0.9.4/lib/paranamer-2.3.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5-20081211.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5.jar:/root/flume-distribution-0.9.4/lib/slf4j-api-1.5.11.jar:/root/flume-distribution-0.9.4/lib/slf4j-log4j12-1.5.11.jar:/root/flume-distribution-0.9.4/lib/snappy-java-1.0.1-rc3.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0.1.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0-2.jar:/root/flume-distribution-0.9.4/lib/stringtemplate-3.2.jar:/root/flume-distribution-0.9.4/lib/velocity-1.6.4.jar:/root/flume-distribution-0.9.4/lib/xmlenc-0.52.jar:/root/flume-distribution-0.9.4/lib/zookeeper-3.3.1-10.jar:/lib/tools.jar:/root/flume-distribution-0.9.4/build/classes
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property user.name=root
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property flume.root.logger=INFO,DRFA
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.specification.version=1.0
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property java.home=/usr/lib/jvm/java-6-sun-1.6.0.24/jre
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property sun.arch.data.model=64
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property user.language=en
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property java.specification.vendor=Sun Microsystems Inc.
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property java.vm.info=mixed mode
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property java.version=1.6.0_24
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property java.ext.dirs=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/ext:/usr/java/packages/lib/ext
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property sun.boot.class.path=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/classes
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property java.vendor=Sun Microsystems Inc.
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property file.separator=/
+2012-04-03 22:52:16,754 INFO com.cloudera.flume.master.FlumeMaster: System property java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+2012-04-03 22:52:16,755 INFO com.cloudera.flume.master.FlumeMaster: System property sun.io.unicode.encoding=UnicodeLittle
+2012-04-03 22:52:16,755 INFO com.cloudera.flume.master.FlumeMaster: System property sun.cpu.endian=little
+2012-04-03 22:52:16,755 INFO com.cloudera.flume.master.FlumeMaster: System property sun.cpu.isalist=
+2012-04-03 22:52:16,850 INFO com.cloudera.flume.conf.FlumeConfiguration: Loading configurations from conf
+2012-04-03 22:52:18,034 WARN com.cloudera.flume.handlers.text.FormatFactory: Unable to load output format plugin class  - Class not found
+2012-04-03 22:52:18,078 INFO com.cloudera.flume.master.FlumeMaster: Inferred master server index 0
+2012-04-03 22:52:18,173 INFO com.cloudera.flume.master.FlumeMaster: Single master, config translations enabled
+2012-04-03 22:52:18,196 INFO com.cloudera.flume.master.FlumeMaster: Starting flume master on: fm-vm-010.cercs.int
+2012-04-03 22:52:18,196 INFO com.cloudera.flume.master.FlumeMaster:  Working Directory is: /root/flume-distribution-0.9.4/.
+2012-04-03 22:52:18,197 INFO com.cloudera.flume.master.ZooKeeperService: Starting standalone ZooKeeper instance on port 3181
+2012-04-03 22:52:18,203 INFO com.cloudera.flume.master.ZKInProcessServer: Removing idfile /tmp/flume-root-zk/server-0/myid
+2012-04-03 22:52:18,204 INFO com.cloudera.flume.master.ZKInProcessServer: Creating /tmp/flume-root-zk/server-0/myid
+2012-04-03 22:52:18,251 INFO com.cloudera.flume.master.ZKInProcessServer: Starting ZooKeeper server
+2012-04-03 22:52:18,252 INFO org.apache.zookeeper.server.ZooKeeperServerMain: Starting server
+2012-04-03 22:52:18,288 INFO com.cloudera.flume.master.ZKInProcessServer: server 0.0.0.0:3181 not up yet
+2012-04-03 22:52:18,288 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:zookeeper.version=3.3.1-942149, built on 05/07/2010 17:14 GMT
+2012-04-03 22:52:18,289 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:host.name=fm-vm-010.cercs.int
+2012-04-03 22:52:18,289 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.version=1.6.0_24
+2012-04-03 22:52:18,289 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.vendor=Sun Microsystems Inc.
+2012-04-03 22:52:18,289 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.home=/usr/lib/jvm/java-6-sun-1.6.0.24/jre
+2012-04-03 22:52:18,289 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.class.path=./conf:/root/flume-distribution-0.9.4/lib/activation-1.1.jar:/root/flume-distribution-0.9.4/lib/ahocorasick-2.x.jar:/root/flume-distribution-0.9.4/lib/ant-1.6.5.jar:/root/flume-distribution-0.9.4/lib/antlr-2.7.7.jar:/root/flume-distribution-0.9.4/lib/antlr-3.2.jar:/root/flume-distribution-0.9.4/lib/antlr-runtime-3.2.jar:/root/flume-distribution-0.9.4/lib/asm-3.1.jar:/root/flume-distribution-0.9.4/lib/automaton-1.0.0.jar:/root/flume-distribution-0.9.4/lib/avro-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-compiler-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-ipc-1.5.1.jar:/root/flume-distribution-0.9.4/lib/commons-cli-1.2.jar:/root/flume-distribution-0.9.4/lib/commons-codec-1.3.jar:/root/flume-distribution-0.9.4/lib/commons-collections-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-el-1.0.jar:/root/flume-distribution-0.9.4/lib/commons-httpclient-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-lang-2.5.jar:/root/flume-distribution-0.9.4/lib/commons-logging-1.0.4.jar:/root/flume-distribution-0.9.4/lib/commons-net-1.4.1.jar:/root/flume-distribution-0.9.4/lib/core-3.1.1.jar:/root/flume-distribution-0.9.4/lib/flume-core-0.9.4.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-hbasesink-0.9.5.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-helloworld-0.9.5.jar:/root/flume-distribution-0.9.4/lib/guava-r07.jar:/root/flume-distribution-0.9.4/lib/hadoop-core-0.20.2-CDH3B4.jar:/root/flume-distribution-0.9.4/lib/hbase-0.92.0.jar:/root/flume-distribution-0.9.4/lib/hsqldb-1.8.0.7.jar:/root/flume-distribution-0.9.4/lib/irclib-1.0.0.jar:/root/flume-distribution-0.9.4/lib/jackson-core-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-jaxrs-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-mapper-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-xc-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jasper-compiler-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jasper-runtime-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jaxb-api-2.1.jar:/root/flume-distribution-0.9.4/lib/jaxb-impl-2.1.12.jar:/root/flume-distribution-0.9.4/lib/jersey-core-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-json-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-server-1.4.jar:/root/flume-distribution-0.9.4/lib/jets3t-0.6.1.jar:/root/flume-distribution-0.9.4/lib/jettison-1.2.jar:/root/flume-distribution-0.9.4/lib/jetty-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jetty-util-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jline-0.9.94.jar:/root/flume-distribution-0.9.4/lib/jms-1.1.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.0.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.1.jar:/root/flume-distribution-0.9.4/lib/libthrift-0.6.0-cdh.jar:/root/flume-distribution-0.9.4/lib/log4j-1.2.15.jar:/root/flume-distribution-0.9.4/lib/mail-1.4.jar:/root/flume-distribution-0.9.4/lib/netty-3.2.4.Final.jar:/root/flume-distribution-0.9.4/lib/oro-2.0.8.jar:/root/flume-distribution-0.9.4/lib/paranamer-2.3.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5-20081211.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5.jar:/root/flume-distribution-0.9.4/lib/slf4j-api-1.5.11.jar:/root/flume-distribution-0.9.4/lib/slf4j-log4j12-1.5.11.jar:/root/flume-distribution-0.9.4/lib/snappy-java-1.0.1-rc3.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0.1.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0-2.jar:/root/flume-distribution-0.9.4/lib/stringtemplate-3.2.jar:/root/flume-distribution-0.9.4/lib/velocity-1.6.4.jar:/root/flume-distribution-0.9.4/lib/xmlenc-0.52.jar:/root/flume-distribution-0.9.4/lib/zookeeper-3.3.1-10.jar:/lib/tools.jar:/root/flume-distribution-0.9.4/build/classes
+2012-04-03 22:52:18,289 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.library.path=/root/flume-distribution-0.9.4/lib::
+2012-04-03 22:52:18,289 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.io.tmpdir=/tmp
+2012-04-03 22:52:18,289 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:java.compiler=<NA>
+2012-04-03 22:52:18,289 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.name=Linux
+2012-04-03 22:52:18,290 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.arch=amd64
+2012-04-03 22:52:18,290 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:os.version=2.6.31-22-server
+2012-04-03 22:52:18,290 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.name=root
+2012-04-03 22:52:18,290 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.home=/root
+2012-04-03 22:52:18,290 INFO org.apache.zookeeper.server.ZooKeeperServer: Server environment:user.dir=/root/flume-distribution-0.9.4
+2012-04-03 22:52:18,299 INFO org.apache.zookeeper.server.ZooKeeperServer: tickTime set to 2000
+2012-04-03 22:52:18,299 INFO org.apache.zookeeper.server.ZooKeeperServer: minSessionTimeout set to -1
+2012-04-03 22:52:18,299 INFO org.apache.zookeeper.server.ZooKeeperServer: maxSessionTimeout set to -1
+2012-04-03 22:52:18,401 INFO org.apache.zookeeper.server.NIOServerCnxn: binding to port 0.0.0.0/0.0.0.0:3181
+2012-04-03 22:52:18,474 INFO org.apache.zookeeper.server.persistence.FileSnap: Reading snapshot /tmp/flume-root-zk/server-0/version-2/snapshot.39
+2012-04-03 22:52:18,639 INFO org.apache.zookeeper.server.persistence.FileSnap: Reading snapshot /tmp/flume-root-zk/server-0/version-2/snapshot.39
+2012-04-03 22:52:18,693 INFO org.apache.zookeeper.server.persistence.FileTxnSnapLog: Snapshotting: 59
+2012-04-03 22:52:20,318 INFO org.apache.zookeeper.server.NIOServerCnxn: Accepted socket connection from /10.2.42.110:50329
+2012-04-03 22:52:20,348 INFO org.apache.zookeeper.server.NIOServerCnxn: Processing stat command from /10.2.42.110:50329
+2012-04-03 22:52:20,368 INFO org.apache.zookeeper.server.NIOServerCnxn: Stat command output
+2012-04-03 22:52:20,370 INFO org.apache.zookeeper.server.NIOServerCnxn: Closed socket connection for client /10.2.42.110:50329 (no session established for client)
+2012-04-03 22:52:20,612 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-04-03 22:52:20,670 INFO com.cloudera.flume.master.FlumeMaster: Webserver root directory: /root/flume-distribution-0.9.4//webapps/flumemaster.war
+2012-04-03 22:52:20,818 INFO com.cloudera.util.InternalHttpServer: Starting internal HTTP server
+2012-04-03 22:52:20,819 INFO org.mortbay.log: jetty-6.1.26
+2012-04-03 22:52:21,292 INFO org.mortbay.log: Extract /root/flume-distribution-0.9.4/webapps/flumemaster.war to /tmp/Jetty_0_0_0_0_35871_flumemaster.war__flumemaster__.g4zqgj/webapp
+2012-04-03 22:52:23,795 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:35871
+2012-04-03 22:52:23,795 INFO com.cloudera.util.InternalHttpServer: Server started
+2012-04-03 22:52:23,863 INFO com.cloudera.flume.master.MasterClientServerThrift: Starting blocking thread pool server for control server on port 35872...
+2012-04-03 22:52:23,973 INFO com.cloudera.flume.master.MasterAdminServerThrift: Starting blocking thread pool server for admin server on port 35873...
+2012-04-03 22:52:24,051 INFO com.cloudera.flume.reporter.server.ThriftReportServer: Starting ReportServer...
+2012-04-03 22:52:24,054 INFO org.apache.zookeeper.server.ZooKeeperServer: Expiring session 0x1367b3e33e00001, timeout of 5000ms exceeded
+2012-04-03 22:52:24,079 INFO com.cloudera.flume.reporter.server.ThriftReportServer: ReportServer started on port 45678
+2012-04-03 22:52:24,113 INFO org.apache.zookeeper.server.ZooKeeperServer: Expiring session 0x1367b3e33e00000, timeout of 5000ms exceeded
+2012-04-03 22:52:24,114 INFO org.apache.zookeeper.server.PrepRequestProcessor: Processed session termination for sessionid: 0x1367b3e33e00001
+2012-04-03 22:52:24,114 INFO org.apache.zookeeper.server.PrepRequestProcessor: Processed session termination for sessionid: 0x1367b3e33e00000
+2012-04-03 22:52:24,625 INFO org.apache.zookeeper.ZooKeeper: Client environment:zookeeper.version=3.3.1-942149, built on 05/07/2010 17:14 GMT
+2012-04-03 22:52:24,632 INFO org.apache.zookeeper.ZooKeeper: Client environment:host.name=fm-vm-010.cercs.int
+2012-04-03 22:52:24,632 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.version=1.6.0_24
+2012-04-03 22:52:24,632 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.vendor=Sun Microsystems Inc.
+2012-04-03 22:52:24,632 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.home=/usr/lib/jvm/java-6-sun-1.6.0.24/jre
+2012-04-03 22:52:24,632 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.class.path=./conf:/root/flume-distribution-0.9.4/lib/activation-1.1.jar:/root/flume-distribution-0.9.4/lib/ahocorasick-2.x.jar:/root/flume-distribution-0.9.4/lib/ant-1.6.5.jar:/root/flume-distribution-0.9.4/lib/antlr-2.7.7.jar:/root/flume-distribution-0.9.4/lib/antlr-3.2.jar:/root/flume-distribution-0.9.4/lib/antlr-runtime-3.2.jar:/root/flume-distribution-0.9.4/lib/asm-3.1.jar:/root/flume-distribution-0.9.4/lib/automaton-1.0.0.jar:/root/flume-distribution-0.9.4/lib/avro-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-compiler-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-ipc-1.5.1.jar:/root/flume-distribution-0.9.4/lib/commons-cli-1.2.jar:/root/flume-distribution-0.9.4/lib/commons-codec-1.3.jar:/root/flume-distribution-0.9.4/lib/commons-collections-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-el-1.0.jar:/root/flume-distribution-0.9.4/lib/commons-httpclient-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-lang-2.5.jar:/root/flume-distribution-0.9.4/lib/commons-logging-1.0.4.jar:/root/flume-distribution-0.9.4/lib/commons-net-1.4.1.jar:/root/flume-distribution-0.9.4/lib/core-3.1.1.jar:/root/flume-distribution-0.9.4/lib/flume-core-0.9.4.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-hbasesink-0.9.5.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-helloworld-0.9.5.jar:/root/flume-distribution-0.9.4/lib/guava-r07.jar:/root/flume-distribution-0.9.4/lib/hadoop-core-0.20.2-CDH3B4.jar:/root/flume-distribution-0.9.4/lib/hbase-0.92.0.jar:/root/flume-distribution-0.9.4/lib/hsqldb-1.8.0.7.jar:/root/flume-distribution-0.9.4/lib/irclib-1.0.0.jar:/root/flume-distribution-0.9.4/lib/jackson-core-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-jaxrs-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-mapper-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-xc-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jasper-compiler-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jasper-runtime-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jaxb-api-2.1.jar:/root/flume-distribution-0.9.4/lib/jaxb-impl-2.1.12.jar:/root/flume-distribution-0.9.4/lib/jersey-core-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-json-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-server-1.4.jar:/root/flume-distribution-0.9.4/lib/jets3t-0.6.1.jar:/root/flume-distribution-0.9.4/lib/jettison-1.2.jar:/root/flume-distribution-0.9.4/lib/jetty-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jetty-util-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jline-0.9.94.jar:/root/flume-distribution-0.9.4/lib/jms-1.1.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.0.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.1.jar:/root/flume-distribution-0.9.4/lib/libthrift-0.6.0-cdh.jar:/root/flume-distribution-0.9.4/lib/log4j-1.2.15.jar:/root/flume-distribution-0.9.4/lib/mail-1.4.jar:/root/flume-distribution-0.9.4/lib/netty-3.2.4.Final.jar:/root/flume-distribution-0.9.4/lib/oro-2.0.8.jar:/root/flume-distribution-0.9.4/lib/paranamer-2.3.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5-20081211.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5.jar:/root/flume-distribution-0.9.4/lib/slf4j-api-1.5.11.jar:/root/flume-distribution-0.9.4/lib/slf4j-log4j12-1.5.11.jar:/root/flume-distribution-0.9.4/lib/snappy-java-1.0.1-rc3.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0.1.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0-2.jar:/root/flume-distribution-0.9.4/lib/stringtemplate-3.2.jar:/root/flume-distribution-0.9.4/lib/velocity-1.6.4.jar:/root/flume-distribution-0.9.4/lib/xmlenc-0.52.jar:/root/flume-distribution-0.9.4/lib/zookeeper-3.3.1-10.jar:/lib/tools.jar:/root/flume-distribution-0.9.4/build/classes
+2012-04-03 22:52:24,632 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.library.path=/root/flume-distribution-0.9.4/lib::
+2012-04-03 22:52:24,632 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+2012-04-03 22:52:24,633 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2012-04-03 22:52:24,633 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.name=Linux
+2012-04-03 22:52:24,633 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.arch=amd64
+2012-04-03 22:52:24,633 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.version=2.6.31-22-server
+2012-04-03 22:52:24,633 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.name=root
+2012-04-03 22:52:24,633 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.home=/root
+2012-04-03 22:52:24,633 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.dir=/root/flume-distribution-0.9.4
+2012-04-03 22:52:24,635 INFO org.apache.zookeeper.ZooKeeper: Initiating client connection, connectString=fm-vm-010:3181 sessionTimeout=5000 watcher=com.cloudera.flume.master.ZKClient$1$1@729b1670
+2012-04-03 22:52:24,680 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server fm-vm-010/10.2.42.110:3181
+2012-04-03 22:52:24,682 INFO org.apache.zookeeper.ClientCnxn: Socket connection established to fm-vm-010/10.2.42.110:3181, initiating session
+2012-04-03 22:52:24,684 INFO org.apache.zookeeper.server.NIOServerCnxn: Accepted socket connection from /10.2.42.110:50337
+2012-04-03 22:52:24,685 INFO org.apache.zookeeper.server.NIOServerCnxn: Client attempting to establish new session at /10.2.42.110:50337
+2012-04-03 22:52:24,698 INFO org.apache.zookeeper.server.NIOServerCnxn: Established session 0x1367b4459b40000 with negotiated timeout 5000 for client /10.2.42.110:50337
+2012-04-03 22:52:24,699 INFO org.apache.zookeeper.ClientCnxn: Session establishment complete on server fm-vm-010/10.2.42.110:3181, sessionid = 0x1367b4459b40000, negotiated timeout = 5000
+2012-04-03 22:52:24,715 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading config from: /flume-cfgs/cfg-0000000025
+2012-04-03 22:52:24,795 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000010
+2012-04-03 22:52:24,804 INFO com.cloudera.flume.master.ZooKeeperConfigStore: No Chokemap found at /flume-chokemap/chokemap*
+2012-04-03 22:52:24,806 INFO org.apache.zookeeper.ZooKeeper: Initiating client connection, connectString=fm-vm-010:3181 sessionTimeout=5000 watcher=com.cloudera.flume.master.ZKClient$1$1@18f42160
+2012-04-03 22:52:24,808 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server fm-vm-010/10.2.42.110:3181
+2012-04-03 22:52:24,809 INFO org.apache.zookeeper.ClientCnxn: Socket connection established to fm-vm-010/10.2.42.110:3181, initiating session
+2012-04-03 22:52:24,809 INFO org.apache.zookeeper.server.NIOServerCnxn: Accepted socket connection from /10.2.42.110:50338
+2012-04-03 22:52:24,809 INFO org.apache.zookeeper.server.NIOServerCnxn: Client attempting to establish new session at /10.2.42.110:50338
+2012-04-03 22:52:24,826 INFO org.apache.zookeeper.server.NIOServerCnxn: Established session 0x1367b4459b40001 with negotiated timeout 5000 for client /10.2.42.110:50338
+2012-04-03 22:52:24,826 INFO org.apache.zookeeper.ClientCnxn: Session establishment complete on server fm-vm-010/10.2.42.110:3181, sessionid = 0x1367b4459b40001, negotiated timeout = 5000
+2012-04-03 22:52:24,987 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000026
+2012-04-03 22:52:25,026 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000027
+2012-04-03 22:52:25,105 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:52:25,226 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in helloworld.HelloWorldSink
+2012-04-03 22:52:25,228 INFO com.cloudera.flume.conf.SourceFactoryImpl: Found source builder helloWorldSource in helloworld.HelloWorldSource
+2012-04-03 22:52:25,230 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in helloworld.HelloWorldDecorator
+2012-04-03 22:52:25,233 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:52:25,234 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:52:25,483 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder helloWorldSink in helloworld.HelloWorldSink
+2012-04-03 22:52:25,483 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in helloworld.HelloWorldSink
+2012-04-03 22:52:25,483 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink builders found in helloworld.HelloWorldSource
+2012-04-03 22:52:25,483 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in helloworld.HelloWorldSource
+2012-04-03 22:52:25,483 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink builders found in helloworld.HelloWorldDecorator
+2012-04-03 22:52:25,483 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink decorator helloWorldDecorator in helloworld.HelloWorldDecorator
+2012-04-03 22:52:25,484 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder hbase in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:52:25,484 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:52:25,484 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder attr2hbase in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:52:25,484 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:52:25,806 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000028
+2012-04-03 22:52:25,812 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:52:26,901 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hbase-collector1' has not been assigned to a physical node yet
+2012-04-03 22:53:01,615 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:01,619 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000011
+2012-04-03 22:53:01,661 WARN com.cloudera.flume.master.MasterClientServer: Recieved heartbeat from node 'fm-vm-011.cercs.int/fm-vm-011.cercs.int' that is not be set by master 
+2012-04-03 22:53:30,441 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [fm-vm-010.cercs.int]
+2012-04-03 22:53:30,449 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [fm-vm-010.cercs.int]
+2012-04-03 22:53:30,524 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000029
+2012-04-03 22:53:30,550 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:30,556 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:30,571 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000012
+2012-04-03 22:53:31,008 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hadoop-agent]
+2012-04-03 22:53:31,017 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hadoop-agent]
+2012-04-03 22:53:31,085 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000030
+2012-04-03 22:53:31,091 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:31,435 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:31,500 WARN com.cloudera.flume.master.MasterClientServer: Recieved heartbeat from node 'fm-vm-010.cercs.int/fm-vm-010.cercs.int' that is not be set by master 
+2012-04-03 22:53:31,516 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000013
+2012-04-03 22:53:31,528 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hadoop-agent, hadoop-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_hadoop_status"), autoBEChain]
+2012-04-03 22:53:31,530 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hadoop-agent, hadoop-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_hadoop_status"), autoBEChain]
+2012-04-03 22:53:31,560 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000031
+2012-04-03 22:53:31,566 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:32,032 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-010.cercs.int, hadoop-agent]
+2012-04-03 22:53:32,033 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-010.cercs.int, hadoop-agent]
+2012-04-03 22:53:32,046 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:32,050 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000014
+2012-04-03 22:53:32,535 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hadoop-collector]
+2012-04-03 22:53:32,537 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hadoop-collector]
+2012-04-03 22:53:32,581 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000032
+2012-04-03 22:53:32,588 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:33,039 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hadoop-collector, hadoop-flow, autoCollectorSource, hbase("flume_hadoop","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:53:33,041 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hadoop-collector, hadoop-flow, autoCollectorSource, hbase("flume_hadoop","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:53:33,176 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000033
+2012-04-03 22:53:33,185 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:33,562 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hadoop-collector' has not been assigned to a physical node yet
+2012-04-03 22:53:33,797 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hadoop-collector' has not been assigned to a physical node yet
+2012-04-03 22:53:34,044 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-010.cercs.int, hadoop-collector]
+2012-04-03 22:53:34,045 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-010.cercs.int, hadoop-collector]
+2012-04-03 22:53:34,057 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:34,061 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000015
+2012-04-03 22:53:34,169 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hadoop-collector' has not been assigned to a physical node yet
+2012-04-03 22:53:34,551 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hbase-agent1]
+2012-04-03 22:53:34,553 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hbase-agent1]
+2012-04-03 22:53:34,570 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000034
+2012-04-03 22:53:34,589 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:34,609 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:34,616 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000016
+2012-04-03 22:53:34,646 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hadoop-collector' has not been assigned to a physical node yet
+2012-04-03 22:53:35,057 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hbase-agent1, hbase-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_hbase_status"), autoBEChain]
+2012-04-03 22:53:35,058 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hbase-agent1, hbase-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_hbase_status"), autoBEChain]
+2012-04-03 22:53:35,105 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000035
+2012-04-03 22:53:35,115 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:35,143 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hadoop-collector' has not been assigned to a physical node yet
+2012-04-03 22:53:35,560 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-010.cercs.int, hbase-agent1]
+2012-04-03 22:53:35,562 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-010.cercs.int, hbase-agent1]
+2012-04-03 22:53:35,591 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:35,595 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000017
+2012-04-03 22:53:35,627 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hadoop-collector' has not been assigned to a physical node yet
+2012-04-03 22:53:36,063 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [fm-vm-011.cercs.int]
+2012-04-03 22:53:36,065 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [fm-vm-011.cercs.int]
+2012-04-03 22:53:36,083 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000036
+2012-04-03 22:53:36,110 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:36,116 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:36,136 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000018
+2012-04-03 22:53:36,172 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hadoop-collector' has not been assigned to a physical node yet
+2012-04-03 22:53:36,578 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hbase-agent2]
+2012-04-03 22:53:36,579 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hbase-agent2]
+2012-04-03 22:53:36,664 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000037
+2012-04-03 22:53:36,673 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:36,809 WARN com.cloudera.flume.master.logical.LogicalConfigurationManager: Logical node 'hadoop-collector' has not been assigned to a physical node yet
+2012-04-03 22:53:37,097 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hbase-agent2, hbase-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_hbase_status"), autoBEChain]
+2012-04-03 22:53:37,099 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hbase-agent2, hbase-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_hbase_status"), autoBEChain]
+2012-04-03 22:53:37,151 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000038
+2012-04-03 22:53:37,161 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:37,493 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:37,527 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000019
+2012-04-03 22:53:37,535 WARN com.cloudera.flume.master.MasterClientServer: Recieved heartbeat from node 'fm-vm-011.cercs.int/fm-vm-011.cercs.int' that is not be set by master 
+2012-04-03 22:53:37,607 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-011.cercs.int, hbase-agent2]
+2012-04-03 22:53:37,609 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-011.cercs.int, hbase-agent2]
+2012-04-03 22:53:37,640 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:37,645 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000020
+2012-04-03 22:53:38,110 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hbase-collector1]
+2012-04-03 22:53:38,123 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hbase-collector1]
+2012-04-03 22:53:38,181 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000039
+2012-04-03 22:53:38,520 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:38,556 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:38,560 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000021
+2012-04-03 22:53:38,614 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hbase-collector1, hbase-flow, autoCollectorSource, hbase("flume_hbase","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:53:38,630 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hbase-collector1, hbase-flow, autoCollectorSource, hbase("flume_hbase","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:53:38,826 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000040
+2012-04-03 22:53:38,835 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:39,647 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-010.cercs.int, hbase-collector1]
+2012-04-03 22:53:39,649 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-010.cercs.int, hbase-collector1]
+2012-04-03 22:53:39,682 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:39,688 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000022
+2012-04-03 22:53:40,153 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hbase-collector1]
+2012-04-03 22:53:40,154 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hbase-collector1]
+2012-04-03 22:53:40,180 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000041
+2012-04-03 22:53:40,223 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:40,238 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:40,241 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000023
+2012-04-03 22:53:40,662 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hbase-collector1, hbase-flow, autoCollectorSource, hbase("flume_hbase","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:53:40,664 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hbase-collector1, hbase-flow, autoCollectorSource, hbase("flume_hbase","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:53:41,256 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000042
+2012-04-03 22:53:41,272 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:41,708 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-011.cercs.int, hbase-collector1]
+2012-04-03 22:53:41,710 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-011.cercs.int, hbase-collector1]
+2012-04-03 22:53:41,805 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:41,822 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000024
+2012-04-03 22:53:42,211 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hbase-agent1]
+2012-04-03 22:53:42,215 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hbase-agent1]
+2012-04-03 22:53:42,318 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000043
+2012-04-03 22:53:42,331 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:42,341 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:42,343 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000025
+2012-04-03 22:53:42,715 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hbase-agent1, sys-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_sys_status"), autoBEChain]
+2012-04-03 22:53:42,717 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hbase-agent1, sys-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_sys_status"), autoBEChain]
+2012-04-03 22:53:43,036 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000044
+2012-04-03 22:53:43,044 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:43,218 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-010.cercs.int, hbase-agent1]
+2012-04-03 22:53:43,220 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-010.cercs.int, hbase-agent1]
+2012-04-03 22:53:43,284 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:43,286 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000026
+2012-04-03 22:53:43,724 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hbase-collector1]
+2012-04-03 22:53:43,725 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hbase-collector1]
+2012-04-03 22:53:43,834 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000045
+2012-04-03 22:53:43,848 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:43,855 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:43,867 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000027
+2012-04-03 22:53:44,237 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hbase-collector1, sys-flow, autoCollectorSource, hbase("flume_sys","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:53:44,238 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hbase-collector1, sys-flow, autoCollectorSource, hbase("flume_sys","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:53:44,315 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000046
+2012-04-03 22:53:44,345 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:44,747 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-010.cercs.int, hbase-collector1]
+2012-04-03 22:53:44,749 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-010.cercs.int, hbase-collector1]
+2012-04-03 22:53:44,795 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:44,799 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000028
+2012-04-03 22:53:45,266 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hbase-agent1]
+2012-04-03 22:53:45,275 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hbase-agent1]
+2012-04-03 22:53:45,304 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000047
+2012-04-03 22:53:45,333 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:45,360 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:45,369 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000029
+2012-04-03 22:53:45,781 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hbase-agent1, sys-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_sys_status"), autoBEChain]
+2012-04-03 22:53:45,783 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hbase-agent1, sys-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_sys_status"), autoBEChain]
+2012-04-03 22:53:45,947 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000048
+2012-04-03 22:53:46,010 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:46,878 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-011.cercs.int, hbase-agent1]
+2012-04-03 22:53:46,881 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-011.cercs.int, hbase-agent1]
+2012-04-03 22:53:46,893 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:46,896 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000030
+2012-04-03 22:53:47,383 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hbase-collector1]
+2012-04-03 22:53:47,384 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hbase-collector1]
+2012-04-03 22:53:47,562 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000049
+2012-04-03 22:53:47,586 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:47,590 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:47,593 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000031
+2012-04-03 22:53:47,886 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hbase-collector1, sys-flow, autoCollectorSource, hbase("flume_sys","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:53:47,887 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hbase-collector1, sys-flow, autoCollectorSource, hbase("flume_sys","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:53:47,952 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000050
+2012-04-03 22:53:47,965 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:48,411 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-011.cercs.int, hbase-collector1]
+2012-04-03 22:53:48,413 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-011.cercs.int, hbase-collector1]
+2012-04-03 22:53:48,424 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:48,426 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000032
+2012-04-03 22:53:48,914 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [fm-vm-012.cercs.int]
+2012-04-03 22:53:48,915 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [fm-vm-012.cercs.int]
+2012-04-03 22:53:48,960 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000051
+2012-04-03 22:53:48,970 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:49,419 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hbase-agent1]
+2012-04-03 22:53:49,421 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hbase-agent1]
+2012-04-03 22:53:49,437 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000052
+2012-04-03 22:53:49,457 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:49,461 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:49,464 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000033
+2012-04-03 22:53:49,922 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hbase-agent1, sys-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_sys_status"), autoBEChain]
+2012-04-03 22:53:49,924 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hbase-agent1, sys-flow, helloWorldSource("/root/Metrics-Collection-with-Flume/dist/poll_sys_status"), autoBEChain]
+2012-04-03 22:53:50,018 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000053
+2012-04-03 22:53:50,026 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:50,426 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-012.cercs.int, hbase-agent1]
+2012-04-03 22:53:50,428 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-012.cercs.int, hbase-agent1]
+2012-04-03 22:53:50,461 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:50,463 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000034
+2012-04-03 22:53:50,929 INFO com.cloudera.flume.master.CommandManager: Submitting command: decommission [hbase-collector1]
+2012-04-03 22:53:50,931 INFO com.cloudera.flume.master.CommandManager: Executing command: decommission [hbase-collector1]
+2012-04-03 22:53:51,005 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000054
+2012-04-03 22:53:51,013 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:51,016 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:51,024 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000035
+2012-04-03 22:53:51,447 INFO com.cloudera.flume.master.CommandManager: Submitting command: config [hbase-collector1, sys-flow, autoCollectorSource, hbase("flume_sys","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:53:51,448 INFO com.cloudera.flume.master.CommandManager: Executing command: config [hbase-collector1, sys-flow, autoCollectorSource, hbase("flume_sys","%{nanos}","cf","body","%{body}","cf","host","%{host}")]
+2012-04-03 22:53:51,506 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000055
+2012-04-03 22:53:51,515 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:51,977 INFO com.cloudera.flume.master.CommandManager: Submitting command: map [fm-vm-012.cercs.int, hbase-collector1]
+2012-04-03 22:53:51,979 INFO com.cloudera.flume.master.CommandManager: Executing command: map [fm-vm-012.cercs.int, hbase-collector1]
+2012-04-03 22:53:52,003 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:52,006 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000036
+2012-04-03 22:53:52,480 INFO com.cloudera.flume.master.CommandManager: Submitting command: refreshAll []
+2012-04-03 22:53:52,482 INFO com.cloudera.flume.master.CommandManager: Executing command: refreshAll []
+2012-04-03 22:53:52,534 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000056
+2012-04-03 22:53:52,554 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000057
+2012-04-03 22:53:52,572 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000058
+2012-04-03 22:53:52,664 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000059
+2012-04-03 22:53:52,680 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000060
+2012-04-03 22:53:52,690 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:52,742 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Created new config at /flume-cfgs/cfg-0000000061
+2012-04-03 22:53:52,763 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Config was updated - reloading
+2012-04-03 22:53:53,764 WARN com.cloudera.flume.master.MasterClientServer: Recieved heartbeat from node 'fm-vm-011.cercs.int/hbase-collector1' that is not be set by master 
+2012-04-03 22:53:54,230 WARN com.cloudera.flume.master.MasterClientServer: Recieved heartbeat from node 'fm-vm-012.cercs.int/fm-vm-012.cercs.int' that is not be set by master 
+2012-04-03 22:53:54,231 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Nodemaps were updated - reloading
+2012-04-03 22:53:54,233 INFO com.cloudera.flume.master.ZooKeeperConfigStore: Loading nodes from: /flume-nodes/nodes0000000037
+2012-04-03 23:02:34,129 INFO com.cloudera.flume.watchdog.Watchdog: Watchdog shutdown hook

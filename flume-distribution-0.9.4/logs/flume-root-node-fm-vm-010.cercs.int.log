@@ -1,0 +1,448 @@
+2012-04-03 22:43:43,878 INFO com.cloudera.flume.watchdog.FlumeWatchdog: Dropped a pidfile='/tmp/flumenode-2412.pid' with pid=2412
+2012-04-03 22:43:43,941 INFO com.cloudera.flume.conf.FlumeConfiguration: Loading configurations from conf
+2012-04-03 22:43:44,144 INFO com.cloudera.flume.watchdog.Watchdog: Restarting process @ Tue Apr 03 22:43:44 EDT 2012
+2012-04-03 22:43:45,172 INFO com.cloudera.flume.agent.FlumeNode: Flume 0.9.4
+2012-04-03 22:43:45,173 INFO com.cloudera.flume.agent.FlumeNode:  rev 8d0aa4be4ee50bb664cb0d1624e5634f46d7b62a
+2012-04-03 22:43:45,173 INFO com.cloudera.flume.agent.FlumeNode: Compiled  on  Mon Jun 20 14:48:23 PDT 2011
+2012-04-03 22:43:45,173 INFO com.cloudera.flume.agent.FlumeNode: System property flume.log.file=flume-root-node-fm-vm-010.cercs.int.log
+2012-04-03 22:43:45,173 INFO com.cloudera.flume.agent.FlumeNode: System property java.runtime.name=Java(TM) SE Runtime Environment
+2012-04-03 22:43:45,173 INFO com.cloudera.flume.agent.FlumeNode: System property sun.boot.library.path=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.version=19.1-b02
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property zookeeper.root.logger=INFO,zookeeper
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.vendor=Sun Microsystems Inc.
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property java.vendor.url=http://java.sun.com/
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property path.separator=:
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property file.encoding.pkg=sun.io
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property sun.java.launcher=SUN_STANDARD
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property user.country=US
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property sun.os.patch.level=unknown
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.specification.name=Java Virtual Machine Specification
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property user.dir=/root/flume-distribution-0.9.4
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property java.runtime.version=1.6.0_24-b07
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+2012-04-03 22:43:45,174 INFO com.cloudera.flume.agent.FlumeNode: System property flume.log.dir=/root/flume-distribution-0.9.4//logs
+2012-04-03 22:43:45,175 INFO com.cloudera.flume.agent.FlumeNode: System property java.endorsed.dirs=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/endorsed
+2012-04-03 22:43:45,175 INFO com.cloudera.flume.agent.FlumeNode: System property os.arch=amd64
+2012-04-03 22:43:45,175 INFO com.cloudera.flume.agent.FlumeNode: System property java.io.tmpdir=/tmp
+2012-04-03 22:43:45,175 INFO com.cloudera.flume.agent.FlumeNode: System property line.separator=
+
+2012-04-03 22:43:45,175 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.specification.vendor=Sun Microsystems Inc.
+2012-04-03 22:43:45,195 INFO com.cloudera.flume.agent.FlumeNode: System property os.name=Linux
+2012-04-03 22:43:45,195 INFO com.cloudera.flume.agent.FlumeNode: System property sun.jnu.encoding=UTF-8
+2012-04-03 22:43:45,195 INFO com.cloudera.flume.agent.FlumeNode: System property java.library.path=/root/flume-distribution-0.9.4/lib::
+2012-04-03 22:43:45,195 INFO com.cloudera.flume.agent.FlumeNode: System property java.specification.name=Java Platform API Specification
+2012-04-03 22:43:45,195 INFO com.cloudera.flume.agent.FlumeNode: System property java.class.version=50.0
+2012-04-03 22:43:45,195 INFO com.cloudera.flume.agent.FlumeNode: System property sun.management.compiler=HotSpot 64-Bit Server Compiler
+2012-04-03 22:43:45,195 INFO com.cloudera.flume.agent.FlumeNode: System property watchdog.root.logger=INFO,watchdog
+2012-04-03 22:43:45,195 INFO com.cloudera.flume.agent.FlumeNode: System property os.version=2.6.31-22-server
+2012-04-03 22:43:45,196 INFO com.cloudera.flume.agent.FlumeNode: System property user.home=/root
+2012-04-03 22:43:45,196 INFO com.cloudera.flume.agent.FlumeNode: System property user.timezone=America/New_York
+2012-04-03 22:43:45,196 INFO com.cloudera.flume.agent.FlumeNode: System property java.awt.printerjob=sun.print.PSPrinterJob
+2012-04-03 22:43:45,196 INFO com.cloudera.flume.agent.FlumeNode: System property file.encoding=UTF-8
+2012-04-03 22:43:45,196 INFO com.cloudera.flume.agent.FlumeNode: System property java.specification.version=1.6
+2012-04-03 22:43:45,196 INFO com.cloudera.flume.agent.FlumeNode: System property java.class.path=./conf:/root/flume-distribution-0.9.4/lib/activation-1.1.jar:/root/flume-distribution-0.9.4/lib/ahocorasick-2.x.jar:/root/flume-distribution-0.9.4/lib/ant-1.6.5.jar:/root/flume-distribution-0.9.4/lib/antlr-2.7.7.jar:/root/flume-distribution-0.9.4/lib/antlr-3.2.jar:/root/flume-distribution-0.9.4/lib/antlr-runtime-3.2.jar:/root/flume-distribution-0.9.4/lib/asm-3.1.jar:/root/flume-distribution-0.9.4/lib/automaton-1.0.0.jar:/root/flume-distribution-0.9.4/lib/avro-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-compiler-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-ipc-1.5.1.jar:/root/flume-distribution-0.9.4/lib/commons-cli-1.2.jar:/root/flume-distribution-0.9.4/lib/commons-codec-1.3.jar:/root/flume-distribution-0.9.4/lib/commons-collections-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-el-1.0.jar:/root/flume-distribution-0.9.4/lib/commons-httpclient-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-lang-2.5.jar:/root/flume-distribution-0.9.4/lib/commons-logging-1.0.4.jar:/root/flume-distribution-0.9.4/lib/commons-net-1.4.1.jar:/root/flume-distribution-0.9.4/lib/core-3.1.1.jar:/root/flume-distribution-0.9.4/lib/flume-core-0.9.4.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-hbasesink-0.9.5.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-helloworld-0.9.5.jar:/root/flume-distribution-0.9.4/lib/guava-r07.jar:/root/flume-distribution-0.9.4/lib/hadoop-core-0.20.2-CDH3B4.jar:/root/flume-distribution-0.9.4/lib/hbase-0.92.0.jar:/root/flume-distribution-0.9.4/lib/hsqldb-1.8.0.7.jar:/root/flume-distribution-0.9.4/lib/irclib-1.0.0.jar:/root/flume-distribution-0.9.4/lib/jackson-core-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-jaxrs-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-mapper-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-xc-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jasper-compiler-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jasper-runtime-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jaxb-api-2.1.jar:/root/flume-distribution-0.9.4/lib/jaxb-impl-2.1.12.jar:/root/flume-distribution-0.9.4/lib/jersey-core-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-json-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-server-1.4.jar:/root/flume-distribution-0.9.4/lib/jets3t-0.6.1.jar:/root/flume-distribution-0.9.4/lib/jettison-1.2.jar:/root/flume-distribution-0.9.4/lib/jetty-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jetty-util-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jline-0.9.94.jar:/root/flume-distribution-0.9.4/lib/jms-1.1.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.0.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.1.jar:/root/flume-distribution-0.9.4/lib/libthrift-0.6.0-cdh.jar:/root/flume-distribution-0.9.4/lib/log4j-1.2.15.jar:/root/flume-distribution-0.9.4/lib/mail-1.4.jar:/root/flume-distribution-0.9.4/lib/netty-3.2.4.Final.jar:/root/flume-distribution-0.9.4/lib/oro-2.0.8.jar:/root/flume-distribution-0.9.4/lib/paranamer-2.3.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5-20081211.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5.jar:/root/flume-distribution-0.9.4/lib/slf4j-api-1.5.11.jar:/root/flume-distribution-0.9.4/lib/slf4j-log4j12-1.5.11.jar:/root/flume-distribution-0.9.4/lib/snappy-java-1.0.1-rc3.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0.1.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0-2.jar:/root/flume-distribution-0.9.4/lib/stringtemplate-3.2.jar:/root/flume-distribution-0.9.4/lib/velocity-1.6.4.jar:/root/flume-distribution-0.9.4/lib/xmlenc-0.52.jar:/root/flume-distribution-0.9.4/lib/zookeeper-3.3.1-10.jar:/lib/tools.jar:/root/flume-distribution-0.9.4/build/classes
+2012-04-03 22:43:45,196 INFO com.cloudera.flume.agent.FlumeNode: System property user.name=root
+2012-04-03 22:43:45,196 INFO com.cloudera.flume.agent.FlumeNode: System property flume.root.logger=INFO,DRFA
+2012-04-03 22:43:45,196 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.specification.version=1.0
+2012-04-03 22:43:45,196 INFO com.cloudera.flume.agent.FlumeNode: System property java.home=/usr/lib/jvm/java-6-sun-1.6.0.24/jre
+2012-04-03 22:43:45,197 INFO com.cloudera.flume.agent.FlumeNode: System property sun.arch.data.model=64
+2012-04-03 22:43:45,197 INFO com.cloudera.flume.agent.FlumeNode: System property user.language=en
+2012-04-03 22:43:45,197 INFO com.cloudera.flume.agent.FlumeNode: System property java.specification.vendor=Sun Microsystems Inc.
+2012-04-03 22:43:45,197 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.info=mixed mode
+2012-04-03 22:43:45,197 INFO com.cloudera.flume.agent.FlumeNode: System property java.version=1.6.0_24
+2012-04-03 22:43:45,197 INFO com.cloudera.flume.agent.FlumeNode: System property java.ext.dirs=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/ext:/usr/java/packages/lib/ext
+2012-04-03 22:43:45,197 INFO com.cloudera.flume.agent.FlumeNode: System property sun.boot.class.path=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/classes
+2012-04-03 22:43:45,197 INFO com.cloudera.flume.agent.FlumeNode: System property java.vendor=Sun Microsystems Inc.
+2012-04-03 22:43:45,197 INFO com.cloudera.flume.agent.FlumeNode: System property file.separator=/
+2012-04-03 22:43:45,197 INFO com.cloudera.flume.agent.FlumeNode: System property java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+2012-04-03 22:43:45,197 INFO com.cloudera.flume.agent.FlumeNode: System property sun.io.unicode.encoding=UnicodeLittle
+2012-04-03 22:43:45,197 INFO com.cloudera.flume.agent.FlumeNode: System property sun.cpu.endian=little
+2012-04-03 22:43:45,197 INFO com.cloudera.flume.agent.FlumeNode: System property sun.cpu.isalist=
+2012-04-03 22:43:45,245 INFO com.cloudera.flume.agent.FlumeNode: Starting flume agent on: fm-vm-010.cercs.int
+2012-04-03 22:43:45,245 INFO com.cloudera.flume.agent.FlumeNode:  Working directory is: /root/flume-distribution-0.9.4/.
+2012-04-03 22:43:45,377 INFO com.cloudera.flume.conf.FlumeConfiguration: Loading configurations from conf
+2012-04-03 22:43:45,970 WARN com.cloudera.flume.agent.FlumeNode: Log directory is writing inside of /tmp.  This data may not survive reboot!
+2012-04-03 22:43:47,334 WARN com.cloudera.flume.handlers.text.FormatFactory: Unable to load output format plugin class  - Class not found
+2012-04-03 22:43:47,800 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-04-03 22:43:48,225 INFO com.cloudera.util.InternalHttpServer: Starting internal HTTP server
+2012-04-03 22:43:48,225 INFO org.mortbay.log: jetty-6.1.26
+2012-04-03 22:43:48,647 INFO org.mortbay.log: Extract /root/flume-distribution-0.9.4/webapps/flumeagent.war to /tmp/Jetty_0_0_0_0_35862_flumeagent.war__flumeagent__4cgrz3/webapp
+2012-04-03 22:43:50,029 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:35862
+2012-04-03 22:43:50,029 INFO com.cloudera.util.InternalHttpServer: Server started
+2012-04-03 22:43:50,279 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in helloworld.HelloWorldSink
+2012-04-03 22:43:50,280 INFO com.cloudera.flume.conf.SourceFactoryImpl: Found source builder helloWorldSource in helloworld.HelloWorldSource
+2012-04-03 22:43:50,327 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in helloworld.HelloWorldDecorator
+2012-04-03 22:43:50,329 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:43:50,331 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:43:50,924 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder helloWorldSink in helloworld.HelloWorldSink
+2012-04-03 22:43:50,924 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in helloworld.HelloWorldSink
+2012-04-03 22:43:50,924 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink builders found in helloworld.HelloWorldSource
+2012-04-03 22:43:50,924 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in helloworld.HelloWorldSource
+2012-04-03 22:43:50,924 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink builders found in helloworld.HelloWorldDecorator
+2012-04-03 22:43:50,924 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink decorator helloWorldDecorator in helloworld.HelloWorldDecorator
+2012-04-03 22:43:50,925 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder hbase in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:43:50,925 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:43:50,945 INFO com.cloudera.flume.agent.MultiMasterRPC: No active master RPC connection
+2012-04-03 22:43:51,023 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder attr2hbase in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:43:51,023 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:43:51,167 INFO com.cloudera.flume.agent.ThriftMasterRPC: Connected to master at fm-vm-010:35872
+2012-04-03 22:43:51,350 INFO com.cloudera.flume.agent.LogicalNodeManager: creating new logical node fm-vm-010.cercs.int
+2012-04-03 22:43:52,013 INFO com.cloudera.flume.agent.FlumeNode: Hadoop Security enabled: false
+2012-04-03 22:43:56,583 INFO com.cloudera.flume.agent.LogicalNodeManager: creating new logical node hbase-agent1
+2012-04-03 22:43:56,634 WARN com.cloudera.flume.handlers.debug.LazyOpenDecorator: Closing a lazy sink that was not logically opened
+2012-04-03 22:43:56,962 INFO com.cloudera.flume.agent.LogicalNodeManager: creating new logical node hbase-collector1
+2012-04-03 22:43:56,996 ERROR com.cloudera.flume.core.connector.DirectDriver: Closing down due to exception on open calls
+2012-04-03 22:43:56,996 INFO com.cloudera.flume.core.connector.DirectDriver: Connector logicalNode hbase-collector1-21 exited with error: Attempting to open a Stub Source!
+2012-04-03 22:43:56,996 ERROR com.cloudera.flume.core.connector.DirectDriver: Error closing logicalNode hbase-collector1-21 source: Attempting to close a Stub Source!
+2012-04-03 22:43:56,996 WARN com.cloudera.flume.hbase.HBaseSink: Double close of HBase sink
+2012-04-03 22:43:56,996 ERROR com.cloudera.flume.core.connector.DirectDriver: Exiting driver logicalNode hbase-collector1-21 in error state StubSource | HBaseSink because Attempting to open a Stub Source!
+2012-04-03 22:43:57,925 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@1451ef4e
+2012-04-03 22:43:57,928 ERROR com.cloudera.flume.core.connector.DirectDriver: Closing down due to exception on open calls
+2012-04-03 22:43:57,928 INFO com.cloudera.flume.core.connector.DirectDriver: Connector logicalNode hbase-collector1-22 exited with error: Attempting to open a Stub Source!
+2012-04-03 22:43:57,928 ERROR com.cloudera.flume.core.connector.DirectDriver: Error closing logicalNode hbase-collector1-22 source: Attempting to close a Stub Source!
+2012-04-03 22:43:57,928 WARN com.cloudera.flume.hbase.HBaseSink: Double close of HBase sink
+2012-04-03 22:43:57,928 ERROR com.cloudera.flume.core.connector.DirectDriver: Exiting driver logicalNode hbase-collector1-22 in error state StubSource | HBaseSink because Attempting to open a Stub Source!
+2012-04-03 22:44:01,823 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:44:01,823 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@4f2b3349
+2012-04-03 22:44:01,855 WARN com.cloudera.flume.handlers.debug.LazyOpenDecorator: Closing a lazy sink that was not logically opened
+2012-04-03 22:44:06,753 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:44:10,490 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:44:14,051 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:44:21,181 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:44:31,864 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:44:49,676 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:45:21,714 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:45:25,549 INFO com.cloudera.flume.watchdog.Watchdog: Watchdog shutdown hook
+2012-04-03 22:45:36,310 INFO com.cloudera.flume.watchdog.FlumeWatchdog: Dropped a pidfile='/tmp/flumenode-3570.pid' with pid=3570
+2012-04-03 22:45:36,397 INFO com.cloudera.flume.conf.FlumeConfiguration: Loading configurations from conf
+2012-04-03 22:45:36,729 INFO com.cloudera.flume.watchdog.Watchdog: Restarting process @ Tue Apr 03 22:45:36 EDT 2012
+2012-04-03 22:45:37,778 INFO com.cloudera.flume.agent.FlumeNode: Flume 0.9.4
+2012-04-03 22:45:37,779 INFO com.cloudera.flume.agent.FlumeNode:  rev 8d0aa4be4ee50bb664cb0d1624e5634f46d7b62a
+2012-04-03 22:45:37,779 INFO com.cloudera.flume.agent.FlumeNode: Compiled  on  Mon Jun 20 14:48:23 PDT 2011
+2012-04-03 22:45:37,779 INFO com.cloudera.flume.agent.FlumeNode: System property flume.log.file=flume-root-node-fm-vm-010.cercs.int.log
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property java.runtime.name=Java(TM) SE Runtime Environment
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property sun.boot.library.path=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.version=19.1-b02
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property zookeeper.root.logger=INFO,zookeeper
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.vendor=Sun Microsystems Inc.
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property java.vendor.url=http://java.sun.com/
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property path.separator=:
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property file.encoding.pkg=sun.io
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property sun.java.launcher=SUN_STANDARD
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property user.country=US
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property sun.os.patch.level=unknown
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.specification.name=Java Virtual Machine Specification
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property user.dir=/root/flume-distribution-0.9.4
+2012-04-03 22:45:37,780 INFO com.cloudera.flume.agent.FlumeNode: System property java.runtime.version=1.6.0_24-b07
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property flume.log.dir=/root/flume-distribution-0.9.4//logs
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property java.endorsed.dirs=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/endorsed
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property os.arch=amd64
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property java.io.tmpdir=/tmp
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property line.separator=
+
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.specification.vendor=Sun Microsystems Inc.
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property os.name=Linux
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property sun.jnu.encoding=UTF-8
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property java.library.path=/root/flume-distribution-0.9.4/lib::
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property java.specification.name=Java Platform API Specification
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property java.class.version=50.0
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property sun.management.compiler=HotSpot 64-Bit Server Compiler
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property watchdog.root.logger=INFO,watchdog
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property os.version=2.6.31-22-server
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property user.home=/root
+2012-04-03 22:45:37,781 INFO com.cloudera.flume.agent.FlumeNode: System property user.timezone=America/New_York
+2012-04-03 22:45:37,782 INFO com.cloudera.flume.agent.FlumeNode: System property java.awt.printerjob=sun.print.PSPrinterJob
+2012-04-03 22:45:37,782 INFO com.cloudera.flume.agent.FlumeNode: System property file.encoding=UTF-8
+2012-04-03 22:45:37,782 INFO com.cloudera.flume.agent.FlumeNode: System property java.specification.version=1.6
+2012-04-03 22:45:37,782 INFO com.cloudera.flume.agent.FlumeNode: System property java.class.path=./conf:/root/flume-distribution-0.9.4/lib/activation-1.1.jar:/root/flume-distribution-0.9.4/lib/ahocorasick-2.x.jar:/root/flume-distribution-0.9.4/lib/ant-1.6.5.jar:/root/flume-distribution-0.9.4/lib/antlr-2.7.7.jar:/root/flume-distribution-0.9.4/lib/antlr-3.2.jar:/root/flume-distribution-0.9.4/lib/antlr-runtime-3.2.jar:/root/flume-distribution-0.9.4/lib/asm-3.1.jar:/root/flume-distribution-0.9.4/lib/automaton-1.0.0.jar:/root/flume-distribution-0.9.4/lib/avro-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-compiler-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-ipc-1.5.1.jar:/root/flume-distribution-0.9.4/lib/commons-cli-1.2.jar:/root/flume-distribution-0.9.4/lib/commons-codec-1.3.jar:/root/flume-distribution-0.9.4/lib/commons-collections-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-el-1.0.jar:/root/flume-distribution-0.9.4/lib/commons-httpclient-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-lang-2.5.jar:/root/flume-distribution-0.9.4/lib/commons-logging-1.0.4.jar:/root/flume-distribution-0.9.4/lib/commons-net-1.4.1.jar:/root/flume-distribution-0.9.4/lib/core-3.1.1.jar:/root/flume-distribution-0.9.4/lib/flume-core-0.9.4.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-hbasesink-0.9.5.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-helloworld-0.9.5.jar:/root/flume-distribution-0.9.4/lib/guava-r07.jar:/root/flume-distribution-0.9.4/lib/hadoop-core-0.20.2-CDH3B4.jar:/root/flume-distribution-0.9.4/lib/hbase-0.92.0.jar:/root/flume-distribution-0.9.4/lib/hsqldb-1.8.0.7.jar:/root/flume-distribution-0.9.4/lib/irclib-1.0.0.jar:/root/flume-distribution-0.9.4/lib/jackson-core-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-jaxrs-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-mapper-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-xc-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jasper-compiler-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jasper-runtime-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jaxb-api-2.1.jar:/root/flume-distribution-0.9.4/lib/jaxb-impl-2.1.12.jar:/root/flume-distribution-0.9.4/lib/jersey-core-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-json-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-server-1.4.jar:/root/flume-distribution-0.9.4/lib/jets3t-0.6.1.jar:/root/flume-distribution-0.9.4/lib/jettison-1.2.jar:/root/flume-distribution-0.9.4/lib/jetty-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jetty-util-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jline-0.9.94.jar:/root/flume-distribution-0.9.4/lib/jms-1.1.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.0.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.1.jar:/root/flume-distribution-0.9.4/lib/libthrift-0.6.0-cdh.jar:/root/flume-distribution-0.9.4/lib/log4j-1.2.15.jar:/root/flume-distribution-0.9.4/lib/mail-1.4.jar:/root/flume-distribution-0.9.4/lib/netty-3.2.4.Final.jar:/root/flume-distribution-0.9.4/lib/oro-2.0.8.jar:/root/flume-distribution-0.9.4/lib/paranamer-2.3.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5-20081211.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5.jar:/root/flume-distribution-0.9.4/lib/slf4j-api-1.5.11.jar:/root/flume-distribution-0.9.4/lib/slf4j-log4j12-1.5.11.jar:/root/flume-distribution-0.9.4/lib/snappy-java-1.0.1-rc3.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0.1.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0-2.jar:/root/flume-distribution-0.9.4/lib/stringtemplate-3.2.jar:/root/flume-distribution-0.9.4/lib/velocity-1.6.4.jar:/root/flume-distribution-0.9.4/lib/xmlenc-0.52.jar:/root/flume-distribution-0.9.4/lib/zookeeper-3.3.1-10.jar:/lib/tools.jar:/root/flume-distribution-0.9.4/build/classes
+2012-04-03 22:45:37,782 INFO com.cloudera.flume.agent.FlumeNode: System property user.name=root
+2012-04-03 22:45:37,782 INFO com.cloudera.flume.agent.FlumeNode: System property flume.root.logger=INFO,DRFA
+2012-04-03 22:45:37,782 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.specification.version=1.0
+2012-04-03 22:45:37,782 INFO com.cloudera.flume.agent.FlumeNode: System property java.home=/usr/lib/jvm/java-6-sun-1.6.0.24/jre
+2012-04-03 22:45:37,782 INFO com.cloudera.flume.agent.FlumeNode: System property sun.arch.data.model=64
+2012-04-03 22:45:37,782 INFO com.cloudera.flume.agent.FlumeNode: System property user.language=en
+2012-04-03 22:45:37,782 INFO com.cloudera.flume.agent.FlumeNode: System property java.specification.vendor=Sun Microsystems Inc.
+2012-04-03 22:45:37,782 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.info=mixed mode
+2012-04-03 22:45:37,782 INFO com.cloudera.flume.agent.FlumeNode: System property java.version=1.6.0_24
+2012-04-03 22:45:37,783 INFO com.cloudera.flume.agent.FlumeNode: System property java.ext.dirs=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/ext:/usr/java/packages/lib/ext
+2012-04-03 22:45:37,783 INFO com.cloudera.flume.agent.FlumeNode: System property sun.boot.class.path=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/classes
+2012-04-03 22:45:37,783 INFO com.cloudera.flume.agent.FlumeNode: System property java.vendor=Sun Microsystems Inc.
+2012-04-03 22:45:37,783 INFO com.cloudera.flume.agent.FlumeNode: System property file.separator=/
+2012-04-03 22:45:37,783 INFO com.cloudera.flume.agent.FlumeNode: System property java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+2012-04-03 22:45:37,783 INFO com.cloudera.flume.agent.FlumeNode: System property sun.io.unicode.encoding=UnicodeLittle
+2012-04-03 22:45:37,783 INFO com.cloudera.flume.agent.FlumeNode: System property sun.cpu.endian=little
+2012-04-03 22:45:37,783 INFO com.cloudera.flume.agent.FlumeNode: System property sun.cpu.isalist=
+2012-04-03 22:45:37,883 INFO com.cloudera.flume.agent.FlumeNode: Starting flume agent on: fm-vm-010.cercs.int
+2012-04-03 22:45:37,883 INFO com.cloudera.flume.agent.FlumeNode:  Working directory is: /root/flume-distribution-0.9.4/.
+2012-04-03 22:45:38,061 INFO com.cloudera.flume.conf.FlumeConfiguration: Loading configurations from conf
+2012-04-03 22:45:38,718 WARN com.cloudera.flume.agent.FlumeNode: Log directory is writing inside of /tmp.  This data may not survive reboot!
+2012-04-03 22:45:39,976 WARN com.cloudera.flume.handlers.text.FormatFactory: Unable to load output format plugin class  - Class not found
+2012-04-03 22:45:40,449 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-04-03 22:45:40,888 INFO com.cloudera.util.InternalHttpServer: Starting internal HTTP server
+2012-04-03 22:45:40,888 INFO org.mortbay.log: jetty-6.1.26
+2012-04-03 22:45:41,478 INFO org.mortbay.log: Extract /root/flume-distribution-0.9.4/webapps/flumeagent.war to /tmp/Jetty_0_0_0_0_35862_flumeagent.war__flumeagent__4cgrz3/webapp
+2012-04-03 22:45:42,486 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:35862
+2012-04-03 22:45:42,486 INFO com.cloudera.util.InternalHttpServer: Server started
+2012-04-03 22:45:42,656 INFO com.cloudera.flume.agent.MultiMasterRPC: No active master RPC connection
+2012-04-03 22:45:42,726 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in helloworld.HelloWorldSink
+2012-04-03 22:45:42,728 INFO com.cloudera.flume.conf.SourceFactoryImpl: Found source builder helloWorldSource in helloworld.HelloWorldSource
+2012-04-03 22:45:42,731 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in helloworld.HelloWorldDecorator
+2012-04-03 22:45:42,733 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:45:42,756 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:45:42,767 INFO com.cloudera.flume.agent.ThriftMasterRPC: Connected to master at fm-vm-010:35872
+2012-04-03 22:45:43,079 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder helloWorldSink in helloworld.HelloWorldSink
+2012-04-03 22:45:43,079 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in helloworld.HelloWorldSink
+2012-04-03 22:45:43,079 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink builders found in helloworld.HelloWorldSource
+2012-04-03 22:45:43,080 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in helloworld.HelloWorldSource
+2012-04-03 22:45:43,080 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink builders found in helloworld.HelloWorldDecorator
+2012-04-03 22:45:43,080 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink decorator helloWorldDecorator in helloworld.HelloWorldDecorator
+2012-04-03 22:45:43,080 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder hbase in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:45:43,080 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:45:43,080 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder attr2hbase in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:45:43,080 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:45:43,227 INFO com.cloudera.flume.agent.LogicalNodeManager: creating new logical node fm-vm-010.cercs.int
+2012-04-03 22:45:43,809 INFO com.cloudera.flume.agent.FlumeNode: Hadoop Security enabled: false
+2012-04-03 22:45:47,811 INFO com.cloudera.flume.agent.LogicalNodeManager: creating new logical node hbase-agent1
+2012-04-03 22:45:47,847 WARN com.cloudera.flume.handlers.debug.LazyOpenDecorator: Closing a lazy sink that was not logically opened
+2012-04-03 22:45:48,048 INFO com.cloudera.flume.agent.LogicalNodeManager: creating new logical node hbase-collector1
+2012-04-03 22:45:48,062 ERROR com.cloudera.flume.core.connector.DirectDriver: Closing down due to exception on open calls
+2012-04-03 22:45:48,063 INFO com.cloudera.flume.core.connector.DirectDriver: Connector logicalNode hbase-collector1-21 exited with error: Attempting to open a Stub Source!
+2012-04-03 22:45:48,063 ERROR com.cloudera.flume.core.connector.DirectDriver: Error closing logicalNode hbase-collector1-21 source: Attempting to close a Stub Source!
+2012-04-03 22:45:48,063 WARN com.cloudera.flume.hbase.HBaseSink: Double close of HBase sink
+2012-04-03 22:45:48,063 ERROR com.cloudera.flume.core.connector.DirectDriver: Exiting driver logicalNode hbase-collector1-21 in error state StubSource | HBaseSink because Attempting to open a Stub Source!
+2012-04-03 22:45:48,488 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@32830122
+2012-04-03 22:45:48,493 ERROR com.cloudera.flume.core.connector.DirectDriver: Closing down due to exception on open calls
+2012-04-03 22:45:48,493 INFO com.cloudera.flume.core.connector.DirectDriver: Connector logicalNode hbase-collector1-22 exited with error: Attempting to open a Stub Source!
+2012-04-03 22:45:48,493 ERROR com.cloudera.flume.core.connector.DirectDriver: Error closing logicalNode hbase-collector1-22 source: Attempting to close a Stub Source!
+2012-04-03 22:45:48,493 WARN com.cloudera.flume.hbase.HBaseSink: Double close of HBase sink
+2012-04-03 22:45:48,493 ERROR com.cloudera.flume.core.connector.DirectDriver: Exiting driver logicalNode hbase-collector1-22 in error state StubSource | HBaseSink because Attempting to open a Stub Source!
+2012-04-03 22:45:52,108 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:45:53,475 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@2180b22e
+2012-04-03 22:45:53,525 INFO com.cloudera.flume.handlers.thrift.ThriftEventSource: Starting blocking thread pool server on port 35853...
+2012-04-03 22:45:53,975 INFO org.apache.zookeeper.ZooKeeper: Client environment:zookeeper.version=3.3.1-942149, built on 05/07/2010 17:14 GMT
+2012-04-03 22:45:53,976 INFO org.apache.zookeeper.ZooKeeper: Client environment:host.name=fm-vm-010.cercs.int
+2012-04-03 22:45:53,976 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.version=1.6.0_24
+2012-04-03 22:45:53,976 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.vendor=Sun Microsystems Inc.
+2012-04-03 22:45:53,976 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.home=/usr/lib/jvm/java-6-sun-1.6.0.24/jre
+2012-04-03 22:45:53,976 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.class.path=./conf:/root/flume-distribution-0.9.4/lib/activation-1.1.jar:/root/flume-distribution-0.9.4/lib/ahocorasick-2.x.jar:/root/flume-distribution-0.9.4/lib/ant-1.6.5.jar:/root/flume-distribution-0.9.4/lib/antlr-2.7.7.jar:/root/flume-distribution-0.9.4/lib/antlr-3.2.jar:/root/flume-distribution-0.9.4/lib/antlr-runtime-3.2.jar:/root/flume-distribution-0.9.4/lib/asm-3.1.jar:/root/flume-distribution-0.9.4/lib/automaton-1.0.0.jar:/root/flume-distribution-0.9.4/lib/avro-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-compiler-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-ipc-1.5.1.jar:/root/flume-distribution-0.9.4/lib/commons-cli-1.2.jar:/root/flume-distribution-0.9.4/lib/commons-codec-1.3.jar:/root/flume-distribution-0.9.4/lib/commons-collections-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-el-1.0.jar:/root/flume-distribution-0.9.4/lib/commons-httpclient-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-lang-2.5.jar:/root/flume-distribution-0.9.4/lib/commons-logging-1.0.4.jar:/root/flume-distribution-0.9.4/lib/commons-net-1.4.1.jar:/root/flume-distribution-0.9.4/lib/core-3.1.1.jar:/root/flume-distribution-0.9.4/lib/flume-core-0.9.4.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-hbasesink-0.9.5.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-helloworld-0.9.5.jar:/root/flume-distribution-0.9.4/lib/guava-r07.jar:/root/flume-distribution-0.9.4/lib/hadoop-core-0.20.2-CDH3B4.jar:/root/flume-distribution-0.9.4/lib/hbase-0.92.0.jar:/root/flume-distribution-0.9.4/lib/hsqldb-1.8.0.7.jar:/root/flume-distribution-0.9.4/lib/irclib-1.0.0.jar:/root/flume-distribution-0.9.4/lib/jackson-core-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-jaxrs-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-mapper-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-xc-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jasper-compiler-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jasper-runtime-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jaxb-api-2.1.jar:/root/flume-distribution-0.9.4/lib/jaxb-impl-2.1.12.jar:/root/flume-distribution-0.9.4/lib/jersey-core-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-json-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-server-1.4.jar:/root/flume-distribution-0.9.4/lib/jets3t-0.6.1.jar:/root/flume-distribution-0.9.4/lib/jettison-1.2.jar:/root/flume-distribution-0.9.4/lib/jetty-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jetty-util-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jline-0.9.94.jar:/root/flume-distribution-0.9.4/lib/jms-1.1.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.0.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.1.jar:/root/flume-distribution-0.9.4/lib/libthrift-0.6.0-cdh.jar:/root/flume-distribution-0.9.4/lib/log4j-1.2.15.jar:/root/flume-distribution-0.9.4/lib/mail-1.4.jar:/root/flume-distribution-0.9.4/lib/netty-3.2.4.Final.jar:/root/flume-distribution-0.9.4/lib/oro-2.0.8.jar:/root/flume-distribution-0.9.4/lib/paranamer-2.3.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5-20081211.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5.jar:/root/flume-distribution-0.9.4/lib/slf4j-api-1.5.11.jar:/root/flume-distribution-0.9.4/lib/slf4j-log4j12-1.5.11.jar:/root/flume-distribution-0.9.4/lib/snappy-java-1.0.1-rc3.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0.1.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0-2.jar:/root/flume-distribution-0.9.4/lib/stringtemplate-3.2.jar:/root/flume-distribution-0.9.4/lib/velocity-1.6.4.jar:/root/flume-distribution-0.9.4/lib/xmlenc-0.52.jar:/root/flume-distribution-0.9.4/lib/zookeeper-3.3.1-10.jar:/lib/tools.jar:/root/flume-distribution-0.9.4/build/classes
+2012-04-03 22:45:53,976 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.library.path=/root/flume-distribution-0.9.4/lib::
+2012-04-03 22:45:53,976 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+2012-04-03 22:45:53,976 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2012-04-03 22:45:53,977 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.name=Linux
+2012-04-03 22:45:53,977 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.arch=amd64
+2012-04-03 22:45:53,977 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.version=2.6.31-22-server
+2012-04-03 22:45:53,977 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.name=root
+2012-04-03 22:45:53,977 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.home=/root
+2012-04-03 22:45:53,977 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.dir=/root/flume-distribution-0.9.4
+2012-04-03 22:45:53,979 INFO org.apache.zookeeper.ZooKeeper: Initiating client connection, connectString=fm-vm-010:2181 sessionTimeout=180000 watcher=hconnection
+2012-04-03 22:45:54,057 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server fm-vm-010/10.2.42.110:2181
+2012-04-03 22:45:54,061 INFO org.apache.zookeeper.ClientCnxn: Socket connection established to fm-vm-010/10.2.42.110:2181, initiating session
+2012-04-03 22:45:54,068 INFO org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper: The identifier of this process is 3639@fm-vm-010.cercs.int
+2012-04-03 22:45:54,102 INFO org.apache.zookeeper.ClientCnxn: Session establishment complete on server fm-vm-010/10.2.42.110:2181, sessionid = 0x1367b121e460021, negotiated timeout = 180000
+2012-04-03 22:45:54,857 INFO com.cloudera.flume.hbase.HBaseSink: HBase sink successfully opened
+2012-04-03 22:45:55,686 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:45:55,696 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@3b8e609b
+2012-04-03 22:45:55,711 WARN com.cloudera.flume.handlers.debug.LazyOpenDecorator: Closing a lazy sink that was not logically opened
+2012-04-03 22:46:00,329 INFO com.cloudera.flume.handlers.thrift.ThriftEventSink: ThriftEventSink to fm-vm-010.cercs.int:35853 opened
+2012-04-03 22:46:15,965 INFO com.cloudera.flume.agent.MultiMasterRPC: Thrift Error
+2012-04-03 22:46:15,966 INFO com.cloudera.flume.agent.ThriftMasterRPC: Connection from node to master closed
+2012-04-03 22:46:15,972 WARN com.cloudera.flume.agent.MultiMasterRPC: Could not connect to any master nodes (tried 1: [fm-vm-010:35872])
+2012-04-03 22:46:16,010 INFO com.cloudera.flume.watchdog.Watchdog: Watchdog shutdown hook
+2012-04-03 22:52:18,997 INFO com.cloudera.flume.watchdog.FlumeWatchdog: Dropped a pidfile='/tmp/flumenode-5241.pid' with pid=5241
+2012-04-03 22:52:19,110 INFO com.cloudera.flume.conf.FlumeConfiguration: Loading configurations from conf
+2012-04-03 22:52:19,441 INFO com.cloudera.flume.watchdog.Watchdog: Restarting process @ Tue Apr 03 22:52:19 EDT 2012
+2012-04-03 22:52:20,344 INFO com.cloudera.flume.agent.FlumeNode: Flume 0.9.4
+2012-04-03 22:52:20,345 INFO com.cloudera.flume.agent.FlumeNode:  rev 8d0aa4be4ee50bb664cb0d1624e5634f46d7b62a
+2012-04-03 22:52:20,356 INFO com.cloudera.flume.agent.FlumeNode: Compiled  on  Mon Jun 20 14:48:23 PDT 2011
+2012-04-03 22:52:20,357 INFO com.cloudera.flume.agent.FlumeNode: System property flume.log.file=flume-root-node-fm-vm-010.cercs.int.log
+2012-04-03 22:52:20,357 INFO com.cloudera.flume.agent.FlumeNode: System property java.runtime.name=Java(TM) SE Runtime Environment
+2012-04-03 22:52:20,357 INFO com.cloudera.flume.agent.FlumeNode: System property sun.boot.library.path=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64
+2012-04-03 22:52:20,357 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.version=19.1-b02
+2012-04-03 22:52:20,357 INFO com.cloudera.flume.agent.FlumeNode: System property zookeeper.root.logger=INFO,zookeeper
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.vendor=Sun Microsystems Inc.
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property java.vendor.url=http://java.sun.com/
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property path.separator=:
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property file.encoding.pkg=sun.io
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property sun.java.launcher=SUN_STANDARD
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property user.country=US
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property sun.os.patch.level=unknown
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.specification.name=Java Virtual Machine Specification
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property user.dir=/root/flume-distribution-0.9.4
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property java.runtime.version=1.6.0_24-b07
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property flume.log.dir=/root/flume-distribution-0.9.4//logs
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property java.endorsed.dirs=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/endorsed
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property os.arch=amd64
+2012-04-03 22:52:20,358 INFO com.cloudera.flume.agent.FlumeNode: System property java.io.tmpdir=/tmp
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property line.separator=
+
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.specification.vendor=Sun Microsystems Inc.
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property os.name=Linux
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property sun.jnu.encoding=UTF-8
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property java.library.path=/root/flume-distribution-0.9.4/lib::
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property java.specification.name=Java Platform API Specification
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property java.class.version=50.0
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property sun.management.compiler=HotSpot 64-Bit Server Compiler
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property watchdog.root.logger=INFO,watchdog
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property os.version=2.6.31-22-server
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property user.home=/root
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property user.timezone=America/New_York
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property java.awt.printerjob=sun.print.PSPrinterJob
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property file.encoding=UTF-8
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property java.specification.version=1.6
+2012-04-03 22:52:20,359 INFO com.cloudera.flume.agent.FlumeNode: System property java.class.path=./conf:/root/flume-distribution-0.9.4/lib/activation-1.1.jar:/root/flume-distribution-0.9.4/lib/ahocorasick-2.x.jar:/root/flume-distribution-0.9.4/lib/ant-1.6.5.jar:/root/flume-distribution-0.9.4/lib/antlr-2.7.7.jar:/root/flume-distribution-0.9.4/lib/antlr-3.2.jar:/root/flume-distribution-0.9.4/lib/antlr-runtime-3.2.jar:/root/flume-distribution-0.9.4/lib/asm-3.1.jar:/root/flume-distribution-0.9.4/lib/automaton-1.0.0.jar:/root/flume-distribution-0.9.4/lib/avro-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-compiler-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-ipc-1.5.1.jar:/root/flume-distribution-0.9.4/lib/commons-cli-1.2.jar:/root/flume-distribution-0.9.4/lib/commons-codec-1.3.jar:/root/flume-distribution-0.9.4/lib/commons-collections-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-el-1.0.jar:/root/flume-distribution-0.9.4/lib/commons-httpclient-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-lang-2.5.jar:/root/flume-distribution-0.9.4/lib/commons-logging-1.0.4.jar:/root/flume-distribution-0.9.4/lib/commons-net-1.4.1.jar:/root/flume-distribution-0.9.4/lib/core-3.1.1.jar:/root/flume-distribution-0.9.4/lib/flume-core-0.9.4.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-hbasesink-0.9.5.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-helloworld-0.9.5.jar:/root/flume-distribution-0.9.4/lib/guava-r07.jar:/root/flume-distribution-0.9.4/lib/hadoop-core-0.20.2-CDH3B4.jar:/root/flume-distribution-0.9.4/lib/hbase-0.92.0.jar:/root/flume-distribution-0.9.4/lib/hsqldb-1.8.0.7.jar:/root/flume-distribution-0.9.4/lib/irclib-1.0.0.jar:/root/flume-distribution-0.9.4/lib/jackson-core-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-jaxrs-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-mapper-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-xc-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jasper-compiler-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jasper-runtime-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jaxb-api-2.1.jar:/root/flume-distribution-0.9.4/lib/jaxb-impl-2.1.12.jar:/root/flume-distribution-0.9.4/lib/jersey-core-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-json-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-server-1.4.jar:/root/flume-distribution-0.9.4/lib/jets3t-0.6.1.jar:/root/flume-distribution-0.9.4/lib/jettison-1.2.jar:/root/flume-distribution-0.9.4/lib/jetty-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jetty-util-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jline-0.9.94.jar:/root/flume-distribution-0.9.4/lib/jms-1.1.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.0.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.1.jar:/root/flume-distribution-0.9.4/lib/libthrift-0.6.0-cdh.jar:/root/flume-distribution-0.9.4/lib/log4j-1.2.15.jar:/root/flume-distribution-0.9.4/lib/mail-1.4.jar:/root/flume-distribution-0.9.4/lib/netty-3.2.4.Final.jar:/root/flume-distribution-0.9.4/lib/oro-2.0.8.jar:/root/flume-distribution-0.9.4/lib/paranamer-2.3.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5-20081211.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5.jar:/root/flume-distribution-0.9.4/lib/slf4j-api-1.5.11.jar:/root/flume-distribution-0.9.4/lib/slf4j-log4j12-1.5.11.jar:/root/flume-distribution-0.9.4/lib/snappy-java-1.0.1-rc3.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0.1.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0-2.jar:/root/flume-distribution-0.9.4/lib/stringtemplate-3.2.jar:/root/flume-distribution-0.9.4/lib/velocity-1.6.4.jar:/root/flume-distribution-0.9.4/lib/xmlenc-0.52.jar:/root/flume-distribution-0.9.4/lib/zookeeper-3.3.1-10.jar:/lib/tools.jar:/root/flume-distribution-0.9.4/build/classes
+2012-04-03 22:52:20,360 INFO com.cloudera.flume.agent.FlumeNode: System property user.name=root
+2012-04-03 22:52:20,360 INFO com.cloudera.flume.agent.FlumeNode: System property flume.root.logger=INFO,DRFA
+2012-04-03 22:52:20,360 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.specification.version=1.0
+2012-04-03 22:52:20,360 INFO com.cloudera.flume.agent.FlumeNode: System property java.home=/usr/lib/jvm/java-6-sun-1.6.0.24/jre
+2012-04-03 22:52:20,360 INFO com.cloudera.flume.agent.FlumeNode: System property sun.arch.data.model=64
+2012-04-03 22:52:20,360 INFO com.cloudera.flume.agent.FlumeNode: System property user.language=en
+2012-04-03 22:52:20,360 INFO com.cloudera.flume.agent.FlumeNode: System property java.specification.vendor=Sun Microsystems Inc.
+2012-04-03 22:52:20,360 INFO com.cloudera.flume.agent.FlumeNode: System property java.vm.info=mixed mode
+2012-04-03 22:52:20,360 INFO com.cloudera.flume.agent.FlumeNode: System property java.version=1.6.0_24
+2012-04-03 22:52:20,360 INFO com.cloudera.flume.agent.FlumeNode: System property java.ext.dirs=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/ext:/usr/java/packages/lib/ext
+2012-04-03 22:52:20,360 INFO com.cloudera.flume.agent.FlumeNode: System property sun.boot.class.path=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/classes
+2012-04-03 22:52:20,361 INFO com.cloudera.flume.agent.FlumeNode: System property java.vendor=Sun Microsystems Inc.
+2012-04-03 22:52:20,361 INFO com.cloudera.flume.agent.FlumeNode: System property file.separator=/
+2012-04-03 22:52:20,361 INFO com.cloudera.flume.agent.FlumeNode: System property java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+2012-04-03 22:52:20,361 INFO com.cloudera.flume.agent.FlumeNode: System property sun.io.unicode.encoding=UnicodeLittle
+2012-04-03 22:52:20,361 INFO com.cloudera.flume.agent.FlumeNode: System property sun.cpu.endian=little
+2012-04-03 22:52:20,361 INFO com.cloudera.flume.agent.FlumeNode: System property sun.cpu.isalist=
+2012-04-03 22:52:20,466 INFO com.cloudera.flume.agent.FlumeNode: Starting flume agent on: fm-vm-010.cercs.int
+2012-04-03 22:52:20,466 INFO com.cloudera.flume.agent.FlumeNode:  Working directory is: /root/flume-distribution-0.9.4/.
+2012-04-03 22:52:20,634 INFO com.cloudera.flume.conf.FlumeConfiguration: Loading configurations from conf
+2012-04-03 22:52:21,277 WARN com.cloudera.flume.agent.FlumeNode: Log directory is writing inside of /tmp.  This data may not survive reboot!
+2012-04-03 22:52:22,441 WARN com.cloudera.flume.handlers.text.FormatFactory: Unable to load output format plugin class  - Class not found
+2012-04-03 22:52:23,054 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-04-03 22:52:23,448 INFO com.cloudera.util.InternalHttpServer: Starting internal HTTP server
+2012-04-03 22:52:23,449 INFO org.mortbay.log: jetty-6.1.26
+2012-04-03 22:52:23,780 INFO org.mortbay.log: Extract /root/flume-distribution-0.9.4/webapps/flumeagent.war to /tmp/Jetty_0_0_0_0_35862_flumeagent.war__flumeagent__4cgrz3/webapp
+2012-04-03 22:52:25,419 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:35862
+2012-04-03 22:52:25,419 INFO com.cloudera.util.InternalHttpServer: Server started
+2012-04-03 22:52:25,604 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in helloworld.HelloWorldSink
+2012-04-03 22:52:25,626 INFO com.cloudera.flume.conf.SourceFactoryImpl: Found source builder helloWorldSource in helloworld.HelloWorldSource
+2012-04-03 22:52:25,629 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in helloworld.HelloWorldDecorator
+2012-04-03 22:52:25,631 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:52:25,633 WARN com.cloudera.flume.conf.SourceFactoryImpl: No source builders found in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:52:25,845 INFO com.cloudera.flume.agent.MultiMasterRPC: No active master RPC connection
+2012-04-03 22:52:25,931 INFO com.cloudera.flume.agent.ThriftMasterRPC: Connected to master at fm-vm-010:35872
+2012-04-03 22:52:26,244 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder helloWorldSink in helloworld.HelloWorldSink
+2012-04-03 22:52:26,244 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in helloworld.HelloWorldSink
+2012-04-03 22:52:26,245 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink builders found in helloworld.HelloWorldSource
+2012-04-03 22:52:26,245 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in helloworld.HelloWorldSource
+2012-04-03 22:52:26,245 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink builders found in helloworld.HelloWorldDecorator
+2012-04-03 22:52:26,282 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink decorator helloWorldDecorator in helloworld.HelloWorldDecorator
+2012-04-03 22:52:26,282 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder hbase in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:52:26,282 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in com.cloudera.flume.hbase.HBaseSink
+2012-04-03 22:52:26,282 INFO com.cloudera.flume.conf.SinkFactoryImpl: Found sink builder attr2hbase in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:52:26,282 WARN com.cloudera.flume.conf.SinkFactoryImpl: No sink decorators found in com.cloudera.flume.hbase.Attr2HBaseEventSink
+2012-04-03 22:52:26,539 INFO com.cloudera.flume.agent.LogicalNodeManager: creating new logical node fm-vm-010.cercs.int
+2012-04-03 22:52:27,141 INFO com.cloudera.flume.agent.FlumeNode: Hadoop Security enabled: false
+2012-04-03 22:52:30,978 INFO com.cloudera.flume.agent.LogicalNodeManager: creating new logical node hbase-agent1
+2012-04-03 22:52:31,025 WARN com.cloudera.flume.handlers.debug.LazyOpenDecorator: Closing a lazy sink that was not logically opened
+2012-04-03 22:52:31,202 INFO com.cloudera.flume.agent.LogicalNodeManager: creating new logical node hbase-collector1
+2012-04-03 22:52:31,216 ERROR com.cloudera.flume.core.connector.DirectDriver: Closing down due to exception on open calls
+2012-04-03 22:52:31,216 INFO com.cloudera.flume.core.connector.DirectDriver: Connector logicalNode hbase-collector1-21 exited with error: Attempting to open a Stub Source!
+2012-04-03 22:52:31,216 ERROR com.cloudera.flume.core.connector.DirectDriver: Error closing logicalNode hbase-collector1-21 source: Attempting to close a Stub Source!
+2012-04-03 22:52:31,216 WARN com.cloudera.flume.hbase.HBaseSink: Double close of HBase sink
+2012-04-03 22:52:31,216 ERROR com.cloudera.flume.core.connector.DirectDriver: Exiting driver logicalNode hbase-collector1-21 in error state StubSource | HBaseSink because Attempting to open a Stub Source!
+2012-04-03 22:52:31,514 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@63f8247d
+2012-04-03 22:52:31,516 ERROR com.cloudera.flume.core.connector.DirectDriver: Closing down due to exception on open calls
+2012-04-03 22:52:31,516 INFO com.cloudera.flume.core.connector.DirectDriver: Connector logicalNode hbase-collector1-22 exited with error: Attempting to open a Stub Source!
+2012-04-03 22:52:31,516 ERROR com.cloudera.flume.core.connector.DirectDriver: Error closing logicalNode hbase-collector1-22 source: Attempting to close a Stub Source!
+2012-04-03 22:52:31,516 WARN com.cloudera.flume.hbase.HBaseSink: Double close of HBase sink
+2012-04-03 22:52:31,516 ERROR com.cloudera.flume.core.connector.DirectDriver: Exiting driver logicalNode hbase-collector1-22 in error state StubSource | HBaseSink because Attempting to open a Stub Source!
+2012-04-03 22:52:35,195 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:52:35,196 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@27972e3a
+2012-04-03 22:52:35,265 WARN com.cloudera.flume.handlers.debug.LazyOpenDecorator: Closing a lazy sink that was not logically opened
+2012-04-03 22:52:39,809 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:52:43,369 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:52:46,942 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:52:54,084 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:53:04,800 INFO com.cloudera.flume.core.BackOffFailOverSink: Attempting to open a stub sink 'fail'!
+2012-04-03 22:53:06,487 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@31d8d237
+2012-04-03 22:53:06,505 INFO com.cloudera.flume.handlers.thrift.ThriftEventSource: Starting blocking thread pool server on port 35853...
+2012-04-03 22:53:06,885 INFO org.apache.zookeeper.ZooKeeper: Client environment:zookeeper.version=3.3.1-942149, built on 05/07/2010 17:14 GMT
+2012-04-03 22:53:06,886 INFO org.apache.zookeeper.ZooKeeper: Client environment:host.name=fm-vm-010.cercs.int
+2012-04-03 22:53:06,886 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.version=1.6.0_24
+2012-04-03 22:53:06,886 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.vendor=Sun Microsystems Inc.
+2012-04-03 22:53:06,886 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.home=/usr/lib/jvm/java-6-sun-1.6.0.24/jre
+2012-04-03 22:53:06,886 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.class.path=./conf:/root/flume-distribution-0.9.4/lib/activation-1.1.jar:/root/flume-distribution-0.9.4/lib/ahocorasick-2.x.jar:/root/flume-distribution-0.9.4/lib/ant-1.6.5.jar:/root/flume-distribution-0.9.4/lib/antlr-2.7.7.jar:/root/flume-distribution-0.9.4/lib/antlr-3.2.jar:/root/flume-distribution-0.9.4/lib/antlr-runtime-3.2.jar:/root/flume-distribution-0.9.4/lib/asm-3.1.jar:/root/flume-distribution-0.9.4/lib/automaton-1.0.0.jar:/root/flume-distribution-0.9.4/lib/avro-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-compiler-1.5.1.jar:/root/flume-distribution-0.9.4/lib/avro-ipc-1.5.1.jar:/root/flume-distribution-0.9.4/lib/commons-cli-1.2.jar:/root/flume-distribution-0.9.4/lib/commons-codec-1.3.jar:/root/flume-distribution-0.9.4/lib/commons-collections-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-el-1.0.jar:/root/flume-distribution-0.9.4/lib/commons-httpclient-3.1.jar:/root/flume-distribution-0.9.4/lib/commons-lang-2.5.jar:/root/flume-distribution-0.9.4/lib/commons-logging-1.0.4.jar:/root/flume-distribution-0.9.4/lib/commons-net-1.4.1.jar:/root/flume-distribution-0.9.4/lib/core-3.1.1.jar:/root/flume-distribution-0.9.4/lib/flume-core-0.9.4.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-hbasesink-0.9.5.jar:/root/flume-distribution-0.9.4/lib/flume-plugin-helloworld-0.9.5.jar:/root/flume-distribution-0.9.4/lib/guava-r07.jar:/root/flume-distribution-0.9.4/lib/hadoop-core-0.20.2-CDH3B4.jar:/root/flume-distribution-0.9.4/lib/hbase-0.92.0.jar:/root/flume-distribution-0.9.4/lib/hsqldb-1.8.0.7.jar:/root/flume-distribution-0.9.4/lib/irclib-1.0.0.jar:/root/flume-distribution-0.9.4/lib/jackson-core-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-jaxrs-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-mapper-asl-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jackson-xc-1.5.5.jar:/root/flume-distribution-0.9.4/lib/jasper-compiler-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jasper-runtime-5.5.23.jar:/root/flume-distribution-0.9.4/lib/jaxb-api-2.1.jar:/root/flume-distribution-0.9.4/lib/jaxb-impl-2.1.12.jar:/root/flume-distribution-0.9.4/lib/jersey-core-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-json-1.4.jar:/root/flume-distribution-0.9.4/lib/jersey-server-1.4.jar:/root/flume-distribution-0.9.4/lib/jets3t-0.6.1.jar:/root/flume-distribution-0.9.4/lib/jettison-1.2.jar:/root/flume-distribution-0.9.4/lib/jetty-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jetty-util-6.1.26.jar:/root/flume-distribution-0.9.4/lib/jline-0.9.94.jar:/root/flume-distribution-0.9.4/lib/jms-1.1.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.0.jar:/root/flume-distribution-0.9.4/lib/jsp-api-2.1.jar:/root/flume-distribution-0.9.4/lib/libthrift-0.6.0-cdh.jar:/root/flume-distribution-0.9.4/lib/log4j-1.2.15.jar:/root/flume-distribution-0.9.4/lib/mail-1.4.jar:/root/flume-distribution-0.9.4/lib/netty-3.2.4.Final.jar:/root/flume-distribution-0.9.4/lib/oro-2.0.8.jar:/root/flume-distribution-0.9.4/lib/paranamer-2.3.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5-20081211.jar:/root/flume-distribution-0.9.4/lib/servlet-api-2.5.jar:/root/flume-distribution-0.9.4/lib/slf4j-api-1.5.11.jar:/root/flume-distribution-0.9.4/lib/slf4j-log4j12-1.5.11.jar:/root/flume-distribution-0.9.4/lib/snappy-java-1.0.1-rc3.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0.1.jar:/root/flume-distribution-0.9.4/lib/stax-api-1.0-2.jar:/root/flume-distribution-0.9.4/lib/stringtemplate-3.2.jar:/root/flume-distribution-0.9.4/lib/velocity-1.6.4.jar:/root/flume-distribution-0.9.4/lib/xmlenc-0.52.jar:/root/flume-distribution-0.9.4/lib/zookeeper-3.3.1-10.jar:/lib/tools.jar:/root/flume-distribution-0.9.4/build/classes
+2012-04-03 22:53:06,886 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.library.path=/root/flume-distribution-0.9.4/lib::
+2012-04-03 22:53:06,886 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+2012-04-03 22:53:06,886 INFO org.apache.zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2012-04-03 22:53:06,886 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.name=Linux
+2012-04-03 22:53:06,886 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.arch=amd64
+2012-04-03 22:53:06,886 INFO org.apache.zookeeper.ZooKeeper: Client environment:os.version=2.6.31-22-server
+2012-04-03 22:53:06,886 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.name=root
+2012-04-03 22:53:06,887 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.home=/root
+2012-04-03 22:53:06,887 INFO org.apache.zookeeper.ZooKeeper: Client environment:user.dir=/root/flume-distribution-0.9.4
+2012-04-03 22:53:06,888 INFO org.apache.zookeeper.ZooKeeper: Initiating client connection, connectString=fm-vm-010:2181 sessionTimeout=180000 watcher=hconnection
+2012-04-03 22:53:06,916 INFO org.apache.zookeeper.ClientCnxn: Opening socket connection to server fm-vm-010/10.2.42.110:2181
+2012-04-03 22:53:06,931 INFO org.apache.zookeeper.ClientCnxn: Socket connection established to fm-vm-010/10.2.42.110:2181, initiating session
+2012-04-03 22:53:06,935 INFO org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper: The identifier of this process is 5310@fm-vm-010.cercs.int
+2012-04-03 22:53:06,961 INFO org.apache.zookeeper.ClientCnxn: Session establishment complete on server fm-vm-010/10.2.42.110:2181, sessionid = 0x1367b121e460022, negotiated timeout = 180000
+2012-04-03 22:53:08,010 INFO com.cloudera.flume.hbase.HBaseSink: HBase sink successfully opened
+2012-04-03 22:53:08,386 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@418bbf55
+2012-04-03 22:53:08,395 WARN com.cloudera.flume.handlers.debug.LazyOpenDecorator: Closing a lazy sink that was not logically opened
+2012-04-03 22:53:13,059 INFO com.cloudera.flume.handlers.thrift.ThriftEventSink: ThriftEventSink to fm-vm-010.cercs.int:35853 opened
+2012-04-03 22:53:36,523 INFO com.cloudera.flume.agent.LogicalNodeManager: creating new logical node hadoop-agent
+2012-04-03 22:53:36,539 WARN com.cloudera.flume.handlers.debug.LazyOpenDecorator: Closing a lazy sink that was not logically opened
+2012-04-03 22:53:36,658 INFO com.cloudera.flume.agent.LogicalNodeManager: creating new logical node hadoop-collector
+2012-04-03 22:53:36,663 ERROR com.cloudera.flume.core.connector.DirectDriver: Closing down due to exception on open calls
+2012-04-03 22:53:36,663 INFO com.cloudera.flume.core.connector.DirectDriver: Connector logicalNode hadoop-collector-39 exited with error: Attempting to open a Stub Source!
+2012-04-03 22:53:36,663 ERROR com.cloudera.flume.core.connector.DirectDriver: Error closing logicalNode hadoop-collector-39 source: Attempting to close a Stub Source!
+2012-04-03 22:53:36,663 WARN com.cloudera.flume.hbase.HBaseSink: Double close of HBase sink
+2012-04-03 22:53:36,663 ERROR com.cloudera.flume.core.connector.DirectDriver: Exiting driver logicalNode hadoop-collector-39 in error state StubSource | HBaseSink because Attempting to open a Stub Source!
+2012-04-03 22:53:36,944 WARN com.cloudera.flume.agent.LivenessManager: Heartbeats are backing up, currently behind by 1 heartbeats
+2012-04-03 22:53:36,948 WARN com.cloudera.flume.agent.LivenessManager: Heartbeats are backing up, currently behind by 2 heartbeats
+2012-04-03 22:53:40,127 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@419c4091
+2012-04-03 22:53:40,223 WARN com.cloudera.flume.handlers.debug.LazyOpenDecorator: Closing a lazy sink that was not logically opened
+2012-04-03 22:53:40,246 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@3253abbb
+2012-04-03 22:53:40,265 ERROR com.cloudera.flume.core.connector.DirectDriver: Closing down due to exception on open calls
+2012-04-03 22:53:40,266 INFO com.cloudera.flume.core.connector.DirectDriver: Connector logicalNode hadoop-collector-42 exited with error: Attempting to open a Stub Source!
+2012-04-03 22:53:40,266 ERROR com.cloudera.flume.core.connector.DirectDriver: Error closing logicalNode hadoop-collector-42 source: Attempting to close a Stub Source!
+2012-04-03 22:53:40,266 WARN com.cloudera.flume.hbase.HBaseSink: Double close of HBase sink
+2012-04-03 22:53:40,266 ERROR com.cloudera.flume.core.connector.DirectDriver: Exiting driver logicalNode hadoop-collector-42 in error state StubSource | HBaseSink because Attempting to open a Stub Source!
+2012-04-03 22:53:42,388 INFO com.cloudera.flume.handlers.thrift.ThriftEventSink: ThriftEventSink on port 35853 closed
+2012-04-03 22:53:42,389 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@1702679a
+2012-04-03 22:53:44,930 INFO com.cloudera.flume.handlers.thrift.ThriftEventSource: Closed server on port 35853...
+2012-04-03 22:53:44,930 INFO com.cloudera.flume.handlers.thrift.ThriftEventSource: Queue still has 0 elements ...
+2012-04-03 22:53:44,930 INFO com.cloudera.flume.hbase.HBaseSink: HBase sink successfully closed
+2012-04-03 22:53:44,959 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@3ddcc4cd
+2012-04-03 22:53:44,978 WARN com.cloudera.flume.agent.LivenessManager: Heartbeats are backing up, currently behind by 1 heartbeats
+2012-04-03 22:53:44,985 WARN com.cloudera.flume.handlers.debug.LazyOpenDecorator: Closing a lazy sink that was not logically opened
+2012-04-03 22:53:45,096 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@32c26ede
+2012-04-03 22:53:45,098 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@15db4492
+2012-04-03 22:53:45,106 WARN com.cloudera.flume.handlers.debug.LazyOpenDecorator: Closing a lazy sink that was not logically opened
+2012-04-03 22:53:45,115 INFO com.cloudera.flume.handlers.thrift.ThriftEventSource: Starting blocking thread pool server on port 35854...
+2012-04-03 22:53:45,471 INFO com.cloudera.flume.hbase.HBaseSink: HBase sink successfully opened
+2012-04-03 22:53:50,115 INFO com.cloudera.flume.core.BackOffFailOverSink: Failed to open thrift event sink to fm-vm-010.cercs.int:35853 : java.net.ConnectException: Connection refused
+2012-04-03 22:53:55,134 WARN com.cloudera.flume.agent.LivenessManager: Heartbeats are backing up, currently behind by 1 heartbeats
+2012-04-03 22:53:55,134 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@3f406eb6
+2012-04-03 22:53:55,197 WARN com.cloudera.flume.handlers.debug.LazyOpenDecorator: Closing a lazy sink that was not logically opened
+2012-04-03 22:54:00,138 WARN com.cloudera.flume.agent.LivenessManager: Heartbeats are backing up, currently behind by 1 heartbeats
+2012-04-03 22:54:00,139 WARN com.cloudera.flume.agent.LivenessManager: Heartbeats are backing up, currently behind by 2 heartbeats
+2012-04-03 22:54:05,143 WARN com.cloudera.flume.agent.LivenessManager: Heartbeats are backing up, currently behind by 3 heartbeats
+2012-04-03 22:54:05,145 WARN com.cloudera.flume.agent.LivenessManager: Heartbeats are backing up, currently behind by 4 heartbeats
+2012-04-03 22:54:10,193 WARN com.cloudera.flume.agent.LivenessManager: Heartbeats are backing up, currently behind by 5 heartbeats
+2012-04-03 22:54:10,195 WARN com.cloudera.flume.agent.LivenessManager: Heartbeats are backing up, currently behind by 6 heartbeats
+2012-04-03 22:54:15,223 WARN com.cloudera.flume.agent.LivenessManager: Heartbeats are backing up, currently behind by 7 heartbeats
+2012-04-03 22:54:15,225 WARN com.cloudera.flume.agent.LivenessManager: Heartbeats are backing up, currently behind by 8 heartbeats
+2012-04-03 22:54:20,241 WARN com.cloudera.flume.agent.LivenessManager: Heartbeats are backing up, currently behind by 9 heartbeats
+2012-04-03 22:54:20,242 WARN com.cloudera.flume.agent.LivenessManager: Heartbeats are backing up, currently behind by 10 heartbeats
+2012-04-03 22:54:25,197 ERROR com.cloudera.flume.agent.LogicalNode: Forcing driver to exit uncleanly
+2012-04-03 22:54:25,198 ERROR com.cloudera.flume.core.connector.DirectDriver: Closing down due to exception during append calls
+2012-04-03 22:54:25,198 INFO com.cloudera.flume.core.connector.DirectDriver: Connector logicalNode hadoop-collector-49 exited with error: Waiting for queue element was interrupted! null
+2012-04-03 22:54:25,198 INFO com.cloudera.flume.handlers.thrift.ThriftEventSource: Closed server on port 35854...
+2012-04-03 22:54:25,198 INFO com.cloudera.flume.handlers.thrift.ThriftEventSource: Queue still has 0 elements ...
+2012-04-03 22:54:25,198 INFO com.cloudera.flume.hbase.HBaseSink: HBase sink successfully closed
+2012-04-03 22:54:25,198 ERROR com.cloudera.flume.core.connector.DirectDriver: Exiting driver logicalNode hadoop-collector-49 in error state ThriftEventSource | HBaseSink because Waiting for queue element was interrupted! null
+2012-04-03 22:54:25,198 INFO com.cloudera.flume.agent.LogicalNode: Node config successfully set to com.cloudera.flume.conf.FlumeConfigData@19336006
+2012-04-03 22:54:25,208 INFO com.cloudera.flume.handlers.thrift.ThriftEventSource: Starting blocking thread pool server on port 35854...
+2012-04-03 22:54:25,536 INFO com.cloudera.flume.hbase.HBaseSink: HBase sink successfully opened
+2012-04-03 23:02:35,083 INFO com.cloudera.flume.watchdog.Watchdog: Watchdog shutdown hook
