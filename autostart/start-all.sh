@@ -20,7 +20,9 @@ for agent in `cat agents.conf`
 do
   HOST=`echo $agent | cut -d';' -f1`
   NODE_NAME=`echo $agent | cut -d';' -f2`
+# This line starts up logical nodes, which doesn't work well withh autobechain
   ssh $HOST "cd $FLUME_HOME; $FLUME_HOME/bin/flume-daemon.sh start node -n $HOST"
+#  ssh $HOST "cd $FLUME_HOME; $FLUME_HOME/bin/flume-daemon.sh start node -n $NODE_NAME"
 done
 
 

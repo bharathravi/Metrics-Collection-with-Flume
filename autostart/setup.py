@@ -7,6 +7,8 @@ def start_configs(master):
 #    print "exec config decommission "+line  
   f=open("agents.conf");
   seen_hosts = []
+  print "submit unmapAll"
+  print "submit purgeAll"
   for line in f.readlines():
     line=line.strip()
     if len(line) == 0:
@@ -22,11 +24,16 @@ def start_configs(master):
     comp= flowname + " " + source + " " + sink    
     if host not in seen_hosts:
       seen_hosts.append(host)
-      print "exec decommission " + host
-    print "exec decommission "+node
-    print "exec config " + node + " " + comp
-    print "exec map " + host + " " + node
-  print "exec refreshAll"  
+      print "submit decommission " + host
+    print "submit decommission "+node
+    print "submit map " + host + " " + node
+
+    # Use some noops after map to give it some time 
+    # to start up. 
+    print "submit noop 5000"
+    print "submit noop 5000"
+    print "submit config " + node + " " + comp
+  print "submit refreshAll"  
 
 def stop_configs(master):
   print "connect "+master  
