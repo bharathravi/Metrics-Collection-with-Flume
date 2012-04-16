@@ -1,10 +1,6 @@
 #!/usr/bin/python
 import sys
 def start_configs(master):
-  print "connect "+master
-#  for line in q.readlines():
-#    line=line.strip()
-#    print "exec config decommission "+line  
   f=open("agents.conf");
   seen_hosts = []
   print "submit unmapAll"
@@ -36,15 +32,26 @@ def start_configs(master):
   print "submit refreshAll"  
 
 def stop_configs(master):
-  print "connect "+master  
-  f=open("agents");
+  # Unmap and decomission all nodes
+  f=open("agents.conf");
+  seen_hosts = []
   for line in f.readlines():
     line=line.strip()
-    #config=line.split(" ")
-    node=line
-    print "exec unconfig "+node
-    print "exec decommission "+node
-    print "exec purge "+node
+    if len(line) == 0:
+      continue
+
+    config=line.split(";")
+    host=config[0]
+    node=config[1]
+    source=config[2]
+    sink=config[3]
+    flowname=config[4]
+
+    print "submit unmap " + host + " " +  node
+    print "submit decommission " + node
+    if host not in seen_hosts:
+      seen_hosts.append(host)
+      print "submit decommission " + host
 
 if __name__ == "__main__":
   if(len(sys.argv)!=3):
@@ -54,5 +61,5 @@ if __name__ == "__main__":
   option=sys.argv[2]
   if option == "start":
     start_configs(master)
-  else:
+  elif option == "stop":
     stop_configs(master)
