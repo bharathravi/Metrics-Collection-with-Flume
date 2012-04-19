@@ -1,0 +1,73 @@
+1. INSTALLATION
+-------------------------------
+  Ensure this directory is replicated on all machines in the set-up 
+  under the same path, or is reachable by all machines if using an NFS.
+
+  Only use the flume-distribution packaged with this directory,
+  since this contains certain modifications required for this to work.
+
+  Next, set the following environment variables:
+
+  1. In autostart/env.sh set FLUME_HOME, pointing to the loaction of the flume distribution.
+     The default is ./flume-distribution-0.9.4/
+  2. In <flume-distribution>/bin/flume-env.sh set the following:
+       FLUME_HOME
+       HBASE_HOME
+       HADOOP_HOME
+
+     These should be absolute paths, valid on all machines in the set up.
+  3. In <flume-distribution>/bin/flume-site.xml, edit the "flume.master.servers" property
+     to point to the right master server.
+  4. Lastly, the flume master opens up a lot of sockets during configuration. 
+     Ensure that the OS file limit is set to a high enough limit (ulimit -a).
+     On my set up, the open file limit was 10000, to play it safe.
+
+
+2. CONFIGURATION
+----------------------------------
+  All flume configuration goes into autostart/agents.conf. 
+  Each line represents a single logical node, with fields separated by 
+  semicolons (;). The format is as fllows:
+
+  <Physical machine where this node should run>;<Name for the logical node>;<source>;<sink>;<name of the Flume flow it is a part of>
+ 
+  Ensure there is only one line per logical name. In case of duplicates, 
+  flume will pick the last line for that name as the right configuration.
+
+  For a flume agent, the source is typically a ProtobufSource (see below) 
+  and the sink is typically "autoBEChain".
+
+  For a flume collector, the source is 'autoCollectorSource' and the sink
+  is an hbase sink.
+
+  The agents.conf contains some sample configurations as examples.
+
+3. HOW TO USE THE PROTOBUF FLUME SOURCE
+---------------------------------------------
+  The protobuf source is called 'helloWorldSource' because I was too lazy to rename it.
+  It expects as a parameter, the path of binary to run (See below for included metrics binaries).
+
+  The helloWorldSource expects the binary to feed it a stream of Protobuf Packets.
+  The source will run infinitely unless it encounters errors.
+
+  Currently, I use complied python scripts as arguments to this.
+
+4. METRICS COLLECTION SCRIPTS
+------------------------------------------------
+  The metrics collected are detailed in the proto files under "metrics_scripts/protos".
+
+  The metrics collection binaries passed to the Protobuf Source as arguments
+  are under "metrics_scripts/binaries/poll_*_status.py". The corresponding source
+  python scripts are under "metrics_scripts/binaries/poll_*_status.py".
+
+  I use compiled python binaries to collect metrics from applications.
+  Although standard python scripts may be used, this requires installing
+  the appropriate python libraries on all machines. Instead, I compile my python scripts
+  into binaries using pyinstaller (http://http://www.pyinstaller.org/).
+
+5. CONFIGURING HBASE FOR METRICS
+-------------------------------------------------
+  HBase exports metrics logs using hadoop-metrics. For the HBase metrics script 
+  to work HBase needs to be configured to export these metrics. To do this,
+  edit HBASE_HOME/conf/hadoop-metrics.properties and uncomment the appropriate lines.
+  See http://hbase.apache.org/metrics.html for a full description
