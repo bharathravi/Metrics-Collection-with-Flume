@@ -10,15 +10,16 @@
 
   1. In autostart/env.sh set FLUME_HOME, pointing to the loaction of the flume distribution.
      The default is ./flume-distribution-0.9.4/
-  2. In <flume-distribution>/bin/flume-env.sh set the following:
+  2. In autostart/master, set the name of the machine that will run the Flume master.
+  3. In <flume-distribution>/bin/flume-env.sh set the following:
        FLUME_HOME
        HBASE_HOME
        HADOOP_HOME
 
      These should be absolute paths, valid on all machines in the set up.
-  3. In <flume-distribution>/bin/flume-site.xml, edit the "flume.master.servers" property
+  4. In <flume-distribution>/bin/flume-site.xml, edit the "flume.master.servers" property
      to point to the right master server.
-  4. Lastly, the flume master opens up a lot of sockets during configuration. 
+  5. Lastly, the flume master opens up a lot of sockets during configuration. 
      Ensure that the OS file limit is set to a high enough limit (ulimit -a).
      On my set up, the open file limit was 10000, to play it safe.
 
