@@ -4,7 +4,7 @@ import os, sys, time, signal
 from datetime import datetime
 import subprocess, struct
 
-sys.path.append("./protos")
+sys.path.append("../protos/python")
 import hbase_status_pb2 as proto
 
 
@@ -13,19 +13,20 @@ def main():
   if len(sys.argv) > 1:
     OUTFILE = open(sys.argv[1], 'rb')
   
-  length_string = OUTFILE.read(8)
+  #length_string = OUTFILE.read(8)
   try:
-    while length_string != "":
-      try:
-        length = struct.unpack('L', length_string)[0]
-        data = OUTFILE.read(length)
-        status = proto.HBaseStatus()
-        status.ParseFromString(data)    
-        print status.timestamp, status.read_latency, status.write_latency, status.sync_latency 
-      except:
-        print "Unexpected end of data"        
-        exit(0)
-      length_string = OUTFILE.read(8)
+    #while length_string != "":
+    try:
+      length = 65 #struct.unpack('L', length_string)[0]
+      data = OUTFILE.read(length)
+      print "OK"
+      status = proto.HBaseStatus()
+      status.ParseFromString(data)    
+      print status.timestamp, status.read_latency, status.write_latency, status.sync_latency 
+    except:
+      print "Unexpected end of data"        
+      exit(0)
+    length_string = OUTFILE.read(8)
   finally:
     OUTFILE.close()
 

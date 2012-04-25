@@ -17,7 +17,7 @@ public class QueryHadoopStats {
 
     // This instantiates an HTable object that connects you to
     // the "myLittleHBaseTable" table.
-    HTable table = new HTable(config, "flume");
+    HTable table = new HTable(config, "flume_hbase");
 
     Scan s = new Scan();
     s.addFamily(Bytes.toBytes("cf"));
@@ -27,9 +27,15 @@ public class QueryHadoopStats {
       // Now, for the actual iteration. One way is to use a while loop like so:
       for (Result rr = scanner.next(); rr != null; rr = scanner.next()) {
         // print out the row we found and the columns we were looking for
-        System.out.println("Found row: " + new String(rr.getRow()) +
-            " " + Bytes.toString(rr.getValue(Bytes.toBytes("cf"), Bytes.toBytes("host")))
-            + " " + Bytes.toString(rr.getValue(Bytes.toBytes("cf"), Bytes.toBytes("body"))));
+        String host = Bytes.toString(rr.getValue(Bytes.toBytes("cf"), Bytes.toBytes("host")));
+
+        if (host.equals("fm-vm-016.cercs.int")) {
+	  String protoBytes = Bytes.toString(rr.getValue(Bytes.toBytes("cf"), Bytes.toBytes("body"))));
+          HbaseStatus stats = new HbaseStatus.parseFrom(protoBytes.getBytes());
+          System.out.println("Found row: " + new String(rr.getRow()) +
+              " " + Bytes.toString(rr.getValue(Bytes.toBytes("cf"), Bytes.toBytes("host")))
+              + " " + stats.getReadLatency());
+        }
       }
 
       // The other approach is to use a foreach loop. Scanners are iterable!

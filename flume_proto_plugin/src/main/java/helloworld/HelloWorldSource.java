@@ -88,6 +88,7 @@ public class HelloWorldSource extends EventSource.Base {
             }
           } else {
             bytesRead += numRead;
+            LOG.info("Read a total of " + bytesRead);
           }          
         }
       } catch (InterruptedException e) {
@@ -128,14 +129,16 @@ public class HelloWorldSource extends EventSource.Base {
         LOG.warn("Proto length too long: " + length + " bytes");
         throw new IOException("Proto length too long: " + length + " bytes");
       }
-      byte[] bytes = new byte[4 + length];
-      bytes[0] = length_bytes[0];
-      bytes[1] = length_bytes[1];
-      bytes[2] = length_bytes[2];
-      bytes[3] = length_bytes[3];
+      byte[] bytes = new byte[length];
+
+
 
       readExactlyNBytes(inputStream, bytes, length, false);
-
+      for (int i = 0; i < bytes.length; ++i) {
+        char x = (char) bytes[i];
+        LOG.info("" + x);
+      }
+      LOG.info("Final byte array size " + bytes.length);
       return new EventImpl(bytes);
     } catch (InterruptedException e) {
       LOG.warn("Process interupted");
