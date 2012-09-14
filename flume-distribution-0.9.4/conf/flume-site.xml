@@ -24,7 +24,7 @@
 
   <property>
     <name>flume.master.servers</name>
-    <value>fm-vm-010</value>
+    <value>localhost</value>
     <description>This is the address for the config servers status
     server (http)
     </description>

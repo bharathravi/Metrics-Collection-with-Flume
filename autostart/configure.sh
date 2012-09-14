@@ -1,11 +1,11 @@
 #!/bin/bash
-if [ $# -ne 2 ];
+if [ $# -ne  ];
 then
-        echo "Usage : setup master_node start|stop"
+        echo "Usage : configure.sh start|stop"
         exit 1
 fi
-MASTER=$1
-OPTION=$2
+MASTER=`cat master`
+OPTION=$!
 TEMP_FILENAME=`pwd`/temp_file
 
 if [ "$FLUME_HOME" = "" ]; then

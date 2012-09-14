@@ -23,6 +23,6 @@
 
 # export FLUME_MASTER="localhost"
 # export JAVA_LIBRARY_PATH=/path/to/extra/libs:$JAVA_LIBRARY_PATH
-export FLUME_HOME="/root/flume-distribution-0.9.4/"
+export FLUME_HOME="/home/bharath/workspace/Metrics-Collection-with-Flume/flume-distribution-0.9.4/"
 export FLUME_LOG_DIR=$FLUME_HOME/logs
 
